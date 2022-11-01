@@ -58,7 +58,7 @@ DV_PATTERNS = $(foreach dv, $(PATTERNS), verify-$(dv))
 TARGET_PATH=$(shell pwd)
 VERIFY_COMMAND="cd ${TARGET_PATH}/verilog/dv/$* && export SIM=${SIM} && make"
 $(DV_PATTERNS): verify-% : ./verilog/dv/% 
-	docker run -v ${TARGET_PATH}:${TARGET_PATH} -v ${PDK_ROOT}:${PDK_ROOT} \
+	sudo docker run -v ${TARGET_PATH}:${TARGET_PATH} -v ${PDK_ROOT}:${PDK_ROOT} \
                 -v ${CARAVEL_ROOT}:${CARAVEL_ROOT} \
                 -e TARGET_PATH=${TARGET_PATH} -e PDK_ROOT=${PDK_ROOT} \
                 -e CARAVEL_ROOT=${CARAVEL_ROOT} \
@@ -112,7 +112,7 @@ precheck:
 run-precheck: check-pdk check-precheck
 	$(eval INPUT_DIRECTORY := $(shell pwd))
 	cd $(PRECHECK_ROOT) && \
-	docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
+	sudo docker run -v $(PRECHECK_ROOT):$(PRECHECK_ROOT) \
 	-v $(INPUT_DIRECTORY):$(INPUT_DIRECTORY) \
 	-v $(PDK_ROOT):$(PDK_ROOT) \
 	-e INPUT_DIRECTORY=$(INPUT_DIRECTORY) \
