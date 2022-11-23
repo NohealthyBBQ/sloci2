@@ -23,16 +23,18 @@ N 2890 -1860 2890 -1820 {
 lab=#net1}
 C {sky130_fd_pr/diode.sym} 2890 -1690 2 0 {name=D1
 model=diode_pw2nd_05v5_nvt
-area=1e12
+area=2e12
 }
 C {vsource.sym} 2750 -1690 0 0 {name=Vdd value=3}
 C {gnd.sym} 2750 -1630 0 0 {name=l1 lab=GND}
 C {devices/code_shown.sym} 3110 -1740 0 0 {name=s2 only_toplevel=false value="
-.dc Vdd -10 0 0.5
+.dc Vdd 0 2 0.1
+.option temp=37
+.option GMIN=1e-12
 .control
 save all
 run
-option temp=37
+
 display
 
 plot vm1#branch
