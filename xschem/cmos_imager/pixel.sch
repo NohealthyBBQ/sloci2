@@ -113,8 +113,6 @@ N 3020 -2420 3020 -2330 {
 lab=GND}
 N 2970 -2420 3020 -2420 {
 lab=GND}
-N 2160 -2770 2160 -2730 {
-lab=#net3}
 N 2970 -2690 2970 -2650 {
 lab=Vmid}
 N 3070 -2550 3100 -2550 {
@@ -185,27 +183,13 @@ N 2450 -2040 2450 -1810 {
 lab=GND}
 N 2380 -2010 2380 -1930 {
 lab=#net6}
-N 2380 -1870 2380 -1810 {
-lab=GND}
-C {sky130_fd_pr/pfet_01v8.sym} 2590 -2900 0 0 {name=M1
-L=0.5
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
+N 2380 -1930 2380 -1870 {
+lab=#net6}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2810 0 0 {name=M2
 L=0.5
 W=1
 nf=1
-mult=8
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -217,7 +201,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2420 0 0 {name=M4
 L=0.5
-W=10
+W=5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -231,7 +215,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2330 0 0 {name=M5
 L=0.5
-W=10
+W=5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -258,7 +242,7 @@ m=1}
 C {lab_wire.sym} 3070 -2620 2 0 {name=l1 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1750 -2740 0 1 {name=M6
 L=0.5
-W=10
+W=5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -270,9 +254,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt.sym} 1750 -2650 0 1 {name=M7
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 1750 -2650 0 1 {name=M1
 L=0.5
-W=10
+W=5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -286,7 +270,7 @@ spiceprefix=X
 }
 C {gnd.sym} 1730 -2570 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} 2800 -2990 0 0 {name=l1 sig_type=std_logic lab=VDD}
-C {isource.sym} 1730 -2890 0 0 {name=I1 value=40u}
+C {isource.sym} 1730 -2890 0 0 {name=I1 value=5u}
 C {lab_wire.sym} 1730 -2970 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1870 -2740 0 0 {name=l1 sig_type=std_logic lab=Vb1}
 C {lab_wire.sym} 1870 -2650 0 0 {name=l1 sig_type=std_logic lab=Vb0}
@@ -313,7 +297,7 @@ C {devices/code_shown.sym} 2190 -3150 0 0 {name=s2 only_toplevel=false value="
 .control
 save all
 run
-tran 0.1n 40u
+tran 0.1n 100u
 display
 
 plot Vin Vout rst_b Vmid
@@ -328,7 +312,7 @@ C {lab_wire.sym} 2770 -2810 0 0 {name=l1 sig_type=std_logic lab=Vin}
 C {devices/ammeter.sym} 2970 -2500 0 0 {name=Vm1 current=40e-6}
 C {lab_wire.sym} 3070 -2550 0 0 {name=l1 sig_type=std_logic lab=Vout}
 C {lab_wire.sym} 2530 -2900 0 0 {name=l1 sig_type=std_logic lab=rst_b}
-C {devices/vsource.sym} 2010 -2910 0 0 {name=V2 net_name=true value="0 pulse(2V 0V 10us 0us 0us 5us)"}
+C {devices/vsource.sym} 2010 -2910 0 0 {name=V2 net_name=true value="0 pulse(1.8V 0V 10us 0us 0us 5us)"}
 C {devices/gnd.sym} 2010 -2880 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 2010 -2940 0 0 {name=l23 lab=rst_b}
 C {devices/ammeter.sym} 2970 -2720 0 0 {name=Vm2 current=40e-6}
@@ -344,7 +328,7 @@ C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2620 0 0 {name=M3
 L=0.5
 W=1
 nf=1
-mult=1
+mult=20
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -522,9 +506,23 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {res.sym} 2380 -1900 2 0 {name=RS1
-value=1Meg
+C {lab_wire.sym} 2970 -2670 0 0 {name=l1 sig_type=std_logic lab=Vmid}
+C {res.sym} 2380 -1840 2 0 {name=RS2
+value=100Meg
 footprint=1206
 device=resistor
 m=1}
-C {lab_wire.sym} 2970 -2670 0 0 {name=l1 sig_type=std_logic lab=Vmid}
+C {sky130_fd_pr/pfet_01v8.sym} 2590 -2900 0 0 {name=M20
+L=0.5
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
