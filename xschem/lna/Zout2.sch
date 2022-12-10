@@ -40,7 +40,7 @@ lab=GND}
 N 740 -1010 740 -950 {
 lab=GND}
 N 700 -1050 700 -1040 {
-lab=Vout_1}
+lab=#net1}
 N 700 -860 700 -830 {
 lab=GND}
 N 740 -880 740 -830 {
@@ -51,38 +51,48 @@ N 630 -830 740 -830 {
 lab=GND}
 N 700 -920 700 -860 {
 lab=GND}
-N 700 -1160 700 -1050 {
+N 970 -1220 1100 -1220 {
 lab=Vout_1}
-N 960 -1100 1090 -1100 {
+N 1100 -1220 1140 -1220 {
 lab=Vout_1}
-N 1090 -1100 1130 -1100 {
+N 1090 -1250 1090 -1220 {
 lab=Vout_1}
-N 1080 -1130 1080 -1100 {
+N 1020 -1255 1020 -1220 {
 lab=Vout_1}
-N 1010 -1135 1010 -1100 {
-lab=Vout_1}
-N 1010 -1220 1010 -1195 {
+N 1020 -1340 1020 -1315 {
 lab=VDD}
-N 1080 -1220 1080 -1190 {
+N 1090 -1340 1090 -1310 {
 lab=VDD}
-N 980 -1220 1160 -1220 {
+N 990 -1340 1170 -1340 {
 lab=VDD}
-N 730 -1220 980 -1220 {
+N 740 -1340 990 -1340 {
 lab=VDD}
-N 960 -1130 960 -1100 {
+N 970 -1250 970 -1220 {
 lab=Vout_1}
-N 960 -1220 960 -1190 {
+N 970 -1340 970 -1310 {
 lab=VDD}
-N 730 -1100 960 -1100 {
+N 740 -1220 970 -1220 {
 lab=Vout_1}
-N 700 -1100 730 -1100 {
+N 710 -1220 740 -1220 {
 lab=Vout_1}
-N 460 -1110 460 -970 { lab=GND}
-N 460 -1180 460 -1170 {
+N 200 -1290 200 -1150 { lab=GND}
+N 200 -1360 200 -1350 {
 lab=VDD}
-N 340 -1110 340 -970 { lab=GND}
-N 340 -1180 340 -1170 {
+N 80 -1290 80 -1150 { lab=GND}
+N 80 -1360 80 -1350 {
 lab=VGS}
+N 700 -1090 700 -1050 {
+lab=#net1}
+N 700 -1220 700 -1150 {
+lab=Vout_1}
+N 700 -1220 710 -1220 {
+lab=Vout_1}
+N 700 -1120 740 -1120 {
+lab=GND}
+N 740 -1120 740 -1010 {
+lab=GND}
+N 610 -1120 660 -1120 {
+lab=VDD}
 C {devices/isource.sym} 870 -1480 2 0 {name=I0 value="ac=1"}
 C {devices/ind.sym} 1150 -1455 0 0 {name=L2
 m=1
@@ -105,6 +115,7 @@ X5 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w
 .ends
 *.sp dec 1000 0.1e9 100e9 1
 *.ac dec 1000 0.01e9 100e9 
+.option GMIN=1e-15
 .control
 save all
 run
@@ -139,28 +150,30 @@ C {devices/lab_wire.sym} 1040 -1510 0 0 {name=l12 sig_type=std_logic lab=Vout}
 C {devices/gnd.sym} 905 -1390 0 0 {name=l17 lab=GND}
 C {devices/nmos4.sym} 680 -1010 0 0 {name=XM12 model=sky130_fd_pr__rf_nfet_01v8_bM04W5p00L0p15_ext w=5.05u l=0.15u m=8}
 C {devices/gnd.sym} 675 -830 0 0 {name=l17 lab=GND}
-C {devices/ind.sym} 1010 -1165 0 0 {name=L1
+C {devices/ind.sym} 1020 -1285 0 0 {name=L1
 m=1
 value=0.2n
 footprint=1206
 device=inductor}
-C {devices/capa.sym} 1080 -1160 2 1 {name=C1
+C {devices/capa.sym} 1090 -1280 2 1 {name=C1
 m=1
 value=316.6f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 960 -1160 2 0 {name=R2
+C {devices/res.sym} 970 -1280 2 0 {name=R2
 value=50
 
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_wire.sym} 900 -1220 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 460 -1140 0 0 {name=V1 value=1.8}
-C {devices/gnd.sym} 460 -970 0 1 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 460 -1180 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 870 -1100 0 0 {name=l12 sig_type=std_logic lab=Vout_1}
-C {devices/vsource.sym} 340 -1140 0 0 {name=V2 value="0.9 ac=1"}
-C {devices/gnd.sym} 340 -970 0 1 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 340 -1180 0 0 {name=l12 sig_type=std_logic lab=VGS}
+C {devices/lab_wire.sym} 910 -1340 0 0 {name=l12 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} 200 -1320 0 0 {name=V1 value=1.8}
+C {devices/gnd.sym} 200 -1150 0 1 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 200 -1360 0 0 {name=l12 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 880 -1220 0 0 {name=l12 sig_type=std_logic lab=Vout_1}
+C {devices/vsource.sym} 80 -1320 0 0 {name=V2 value="0.9 ac=1"}
+C {devices/gnd.sym} 80 -1150 0 1 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 80 -1360 0 0 {name=l12 sig_type=std_logic lab=VGS}
 C {devices/lab_wire.sym} 640 -1010 0 0 {name=l12 sig_type=std_logic lab=VGS}
+C {devices/nmos4.sym} 680 -1120 0 0 {name=XM3 model=sky130_fd_pr__rf_nfet_01v8_bM04W5p00L0p15_ext w=5.05u l=0.15u m=12}
+C {devices/lab_wire.sym} 620 -1120 0 0 {name=l12 sig_type=std_logic lab=VDD}
