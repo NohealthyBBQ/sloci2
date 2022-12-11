@@ -157,7 +157,7 @@ footprint=1206
 device=inductor}
 C {devices/capa.sym} 1090 -1280 2 1 {name=C1
 m=1
-value=316.6f
+value=100f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/res.sym} 970 -1280 2 0 {name=R2
@@ -171,7 +171,7 @@ C {devices/vsource.sym} 200 -1320 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 200 -1150 0 1 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 200 -1360 0 0 {name=l12 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -1220 0 0 {name=l12 sig_type=std_logic lab=Vout_1}
-C {devices/vsource.sym} 80 -1320 0 0 {name=V2 value="0.9 ac=1"}
+C {devices/vsource.sym} 80 -1320 0 0 {name=V2 value="1.2 ac=1"}
 C {devices/gnd.sym} 80 -1150 0 1 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 80 -1360 0 0 {name=l12 sig_type=std_logic lab=VGS}
 C {devices/lab_wire.sym} 640 -1010 0 0 {name=l12 sig_type=std_logic lab=VGS}
