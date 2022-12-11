@@ -112,6 +112,9 @@ display
 
 ac dec 10 1G 100G
 let phase = 180/PI*vp(Vout)
+plot Vout
+plot real(Vout)
+plot imag(Vout)
 
 plot Vout_1
 plot real(Vout_1)
@@ -146,7 +149,7 @@ footprint=1206
 device=inductor}
 C {devices/capa.sym} 1080 -1160 2 1 {name=C1
 m=1
-value=316.6f
+value=100f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/res.sym} 960 -1160 2 0 {name=R2
