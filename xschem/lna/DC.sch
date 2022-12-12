@@ -71,11 +71,11 @@ N 970 -1250 970 -1220 {
 lab=Vout_1}
 N 970 -1340 970 -1310 {
 lab=VDD}
-N 200 -1290 200 -1150 { lab=GND}
-N 200 -1360 200 -1350 {
+N 660 -1480 660 -1340 { lab=GND}
+N 660 -1550 660 -1540 {
 lab=VDD}
-N 80 -1290 80 -1150 { lab=GND}
-N 80 -1360 80 -1350 {
+N 540 -1480 540 -1340 { lab=GND}
+N 540 -1550 540 -1540 {
 lab=VGS}
 N 700 -1090 700 -1050 {
 lab=Vmid}
@@ -87,8 +87,10 @@ N 740 -1120 740 -1010 {
 lab=GND}
 N 610 -1120 660 -1120 {
 lab=VDD}
-N 760 -1220 970 -1220 {
+N 770 -1220 970 -1220 {
 lab=Vout_1}
+N 700 -1220 710 -1220 {
+lab=#net1}
 C {devices/isource.sym} 870 -1480 2 0 {name=I0 value="ac=1"}
 C {devices/ind.sym} 1150 -1455 0 0 {name=L2
 m=1
@@ -111,23 +113,20 @@ X5 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w
 .ends
 *.sp dec 1000 0.1e9 100e9 1
 *.ac dec 1000 0.01e9 100e9 
-.option GMIN=1e-15
 .control
 save all
 run
 display
 
-ac dec 10 1G 100G
-let phase = 180/PI*vp(Vout)
+tran 0.1n 5u
 
 plot Vout_1 Vmid
-plot abs(real(Vout_1)) abs(real(Vmid))
-plot imag(Vout_1)
 plot vm1#branch
+
 
 .endc
 "}
-C {devices/code.sym} 1340 -1860 0 0 {name=TT_MODELS1
+C {devices/code.sym} 1370 -1050 0 0 {name=TT_MODELS1
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -163,15 +162,15 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_wire.sym} 910 -1340 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 200 -1320 0 0 {name=V1 value=1.8}
-C {devices/gnd.sym} 200 -1150 0 1 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 200 -1360 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 1130 -1220 0 1 {name=l12 sig_type=std_logic lab=Vout_1}
-C {devices/vsource.sym} 80 -1320 0 0 {name=V2 value="1 ac=1"}
-C {devices/gnd.sym} 80 -1150 0 1 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 80 -1360 0 0 {name=l12 sig_type=std_logic lab=VGS}
+C {devices/vsource.sym} 660 -1510 0 0 {name=V1 value=1.8}
+C {devices/gnd.sym} 660 -1340 0 1 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 660 -1550 0 0 {name=l12 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 1140 -1220 2 0 {name=l12 sig_type=std_logic lab=Vout_1}
+C {devices/vsource.sym} 540 -1510 0 0 {name=V2 value="1"}
+C {devices/gnd.sym} 540 -1340 0 1 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 540 -1550 0 0 {name=l12 sig_type=std_logic lab=VGS}
 C {devices/lab_wire.sym} 640 -1010 0 0 {name=l12 sig_type=std_logic lab=VGS}
 C {devices/nmos4.sym} 680 -1120 0 0 {name=XM3 model=sky130_fd_pr__rf_nfet_01v8_bM04W5p00L0p15_ext w=5.05u l=0.15u m=12}
 C {devices/lab_wire.sym} 620 -1120 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 700 -1060 0 0 {name=l12 sig_type=std_logic lab=Vmid}
-C {devices/ammeter.sym} 730 -1220 1 0 {name=Vm1 current=40e-6}
+C {devices/ammeter.sym} 740 -1220 1 0 {name=Vm1 current=40e-6}
+C {devices/lab_wire.sym} 700 -1070 2 1 {name=l12 sig_type=std_logic lab=Vmid}

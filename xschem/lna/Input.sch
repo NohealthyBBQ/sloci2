@@ -40,7 +40,7 @@ lab=GND}
 N 740 -1010 740 -950 {
 lab=GND}
 N 700 -1050 700 -1040 {
-lab=Vmid}
+lab=#net1}
 N 700 -860 700 -830 {
 lab=GND}
 N 740 -880 740 -830 {
@@ -71,6 +71,10 @@ N 970 -1250 970 -1220 {
 lab=Vout_1}
 N 970 -1340 970 -1310 {
 lab=VDD}
+N 740 -1220 970 -1220 {
+lab=Vout_1}
+N 710 -1220 740 -1220 {
+lab=Vout_1}
 N 200 -1290 200 -1150 { lab=GND}
 N 200 -1360 200 -1350 {
 lab=VDD}
@@ -78,17 +82,17 @@ N 80 -1290 80 -1150 { lab=GND}
 N 80 -1360 80 -1350 {
 lab=VGS}
 N 700 -1090 700 -1050 {
-lab=Vmid}
-N 700 -1220 700 -1150 {
 lab=#net1}
+N 700 -1220 700 -1150 {
+lab=Vout_1}
+N 700 -1220 710 -1220 {
+lab=Vout_1}
 N 700 -1120 740 -1120 {
 lab=GND}
 N 740 -1120 740 -1010 {
 lab=GND}
 N 610 -1120 660 -1120 {
 lab=VDD}
-N 760 -1220 970 -1220 {
-lab=Vout_1}
 C {devices/isource.sym} 870 -1480 2 0 {name=I0 value="ac=1"}
 C {devices/ind.sym} 1150 -1455 0 0 {name=L2
 m=1
@@ -120,10 +124,10 @@ display
 ac dec 10 1G 100G
 let phase = 180/PI*vp(Vout)
 
-plot Vout_1 Vmid
-plot abs(real(Vout_1)) abs(real(Vmid))
+plot Vout_1
+plot abs(real(Vout_1))
 plot imag(Vout_1)
-plot vm1#branch
+*plot phase
 
 .endc
 "}
@@ -166,12 +170,10 @@ C {devices/lab_wire.sym} 910 -1340 0 0 {name=l12 sig_type=std_logic lab=VDD}
 C {devices/vsource.sym} 200 -1320 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 200 -1150 0 1 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 200 -1360 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 1130 -1220 0 1 {name=l12 sig_type=std_logic lab=Vout_1}
-C {devices/vsource.sym} 80 -1320 0 0 {name=V2 value="1 ac=1"}
+C {devices/lab_wire.sym} 880 -1220 0 0 {name=l12 sig_type=std_logic lab=Vout_1}
+C {devices/vsource.sym} 80 -1320 0 0 {name=V2 value="1.2 ac=1"}
 C {devices/gnd.sym} 80 -1150 0 1 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 80 -1360 0 0 {name=l12 sig_type=std_logic lab=VGS}
 C {devices/lab_wire.sym} 640 -1010 0 0 {name=l12 sig_type=std_logic lab=VGS}
 C {devices/nmos4.sym} 680 -1120 0 0 {name=XM3 model=sky130_fd_pr__rf_nfet_01v8_bM04W5p00L0p15_ext w=5.05u l=0.15u m=12}
 C {devices/lab_wire.sym} 620 -1120 0 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 700 -1060 0 0 {name=l12 sig_type=std_logic lab=Vmid}
-C {devices/ammeter.sym} 730 -1220 1 0 {name=Vm1 current=40e-6}
