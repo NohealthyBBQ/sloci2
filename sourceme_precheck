@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# define the location of the project
+export PROJECT_ROOT="/home/zexious/project/sloci2"
+export PDK_ROOT="/pdk/open_pdks/install/share/pdk"
+export PDK_PATH="/pdk/open_pdks/install/share/pdk/sky130A"
+make run-precheck
+
