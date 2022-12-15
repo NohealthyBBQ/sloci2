@@ -1,0 +1,39 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="X@name @@vdd @@vss @@ir50u @@vip @@vin @@vo @@vcomp @symname"
+template="
+name=I1
+"}
+V {}
+S {}
+E {}
+L 4 -0 -40 -0 -20 {}
+L 4 0 20 0 40 {}
+L 4 -30 -20 -20 -20 {}
+L 4 -30 20 -20 20 {}
+L 4 -25 -25 -25 -15 {}
+L 4 15 -40 40 -40 {}
+L 4 15 -40 15 -12.5 {}
+B 5 -42.5 -22.5 -37.5 -17.5 {name=vip
+dir=inout}
+B 5 -42.5 17.5 -37.5 22.5 {name=vin
+dir=inout}
+B 5 37.5 -2.5 42.5 2.5 {name=vo
+dir=inout}
+B 5 -2.5 -42.5 2.5 -37.5 {name=vdd
+dir=inout}
+B 5 -2.5 37.5 2.5 42.5 {name=vss
+dir=inout}
+B 5 -32.5 -42.5 -27.5 -37.5 {name=ir50u
+dir=inout}
+B 5 37.5 -42.5 42.5 -37.5 {name=vcomp
+dir=inout}
+P 4 4 -40 -40 -40 40 40 -0 -40 -40 {}
+P 4 4 -30 -32.5 -28.75 -37.5 -31.25 -37.5 -30 -32.5 {fill=true}
+T {@name} 12.5 12.5 0 0 0.2 0.2 {}
+T {@symname} 12.5 22.5 0 0 0.2 0.2 {}
+T {50u} -25 -42.5 0 0 0.1 0.1 {}
+T {vcomp} 17.5 -40 0 0 0.1 0.1 {}
+T {vdd} 2.5 -17.5 1 0 0.1 0.1 {}
+T {vss} -3.75 17.5 3 0 0.1 0.1 {}
