@@ -30,7 +30,7 @@ lab=GND}
 N 870 -1390 1100 -1390 {
 lab=GND}
 N 640 -1010 660 -1010 {
-lab=VGS}
+lab=#net1}
 N 700 -1010 720 -1010 {
 lab=GND}
 N 740 -950 740 -880 {
@@ -46,7 +46,7 @@ lab=GND}
 N 740 -880 740 -830 {
 lab=GND}
 N 700 -980 700 -920 {
-lab=GND}
+lab=#net2}
 N 970 -1220 1100 -1220 {
 lab=Vout_1}
 N 1100 -1220 1140 -1220 {
@@ -68,7 +68,7 @@ lab=Vout_1}
 N 970 -1340 970 -1310 {
 lab=VDD}
 N 710 -1220 740 -1220 {
-lab=#net1}
+lab=#net3}
 N 200 -1290 200 -1150 { lab=GND}
 N 200 -1360 200 -1350 {
 lab=VDD}
@@ -78,9 +78,9 @@ lab=VGS}
 N 700 -1090 700 -1050 {
 lab=Vmid}
 N 700 -1220 700 -1150 {
-lab=#net1}
+lab=#net3}
 N 700 -1220 710 -1220 {
-lab=#net1}
+lab=#net3}
 N 700 -1120 740 -1120 {
 lab=GND}
 N 740 -1120 740 -1010 {
@@ -89,18 +89,14 @@ N 610 -1120 660 -1120 {
 lab=VDD}
 N 800 -1220 970 -1220 {
 lab=Vout_1}
-N 500 -1010 580 -1010 {
-lab=VGS}
 N 400 -1010 440 -1010 {
 lab=VGS}
 N 700 -830 740 -830 {
 lab=GND}
-N 440 -1010 500 -1010 {
-lab=VGS}
-N 700 -920 700 -860 {
-lab=GND}
 N 580 -1010 640 -1010 {
-lab=VGS}
+lab=#net1}
+N 500 -1010 520 -1010 {
+lab=#net4}
 C {devices/isource.sym} 870 -1480 2 0 {name=I0 value="ac=1"}
 C {devices/ind.sym} 1150 -1455 0 0 {name=L2
 m=1
@@ -159,7 +155,7 @@ device=resistor
 m=1}
 C {devices/lab_wire.sym} 1040 -1510 0 0 {name=l12 sig_type=std_logic lab=Vout}
 C {devices/gnd.sym} 905 -1390 0 0 {name=l17 lab=GND}
-C {devices/nmos4.sym} 680 -1010 0 0 {name=XM12 model=sky130_fd_pr__rf_nfet_01v8_bM04W5p00L0p15_ext w=5.05u l=0.15u m=12}
+C {devices/nmos4.sym} 680 -1010 0 0 {name=XM12 model=sky130_fd_pr__rf_nfet_01v8_bM04W5p00L0p15_ext w=5.05u l=0.15u m=4}
 C {devices/gnd.sym} 715 -830 0 0 {name=l17 lab=GND}
 C {devices/ind.sym} 1020 -1285 0 0 {name=L1
 m=1
@@ -190,3 +186,19 @@ C {devices/lab_wire.sym} 620 -1120 0 0 {name=l12 sig_type=std_logic lab=VDD}
 C {devices/ammeter.sym} 770 -1220 1 0 {name=Vm1 current=40e-6}
 C {devices/lab_wire.sym} 700 -1060 0 0 {name=l12 sig_type=std_logic lab=Vmid}
 C {devices/lab_wire.sym} 410 -1010 0 0 {name=l12 sig_type=std_logic lab=VGS}
+C {devices/res.sym} 470 -1010 3 0 {name=R3
+value=100
+
+footprint=1206
+device=resistor
+m=1}
+C {ind.sym} 700 -890 0 0 {name=L4
+m=1
+value=1.34n
+footprint=1206
+device=inductor}
+C {ind.sym} 550 -1010 3 0 {name=L5
+m=1
+value=1p
+footprint=1206
+device=inductor}

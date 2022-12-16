@@ -72,11 +72,11 @@ lab=GNDI}
 N 615 -1090 625 -1090 {
 lab=#net4}
 N 1100 -1390 1230 -1390 {
-lab=#net5}
+lab=Vout}
 N 1160 -1360 1180 -1360 {
-lab=#net6}
-N 1230 -1390 1270 -1390 {
 lab=#net5}
+N 1230 -1390 1270 -1390 {
+lab=Vout}
 N 840 -1230 840 -1170 {
 lab=GNDI}
 N 840 -1230 870 -1230 {
@@ -84,23 +84,23 @@ lab=GNDI}
 N 870 -910 940 -910 {
 lab=GNDI}
 N 685 -1090 710 -1090 {
-lab=#net7}
+lab=#net6}
 N 770 -1090 990 -1090 {
-lab=#net7}
+lab=#net6}
 N 1220 -1130 1220 -1120 {
 lab=vmid}
 N 940 -910 1150 -910 {
 lab=GNDI}
 N 1220 -1420 1220 -1390 {
-lab=#net5}
+lab=Vout}
 N 1150 -1425 1150 -1390 {
-lab=#net5}
+lab=Vout}
 N 1150 -1510 1150 -1485 {
 lab=VDDI}
 N 1220 -1510 1220 -1480 {
 lab=VDDI}
 N 990 -1090 1100 -1090 {
-lab=#net7}
+lab=#net6}
 N 1220 -1210 1220 -1130 {
 lab=vmid}
 N 1120 -1510 1300 -1510 {
@@ -126,7 +126,7 @@ lab=GNDI}
 N 870 -1510 870 -1380 {
 lab=VDDI}
 N 1030 -1130 1030 -1090 {
-lab=#net7}
+lab=#net6}
 N 910 -1230 1030 -1230 {
 lab=Vref}
 N 1030 -1230 1030 -1190 {
@@ -134,7 +134,7 @@ lab=Vref}
 N 870 -1510 1120 -1510 {
 lab=VDDI}
 N 1220 -1060 1220 -1000 {
-lab=#net8}
+lab=#net7}
 N 870 -1120 870 -1080 {
 lab=GNDI}
 N 870 -1200 870 -1120 {
@@ -146,27 +146,29 @@ lab=GNDI}
 N 1420 -1300 1420 -1280 {
 lab=GNDI}
 N 1330 -1390 1420 -1390 {
-lab=#net9}
-N 1420 -1390 1420 -1360 {
-lab=#net9}
+lab=#net8}
 N 1020 -1360 1160 -1360 {
-lab=#net6}
+lab=#net5}
 N 950 -1420 950 -1360 {
-lab=#net6}
+lab=#net5}
 N 950 -1510 950 -1480 {
 lab=VDDI}
 N 950 -1360 1020 -1360 {
-lab=#net6}
+lab=#net5}
 N 1260 -1300 1260 -1090 {
 lab=GNDI}
 N 1170 -1010 1220 -1010 {
-lab=#net8}
+lab=#net7}
 N 1170 -1090 1170 -1070 {
 lab=#net3}
 N 1220 -1270 1220 -1210 {
 lab=vmid}
 N 710 -1090 780 -1090 {
-lab=#net7}
+lab=#net6}
+N 1100 -1420 1100 -1390 {
+lab=Vout}
+N 1100 -1510 1100 -1480 {
+lab=VDDI}
 C {devices/vsource.sym} 630 -1620 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 630 -1430 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 615 -1020 0 0 {name=V2 value="dc 0.9 ac 1 portnum 1 z0 100"
@@ -329,3 +331,10 @@ m=1
 value=20f
 footprint=1206
 device="ceramic capacitor"}
+C {devices/res.sym} 1100 -1450 2 0 {name=R1
+value=50
+
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_wire.sym} 1100 -1390 0 0 {name=l12 sig_type=std_logic lab=Vout}
