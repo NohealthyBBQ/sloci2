@@ -1,12 +1,10 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
 E {}
-T {10u} 540 -440 0 0 0.4 0.4 {}
-T {10u} 330 -440 0 0 0.4 0.4 {}
-T {100u} 740 -440 0 0 0.4 0.4 {}
 N 360 -170 360 -140 { lab=ppair_gate}
 N 450 -140 540 -140 { lab=ppair_gate}
 N 540 -170 540 -140 { lab=ppair_gate}

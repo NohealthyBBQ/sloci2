@@ -25,6 +25,8 @@ N 1830 -1160 1870 -1160 {
 lab=#net4}
 N 1460 -1140 1510 -1140 {}
 N 1310 -1140 1400 -1140 {}
+N 1690 -1100 1690 -1060 {}
+N 1660 -1280 1660 -1240 {}
 C {ip_block/opamp/miller_2stage/miller_2stage.sym} 1690 -1160 0 0 {name=x1}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1650 -910 3 0 {name=R1
 W=0.35

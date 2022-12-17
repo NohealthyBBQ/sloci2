@@ -1,0 +1,21 @@
+>>>In magic:
+
+% extract all
+Extracting sky130_fd_pr__nfet_01v8_lvt_T7FZYG into sky130_fd_pr__nfet_01v8_lvt_T7FZYG.ext:
+Extracting nfet_nf4_m2 into nfet_nf4_m2.ext:
+ext2sim ext2spice
+% ext2spice default //reset ext2spice if you have some previous commands
+% ext2spice lvs
+% ext2spice
+Devs merged: 0
+Devs merged: 0
+exttospice finished.
+
+>>>In xscheme:
+Enable LVS netlist
+cp ~/.xschem/simulations/nfet_nf4_m2.spice nfet_nf4_m2_xschem.spice
+
+>>>netgen:
+netgen -batch lvs "nfet_nf4_m2.spice nfet_nf4_m2" "nfet_nf4_m2_xschem.spice nfet_nf4_m2" /pdk/open_pdks/install/share/pdk/sky130A/libs.tech/netgen/setup.tcl compare_out
+
+//"<spice file name> <subckt name>"

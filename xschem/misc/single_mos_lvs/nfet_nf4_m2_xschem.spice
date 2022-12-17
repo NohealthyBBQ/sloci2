@@ -1,0 +1,8 @@
+** sch_path: /home/zexi/sloci/design/misc/single_mos_lvs/nfet_nf4_m2.sch
+.subckt nfet_nf4_m2 G S B D
+*.PININFO G:I S:B B:B D:O
+XM1 D G S B sky130_fd_pr__nfet_01v8_lvt L=1 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+.end

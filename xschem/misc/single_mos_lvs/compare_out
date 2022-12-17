@@ -1,0 +1,38 @@
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_T7FZYG in circuit nfet_nf4_m2 (0)(1 instance)
+
+Class nfet_nf4_m2 (0):  Merged 7 parallel devices.
+Subcircuit summary:
+Circuit 1: nfet_nf4_m2                     |Circuit 2: nfet_nf4_m2                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (8->1)         |sky130_fd_pr__nfet_01v8_lvt (2->1)         
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: nfet_nf4_m2                     |Circuit 2: nfet_nf4_m2                     
+-------------------------------------------|-------------------------------------------
+(no pins)                                  |B **Mismatch**                             
+(no matching pin)                          |G                                          
+(no matching pin)                          |S                                          
+(no matching pin)                          |D                                          
+---------------------------------------------------------------------------------------
+Cell pin lists for nfet_nf4_m2 and nfet_nf4_m2 altered to match.
+Cells failed matching, or top level cell failed pin matching.

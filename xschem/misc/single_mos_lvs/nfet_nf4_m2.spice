@@ -1,0 +1,20 @@
+* NGSPICE file created from nfet_nf4_m2.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_T7FZYG a_229_109# a_n229_n535# a_n487_21# a_287_n535#
++ a_229_n447# a_n545_109# a_287_21# a_n545_n447# a_487_109# a_n29_109# a_29_21# a_n487_n535#
++ a_n287_109# a_487_n447# a_n29_n447# a_n647_n621# a_n229_21# a_29_n535# a_n287_n447#
+X0 a_229_109# a_29_21# a_n29_109# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=1e+06u
+X1 a_n29_n447# a_n229_n535# a_n287_n447# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=1e+06u
+X2 a_229_n447# a_29_n535# a_n29_n447# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=0p ps=0u w=2e+06u l=1e+06u
+X3 a_487_109# a_287_21# a_229_109# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=0p ps=0u w=2e+06u l=1e+06u
+X4 a_n287_n447# a_n487_n535# a_n545_n447# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=5.8e+11p ps=4.58e+06u w=2e+06u l=1e+06u
+X5 a_n287_109# a_n487_21# a_n545_109# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=1e+06u
+X6 a_487_n447# a_287_n535# a_229_n447# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=0p ps=0u w=2e+06u l=1e+06u
+X7 a_n29_109# a_n229_21# a_n287_109# a_n647_n621# sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=1e+06u
+.ends
+
+.subckt nfet_nf4_m2
+Xsky130_fd_pr__nfet_01v8_lvt_T7FZYG_0 D m1_834_666# m1_834_666# m1_834_666# D S m1_834_666#
++ S S S m1_834_666# m1_834_666# D S S B m1_834_666# m1_834_666# D sky130_fd_pr__nfet_01v8_lvt_T7FZYG
+.ends
+
