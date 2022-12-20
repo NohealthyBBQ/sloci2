@@ -177,10 +177,6 @@ N 3350 -2530 3350 -2400 {
 lab=Vbuff_out}
 N 3270 -2530 3350 -2530 {
 lab=Vbuff_out}
-N 3450 -2530 3560 -2530 {
-lab=Vcap}
-N 3620 -2530 3700 -2530 {
-lab=Vcap}
 N 3540 -2530 3540 -2460 {
 lab=Vcap}
 N 3540 -2460 3650 -2460 {
@@ -213,6 +209,14 @@ N 3480 -2730 3510 -2730 {
 lab=sh_clk_b}
 N 3590 -2600 3590 -2570 {
 lab=sh_clk_b}
+N 3450 -2530 3540 -2530 {
+lab=Vcap}
+N 3650 -2530 3700 -2530 {
+lab=Vcap}
+N 3540 -2530 3560 -2530 {
+lab=Vcap}
+N 3620 -2530 3650 -2530 {
+lab=Vcap}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2420 0 0 {name=M4
 L=0.5
 W=5
@@ -309,6 +313,8 @@ display
 plot Vin Vpixel_out Vbuff_out
 plot rst_b_clk sh_clk Vbuff_out Vcap Vout
 plot rst_b_clk sh_clk
+plot sh_clk sh_clk_b
+plot Vcap Vout
 *plot vm1#branch
 *plot vm2#branch
 *plot vm3#branch
@@ -488,7 +494,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3590 -2550 3 1 {name=M14
 L=0.5
-W=5
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -498,20 +504,6 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 3720 -2530 0 0 {name=M20
-L=0.5
-W=5
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 3740 -2580 0 0 {name=l3 sig_type=std_logic lab=Vout}
@@ -535,3 +527,17 @@ C {devices/lab_pin.sym} 3590 -2600 0 1 {name=l23 lab=sh_clk_b}
 C {devices/vdd.sym} 3390 -2790 0 0 {name=l9 lab=VDD}
 C {devices/gnd.sym} 3390 -2670 0 0 {name=l12 lab=GND}
 C {lab_wire.sym} 3540 -2480 0 0 {name=l4 sig_type=std_logic lab=Vcap}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 3720 -2530 0 0 {name=M15
+L=0.5
+W=4
+nf=1
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
