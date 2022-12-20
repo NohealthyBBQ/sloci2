@@ -15,9 +15,9 @@ N 1520 -2940 1520 -2930 {
 lab=A}
 N 1960 -2820 1990 -2820 {
 lab=#net1}
-N 2150 -2820 2170 -2820 {
+N 1990 -2820 2010 -2820 {
 lab=Vout}
-N 2170 -2820 2170 -2800 {
+N 2010 -2820 2010 -2800 {
 lab=Vout}
 C {devices/code.sym} 2040 -3150 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -64,13 +64,10 @@ C {devices/gnd.sym} 1390 -2850 0 0 {name=l22 lab=GND}
 C {devices/vdd.sym} 1850 -2890 0 0 {name=l9 lab=VDD}
 C {devices/lab_pin.sym} 1760 -2840 0 0 {name=l23 lab=A}
 C {devices/lab_pin.sym} 1760 -2800 0 0 {name=l23 lab=B}
-C {devices/lab_pin.sym} 2170 -2820 0 1 {name=l23 lab=Vout}
-C {devices/gnd.sym} 2170 -2740 0 0 {name=l12 lab=GND}
-C {capa.sym} 2170 -2770 0 0 {name=C1
+C {devices/lab_pin.sym} 2010 -2820 0 1 {name=l23 lab=Vout}
+C {devices/gnd.sym} 2010 -2740 0 0 {name=l12 lab=GND}
+C {capa.sym} 2010 -2770 0 0 {name=C1
 m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {ip_block/logic_gate/inv.sym} -770 480 0 0 {name=X2}
-C {devices/gnd.sym} 2060 -2760 0 0 {name=l12 lab=GND}
-C {devices/vdd.sym} 2060 -2880 0 0 {name=l9 lab=VDD}
