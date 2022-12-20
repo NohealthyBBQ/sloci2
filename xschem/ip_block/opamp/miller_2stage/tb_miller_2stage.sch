@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -93,4 +94,4 @@ C {lab_wire.sym} -100 -250 0 0 {name=l5 sig_type=std_logic lab=Vbias
 }
 C {lab_wire.sym} 360 -270 0 0 {name=l6 sig_type=std_logic lab=Vbias
 }
-C {ip_block/opamp/miller_2stage.sym} 390 -160 0 0 {name=x1}
+C {ip_block/opamp/miller_2stage/miller_2stage.sym} 390 -160 0 0 {name=x1}
