@@ -529,9 +529,9 @@ C {devices/gnd.sym} 3390 -2670 0 0 {name=l12 lab=GND}
 C {lab_wire.sym} 3540 -2480 0 0 {name=l4 sig_type=std_logic lab=Vcap}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 3720 -2530 0 0 {name=M15
 L=0.5
-W=4
+W=8
 nf=1
-mult=4
+mult=20
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
