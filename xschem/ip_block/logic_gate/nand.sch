@@ -42,19 +42,17 @@ lab=VDD}
 N 260 -170 280 -170 {
 lab=VDD}
 N 170 -110 170 -60 {
-lab=#net2}
+lab=Vout}
 N 90 -110 170 -110 {
-lab=#net2}
+lab=Vout}
 N 170 -110 260 -110 {
-lab=#net2}
+lab=Vout}
 N 260 -110 350 -110 {
-lab=#net2}
+lab=Vout}
 N 30 -140 50 -140 {
 lab=A}
 N 200 -140 220 -140 {
 lab=B}
-N 510 -110 530 -110 {
-lab=Vout}
 C {sky130_fd_pr/nfet_01v8.sym} 150 80 0 0 {name=Minv_n
 L=0.5
 W=1.5
@@ -84,7 +82,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {ipin.sym} 100 80 0 0 {name=p6 lab=B}
-C {opin.sym} 530 -110 0 0 {name=p5 lab=Vout}
+C {opin.sym} 350 -110 0 0 {name=p5 lab=Vout}
 C {iopin.sym} 90 -200 0 1 {name=p2 lab=VDD}
 C {iopin.sym} 170 130 0 1 {name=p3 lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 150 -30 0 0 {name=Minv_n1
@@ -119,6 +117,3 @@ spiceprefix=X
 C {lab_wire.sym} 30 -140 0 0 {name=l1 sig_type=std_logic lab=A}
 C {lab_wire.sym} 200 -140 0 0 {name=l1 sig_type=std_logic lab=B}
 C {lab_wire.sym} 260 -200 0 0 {name=l1 sig_type=std_logic lab=VDD}
-C {ip_block/logic_gate/inv.sym} -2410 3190 0 0 {name=X1}
-C {lab_wire.sym} 420 -170 0 0 {name=l1 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 420 -50 0 0 {name=l1 sig_type=std_logic lab=VSS}
