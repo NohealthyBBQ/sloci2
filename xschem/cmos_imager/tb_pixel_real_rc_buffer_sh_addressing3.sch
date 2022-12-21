@@ -76,9 +76,9 @@ lab=rst_b_clk}
 N 2650 -2710 2690 -2710 {
 lab=D1}
 N 2760 -3130 2760 -3110 {
-lab=rst_b_clk}
+lab=#net3}
 N 2760 -3140 2760 -3130 {
-lab=rst_b_clk}
+lab=#net3}
 N 2940 -3010 2940 -2980 {
 lab=rst_b}
 N 3350 -2170 3350 -2060 {
@@ -110,9 +110,9 @@ lab=Vcap}
 N 3990 -2190 4070 -2190 {
 lab=VDD}
 N 2980 -3130 2980 -3110 {
-lab=#net3}
+lab=#net4}
 N 2980 -3140 2980 -3130 {
-lab=#net3}
+lab=#net4}
 N 3670 -2260 3670 -2230 {
 lab=sh_clk}
 N 3540 -2390 3570 -2390 {
@@ -168,7 +168,7 @@ lab=VDD}
 N 3990 -2410 4030 -2410 {
 lab=VDD}
 N 4510 -2530 4510 -2500 {
-lab=#net4}
+lab=#net5}
 N 4470 -2770 4510 -2770 {
 lab=VDD}
 N 4470 -2810 4470 -2770 {
@@ -226,13 +226,13 @@ lab=A}
 N 3270 -2640 3330 -2640 {
 lab=B}
 N 3250 -2990 3250 -2970 {
-lab=#net5}
+lab=#net6}
 N 3250 -3000 3250 -2990 {
-lab=#net5}
+lab=#net6}
 N 3250 -3130 3250 -3110 {
-lab=#net6}
+lab=#net7}
 N 3250 -3140 3250 -3130 {
-lab=#net6}
+lab=#net7}
 N 3710 -3260 3730 -3260 {
 lab=A0}
 N 3710 -3220 3710 -3200 {
@@ -284,9 +284,13 @@ lab=S1}
 N 4775 -3270 4795 -3270 {
 lab=S1}
 N 4960 -3290 4995 -3290 {
-lab=#net7}
+lab=#net8}
 N 5160 -3270 5195 -3270 {
 lab=sh_clk}
+N 4125 -2990 4125 -2970 {
+lab=rst_b_clk}
+N 4125 -3000 4125 -2990 {
+lab=rst_b_clk}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3200 -2080 0 0 {name=M4
 L=0.5
 W=5
@@ -396,7 +400,6 @@ C {gnd.sym} 2770 -2550 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 2670 -2750 0 0 {name=l23 lab=rst_b_clk}
 C {devices/vsource.sym} 2760 -3080 0 0 {name=V3 value="pulse 0 1.8 0 0.1u 0.1u 25u 30u"}
 C {devices/gnd.sym} 2760 -3050 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 2760 -3130 0 1 {name=l23 lab=rst_b_clk}
 C {noconn.sym} 2760 -3140 0 0 {name=l2}
 C {noconn.sym} 2940 -3010 0 0 {name=l1}
 C {ip_block/opamp/miller_2stage/miller_2stage.sym} 3450 -2190 0 0 {name=x2}
@@ -617,3 +620,7 @@ C {devices/vdd.sym} 5065 -3330 0 0 {name=l26 lab=VDD}
 C {devices/gnd.sym} 5065 -3210 0 0 {name=l27 lab=GND}
 C {devices/lab_pin.sym} 4995 -3250 0 0 {name=l28 lab=S2}
 C {devices/lab_pin.sym} 5195 -3270 0 1 {name=l29 lab=sh_clk}
+C {devices/vsource.sym} 4125 -2940 0 0 {name=V15 value="pulse 0 1.8 2u 0.1u 0.1u 15u 16u"}
+C {devices/gnd.sym} 4125 -2910 0 0 {name=l12 lab=GND}
+C {devices/lab_pin.sym} 4125 -2990 0 1 {name=l23 lab=rst_b_clk}
+C {noconn.sym} 4125 -3000 0 0 {name=l9}
