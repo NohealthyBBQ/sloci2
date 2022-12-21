@@ -30,9 +30,9 @@ lab=pd_in}
 N 2660 -2990 2660 -2900 {
 lab=VDD}
 N 2970 -2810 3040 -2810 {
-lab=vss}
+lab=VSS}
 N 2970 -2620 3070 -2620 {
-lab=vss}
+lab=VSS}
 N 2870 -2620 2890 -2620 {
 lab=row_sel}
 N 2520 -2900 2570 -2900 {
@@ -48,14 +48,14 @@ lab=#net2}
 N 2970 -2990 2970 -2940 {
 lab=VDD}
 N 3050 -2810 3050 -2620 {
-lab=vss}
+lab=VSS}
 N 3040 -2810 3050 -2810 {
-lab=vss}
+lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2810 0 0 {name=M2
 L=0.5
-W=1
+W=2
 nf=1
-mult=10
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -69,9 +69,9 @@ C {devices/ammeter.sym} 2970 -2720 0 0 {name=Vm2 current=40e-6}
 C {devices/ammeter.sym} 2970 -2910 0 0 {name=Vm3 current=40e-6}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2950 -2620 0 0 {name=M3
 L=0.5
-W=1
+W=2
 nf=1
-mult=20
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -84,7 +84,7 @@ spiceprefix=X
 C {lab_wire.sym} 2970 -2670 0 0 {name=l1 sig_type=std_logic lab=Vmid}
 C {sky130_fd_pr/pfet_01v8.sym} 2590 -2900 0 0 {name=M20
 L=0.5
-W=1
+W=2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

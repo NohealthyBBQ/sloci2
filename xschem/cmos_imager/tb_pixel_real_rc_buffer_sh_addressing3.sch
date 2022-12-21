@@ -360,7 +360,7 @@ run
 tran 0.1n 50u
 display
 
-plot Vin_1 Vin_2 Vin_3
+plot Vin_1 Vin_2 Vin_3 Vpixel_out
 plot Vpixel_out Vbuff_out Vcap Vout
 plot A B sh_clk rst_b_clk
 *plot rst_b_clk sh_clk

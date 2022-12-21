@@ -48,7 +48,7 @@ lab=VDD}
 N 3220 -2210 3320 -2210 {
 lab=Vpixel_out}
 N 3220 -2130 3220 -2110 {
-lab=#net2}
+lab=Vpixel_out}
 N 3220 -1990 3270 -1990 {
 lab=GND}
 N 3270 -1990 3270 -1940 {
@@ -75,12 +75,6 @@ N 2650 -2750 2690 -2750 {
 lab=rst_b_clk}
 N 2650 -2710 2690 -2710 {
 lab=D1}
-N 2760 -3130 2760 -3110 {
-lab=rst_b_clk}
-N 2760 -3140 2760 -3130 {
-lab=rst_b_clk}
-N 2940 -3010 2940 -2980 {
-lab=rst_b}
 N 3350 -2170 3350 -2060 {
 lab=Vbuff_out}
 N 3350 -2060 3600 -2060 {
@@ -109,10 +103,6 @@ N 3790 -2120 3790 -2080 {
 lab=Vcap}
 N 3990 -2190 4070 -2190 {
 lab=VDD}
-N 2980 -3130 2980 -3110 {
-lab=sh_clk}
-N 2980 -3140 2980 -3130 {
-lab=sh_clk}
 N 3670 -2260 3670 -2230 {
 lab=sh_clk}
 N 3540 -2390 3570 -2390 {
@@ -168,7 +158,7 @@ lab=VDD}
 N 3990 -2410 4030 -2410 {
 lab=VDD}
 N 4510 -2530 4510 -2500 {
-lab=#net3}
+lab=#net2}
 N 4470 -2770 4510 -2770 {
 lab=VDD}
 N 4470 -2810 4470 -2770 {
@@ -225,14 +215,66 @@ N 3270 -2700 3330 -2700 {
 lab=A}
 N 3270 -2640 3330 -2640 {
 lab=B}
-N 3250 -2990 3250 -2970 {
-lab=B}
-N 3250 -3000 3250 -2990 {
-lab=B}
-N 3250 -3130 3250 -3110 {
+N 3205 -3825 3205 -3805 {
+lab=A0}
+N 3205 -3835 3205 -3825 {
+lab=A0}
+N 3615 -3715 3635 -3715 {
+lab=A0}
+N 3615 -3675 3615 -3655 {
+lab=A1}
+N 3615 -3675 3635 -3675 {
+lab=A1}
+N 3800 -3695 3835 -3695 {
 lab=A}
-N 3250 -3140 3250 -3130 {
-lab=A}
+N 3205 -3675 3205 -3655 {
+lab=A1}
+N 3205 -3685 3205 -3675 {
+lab=A1}
+N 3205 -3485 3205 -3465 {
+lab=B0}
+N 3205 -3495 3205 -3485 {
+lab=B0}
+N 3205 -3335 3205 -3315 {
+lab=B1}
+N 3205 -3345 3205 -3335 {
+lab=B1}
+N 3625 -3365 3645 -3365 {
+lab=B0}
+N 3625 -3325 3625 -3305 {
+lab=B1}
+N 3625 -3325 3645 -3325 {
+lab=B1}
+N 3810 -3345 3845 -3345 {
+lab=B}
+N 3205 -3155 3205 -3135 {
+lab=S0}
+N 3205 -3165 3205 -3155 {
+lab=S0}
+N 3205 -3005 3205 -2985 {
+lab=S1}
+N 3205 -3015 3205 -3005 {
+lab=S1}
+N 3465 -3145 3465 -3125 {
+lab=S2}
+N 3465 -3155 3465 -3145 {
+lab=S2}
+N 3855 -3145 3875 -3145 {
+lab=S0}
+N 3855 -3105 3855 -3085 {
+lab=S1}
+N 3855 -3105 3875 -3105 {
+lab=S1}
+N 4040 -3125 4075 -3125 {
+lab=#net3}
+N 4240 -3105 4275 -3105 {
+lab=sh_clk}
+N 2965 -3655 2965 -3635 {
+lab=rst_b_clk}
+N 2965 -3665 2965 -3655 {
+lab=rst_b_clk}
+N 3220 -2190 3220 -2130 {
+lab=Vpixel_out}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3200 -2080 0 0 {name=M4
 L=0.5
 W=5
@@ -317,7 +359,7 @@ C {devices/code_shown.sym} 2190 -3150 0 0 {name=s2 only_toplevel=false value="
 .control
 save all
 run
-tran 0.1n 70u
+tran 0.1n 50u
 display
 
 plot Vin_1 Vin_2 Vin_3
@@ -326,25 +368,16 @@ plot rst_b_clk sh_clk Vbuff_out Vcap Vout
 *plot rst_b_clk sh_clk
 *plot sh_clk sh_clk_b
 plot Vcap Vout
-plot vm1#branch
-plot vm2#branch
+*plot vm1#branch
+*plot vm2#branch
 *plot vm3#branch
 
 .endc
 "}
-C {devices/ammeter.sym} 3220 -2160 0 0 {name=Vm1 current=40e-6}
-C {devices/vsource.sym} 2940 -2950 0 0 {name=V2 net_name=true value="0 pulse(1.8V 0V 10us 0us 0us 5us)"}
-C {devices/gnd.sym} 2940 -2920 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 2940 -2980 0 0 {name=l23 lab=rst_b}
 C {cmos_imager/3T.sym} 2650 -2710 0 0 {name=X1}
 C {lab_wire.sym} 2770 -2820 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {gnd.sym} 2770 -2550 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 2670 -2750 0 0 {name=l23 lab=rst_b_clk}
-C {devices/vsource.sym} 2760 -3080 0 0 {name=V3 value="pulse 0 1.8 0 0.1u 0.1u 25u 30u"}
-C {devices/gnd.sym} 2760 -3050 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 2760 -3130 0 1 {name=l23 lab=rst_b_clk}
-C {noconn.sym} 2760 -3140 0 0 {name=l2}
-C {noconn.sym} 2940 -3010 0 0 {name=l1}
 C {ip_block/opamp/miller_2stage/miller_2stage.sym} 3450 -2190 0 0 {name=x2}
 C {gnd.sym} 3450 -2130 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 3450 -2270 0 0 {name=l9 lab=VDD}
@@ -392,10 +425,6 @@ C {gnd.sym} 3990 -2090 0 0 {name=l3 lab=GND}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 3790 -2050 0 0 {name=C2 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
 C {gnd.sym} 3790 -2020 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} 4060 -2190 0 1 {name=l3 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 2980 -3080 0 0 {name=V5 value="pulse 0 1.8 5u 0.1u 0.1u 5u 20u"}
-C {devices/gnd.sym} 2980 -3050 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 2980 -3130 0 1 {name=l23 lab=sh_clk}
-C {noconn.sym} 2980 -3140 0 0 {name=l3}
 C {devices/lab_pin.sym} 3670 -2260 0 1 {name=l23 lab=sh_clk}
 C {ip_block/logic_gate/inv.sym} 810 910 0 0 {name=X3}
 C {devices/lab_pin.sym} 3540 -2390 0 0 {name=l23 lab=sh_clk}
@@ -506,11 +535,65 @@ C {lab_wire.sym} 3530 -2640 0 1 {name=l4 sig_type=std_logic lab=D3}
 C {noconn.sym} 3530 -2700 0 1 {name=l4}
 C {devices/lab_pin.sym} 3270 -2700 0 0 {name=l7 lab=A}
 C {devices/lab_pin.sym} 3270 -2640 0 0 {name=l23 lab=B}
-C {devices/vsource.sym} 3250 -2940 0 0 {name=V6 value="pulse 0 1.8 5u 0.25u 0.25u 5u 10u"}
-C {devices/gnd.sym} 3250 -2910 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 3250 -2990 0 1 {name=l23 lab=B}
-C {noconn.sym} 3250 -3000 0 0 {name=l5}
-C {devices/vsource.sym} 3250 -3080 0 0 {name=V7 value="pulse 0 1.8 2.5u 0.05u 0.05u 2.5u 5u"}
-C {devices/gnd.sym} 3250 -3050 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} 3250 -3130 0 1 {name=l7 lab=A}
-C {noconn.sym} 3250 -3140 0 0 {name=l8}
+C {devices/vsource.sym} 3205 -3775 0 0 {name=V2 value="pulse 0 1.8 4u 0.05u 0.05u 2u 16u"}
+C {devices/gnd.sym} 3205 -3745 0 0 {name=l12 lab=GND}
+C {devices/lab_pin.sym} 3205 -3825 0 1 {name=l23 lab=A0}
+C {noconn.sym} 3205 -3835 0 0 {name=l3}
+C {devices/vsource.sym} 2965 -3765 0 0 {name=V3 net_name=true 
+*value="'VDD' pwl 0us 0 1us 'VDD'"
+value=1.8}
+C {devices/vdd.sym} 2965 -3795 0 0 {name=l9 lab=VDD}
+C {devices/gnd.sym} 2965 -3735 0 0 {name=l22 lab=GND}
+C {devices/lab_pin.sym} 3615 -3715 0 0 {name=l1 lab=A0}
+C {devices/lab_pin.sym} 3615 -3655 0 0 {name=l2 lab=A1}
+C {devices/lab_pin.sym} 3835 -3695 0 1 {name=l5 lab=A}
+C {ip_block/logic_gate/or.sym} 3615 -3625 0 0 {name=X10}
+C {devices/vdd.sym} 3705 -3755 0 0 {name=l6 lab=VDD}
+C {devices/gnd.sym} 3705 -3635 0 0 {name=l7 lab=GND}
+C {noconn.sym} 3830 -3695 1 1 {name=l8}
+C {devices/vsource.sym} 3205 -3625 0 0 {name=V5 value="pulse 0 1.8 12u 0.05u 0.05u 2u 16u"}
+C {devices/gnd.sym} 3205 -3595 0 0 {name=l10 lab=GND}
+C {devices/lab_pin.sym} 3205 -3675 0 1 {name=l11 lab=A1}
+C {noconn.sym} 3205 -3685 0 0 {name=l13}
+C {devices/vsource.sym} 3205 -3435 0 0 {name=V6 value="pulse 0 1.8 8u 0.05u 0.05u 2u 16u"}
+C {devices/gnd.sym} 3205 -3405 0 0 {name=l14 lab=GND}
+C {devices/lab_pin.sym} 3205 -3485 0 1 {name=l15 lab=B0}
+C {noconn.sym} 3205 -3495 0 0 {name=l16}
+C {devices/vsource.sym} 3205 -3285 0 0 {name=V7 value="pulse 0 1.8 12u 0.05u 0.05u 2u 16u"}
+C {devices/gnd.sym} 3205 -3255 0 0 {name=l17 lab=GND}
+C {devices/lab_pin.sym} 3205 -3335 0 1 {name=l18 lab=B1}
+C {noconn.sym} 3205 -3345 0 0 {name=l19}
+C {devices/lab_pin.sym} 3625 -3365 0 0 {name=l20 lab=B0}
+C {devices/lab_pin.sym} 3625 -3305 0 0 {name=l21 lab=B1}
+C {devices/lab_pin.sym} 3845 -3345 0 1 {name=l24 lab=B}
+C {ip_block/logic_gate/or.sym} 3625 -3275 0 0 {name=X11}
+C {devices/vdd.sym} 3715 -3405 0 0 {name=l25 lab=VDD}
+C {devices/gnd.sym} 3715 -3285 0 0 {name=l26 lab=GND}
+C {noconn.sym} 3840 -3345 1 1 {name=l27}
+C {devices/vsource.sym} 3205 -3105 0 0 {name=V8 value="pulse 0 1.8 4.5u 0.05u 0.05u 0.5u 16u"}
+C {devices/gnd.sym} 3205 -3075 0 0 {name=l33 lab=GND}
+C {devices/lab_pin.sym} 3205 -3155 0 1 {name=l34 lab=S0}
+C {noconn.sym} 3205 -3165 0 0 {name=l35}
+C {devices/vsource.sym} 3205 -2955 0 0 {name=V9 value="pulse 0 1.8 12.5u 0.05u 0.05u 0.5u 16u"}
+C {devices/gnd.sym} 3205 -2925 0 0 {name=l36 lab=GND}
+C {devices/lab_pin.sym} 3205 -3005 0 1 {name=l37 lab=S1}
+C {noconn.sym} 3205 -3015 0 0 {name=l38}
+C {devices/vsource.sym} 3465 -3095 0 0 {name=V10 value="pulse 0 1.8 8.5u 0.05u 0.05u 0.5u 16u"}
+C {devices/gnd.sym} 3465 -3065 0 0 {name=l39 lab=GND}
+C {devices/lab_pin.sym} 3465 -3145 0 1 {name=l40 lab=S2}
+C {noconn.sym} 3465 -3155 0 0 {name=l41}
+C {devices/lab_pin.sym} 3855 -3145 0 0 {name=l42 lab=S0}
+C {devices/lab_pin.sym} 3855 -3085 0 0 {name=l43 lab=S1}
+C {ip_block/logic_gate/or.sym} 3855 -3055 0 0 {name=X13}
+C {devices/vdd.sym} 3945 -3185 0 0 {name=l44 lab=VDD}
+C {devices/gnd.sym} 3945 -3065 0 0 {name=l45 lab=GND}
+C {ip_block/logic_gate/or.sym} 4055 -3035 0 0 {name=X14}
+C {devices/vdd.sym} 4145 -3165 0 0 {name=l46 lab=VDD}
+C {devices/gnd.sym} 4145 -3045 0 0 {name=l47 lab=GND}
+C {devices/lab_pin.sym} 4075 -3085 0 0 {name=l48 lab=S2}
+C {devices/lab_pin.sym} 4275 -3105 0 1 {name=l49 lab=sh_clk}
+C {noconn.sym} 4270 -3105 1 1 {name=l50}
+C {devices/vsource.sym} 2965 -3605 0 0 {name=V11 value="pulse 0 1.8 2u 0.1u 0.1u 15u 16u"}
+C {devices/gnd.sym} 2965 -3575 0 0 {name=l51 lab=GND}
+C {devices/lab_pin.sym} 2965 -3655 0 1 {name=l52 lab=rst_b_clk}
+C {noconn.sym} 2965 -3665 0 0 {name=l53}

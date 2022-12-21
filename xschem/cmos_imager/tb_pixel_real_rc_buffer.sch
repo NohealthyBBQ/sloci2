@@ -267,11 +267,11 @@ C {devices/code_shown.sym} 2190 -3150 0 0 {name=s2 only_toplevel=false value="
 .control
 save all
 run
-tran 0.1n 70u
+tran 0.1n 30u
 display
 
 plot Vin Vpixel_out Vout rst_b_clk
-*plot vm1#branch
+plot vm1#branch
 *plot vm2#branch
 *plot vm3#branch
 
