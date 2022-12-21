@@ -61,6 +61,10 @@ N 1895 -2390 1930 -2390 {
 lab=#net1}
 N 2095 -2370 2130 -2370 {
 lab=Vout_S}
+N 820 -2920 820 -2900 {
+lab=rst_b_clk}
+N 820 -2930 820 -2920 {
+lab=rst_b_clk}
 C {devices/code.sym} 2040 -3150 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -76,14 +80,14 @@ C {devices/code_shown.sym} 2190 -3150 0 0 {name=s2 only_toplevel=false value="
 .control
 save all
 run
-tran 0.1n 44u
+tran 0.1n 50u
 display
 
 *plot A
 *plot B
 plot Vout_A
 plot Vout_B
-plot Vout Vout_S
+plot Vout Vout_S rst_b_clk
 
 *plot vm1#branch
 *plot vm2#branch
@@ -155,3 +159,7 @@ C {devices/gnd.sym} 2000 -2310 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 1930 -2350 0 0 {name=l23 lab=S2}
 C {devices/lab_pin.sym} 2130 -2370 0 1 {name=l9 lab=Vout_S}
 C {noconn.sym} 2125 -2370 1 1 {name=l11}
+C {devices/vsource.sym} 820 -2870 0 0 {name=V9 value="pulse 0 1.8 2u 0.1u 0.1u 15u 16u"}
+C {devices/gnd.sym} 820 -2840 0 0 {name=l12 lab=GND}
+C {devices/lab_pin.sym} 820 -2920 0 1 {name=l23 lab=rst_b_clk}
+C {noconn.sym} 820 -2930 0 0 {name=l9}
