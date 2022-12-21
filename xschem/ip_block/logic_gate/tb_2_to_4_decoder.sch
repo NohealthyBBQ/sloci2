@@ -42,7 +42,7 @@ C {devices/code_shown.sym} 2190 -3150 0 0 {name=s2 only_toplevel=false value="
 .control
 save all
 run
-tran 0.1n 100u
+tran 0.1n 12u
 display
 
 plot A
@@ -57,11 +57,11 @@ plot D3
 
 .endc
 "}
-C {devices/vsource.sym} 1480 -2890 0 0 {name=V1 value="pulse 0 1.8 0 0.1u 0.1u 18u 40u"}
+C {devices/vsource.sym} 1480 -2890 0 0 {name=V1 value="pulse 0 1.8 5u 0.25u 0.25u 5u 10u"}
 C {devices/gnd.sym} 1480 -2860 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 1480 -2940 0 1 {name=l23 lab=B}
 C {noconn.sym} 1480 -2950 0 0 {name=l1}
-C {devices/vsource.sym} 1480 -3030 0 0 {name=V2 value="pulse 0 1.8 0 0.1u 0.1u 8u 20u"}
+C {devices/vsource.sym} 1480 -3030 0 0 {name=V2 value="pulse 0 1.8 2.5u 0.05u 0.05u 2.5u 5u"}
 C {devices/gnd.sym} 1480 -3000 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 1480 -3080 0 1 {name=l23 lab=A}
 C {noconn.sym} 1480 -3090 0 0 {name=l3}
