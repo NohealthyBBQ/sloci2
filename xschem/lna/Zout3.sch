@@ -41,15 +41,9 @@ N 740 -1010 740 -950 {
 lab=GND}
 N 700 -1050 700 -1040 {
 lab=Vmid}
-N 700 -860 700 -830 {
-lab=GND}
 N 740 -880 740 -830 {
 lab=GND}
-N 700 -980 700 -920 {
-lab=GND}
 N 630 -830 740 -830 {
-lab=GND}
-N 700 -920 700 -860 {
 lab=GND}
 N 970 -1220 1100 -1220 {
 lab=Vout_1}
@@ -89,6 +83,10 @@ N 610 -1120 660 -1120 {
 lab=VDD}
 N 760 -1220 970 -1220 {
 lab=Vout_1}
+N 700 -980 700 -940 {
+lab=#net2}
+N 700 -885 700 -830 {
+lab=GND}
 C {devices/isource.sym} 870 -1480 2 0 {name=I0 value="ac=1"}
 C {devices/ind.sym} 1150 -1455 0 0 {name=L2
 m=1
@@ -117,11 +115,12 @@ save all
 run
 display
 
-ac dec 10 1G 100G
+ac dec 10 100 100G
 let phase = 180/PI*vp(Vout)
 
 plot Vout_1 Vmid
-plot abs(real(Vout_1)) abs(real(Vmid))
+*plot abs(real(Vout_1)) abs(real(Vmid))
+plot abs(Vout_1) abs(real(Vmid))
 plot imag(Vout_1)
 plot vm1#branch
 
@@ -175,3 +174,8 @@ C {devices/nmos4.sym} 680 -1120 0 0 {name=XM3 model=sky130_fd_pr__rf_nfet_01v8_b
 C {devices/lab_wire.sym} 620 -1120 0 0 {name=l12 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 700 -1060 0 0 {name=l12 sig_type=std_logic lab=Vmid}
 C {devices/ammeter.sym} 730 -1220 1 0 {name=Vm1 current=40e-6}
+C {devices/ind.sym} 700 -915 0 0 {name=L3
+m=1
+value=20p
+footprint=1206
+device=inductor}
