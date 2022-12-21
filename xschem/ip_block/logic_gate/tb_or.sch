@@ -19,7 +19,7 @@ N 1790 -2940 1790 -2920 {
 lab=B}
 N 1790 -2940 1810 -2940 {
 lab=B}
-N 1930 -2960 1960 -2960 {
+N 1975 -2960 2010 -2960 {
 lab=Vout}
 C {devices/code.sym} 2040 -3150 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -64,5 +64,8 @@ C {devices/vdd.sym} 1350 -3060 0 0 {name=l9 lab=VDD}
 C {devices/gnd.sym} 1350 -3000 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} 1790 -2980 0 0 {name=l23 lab=A}
 C {devices/lab_pin.sym} 1790 -2920 0 0 {name=l23 lab=B}
-C {sky130_stdcells/or2_0.sym} 1870 -2960 0 0 {name=x1 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 1960 -2960 0 1 {name=l23 lab=Vout}
+C {devices/lab_pin.sym} 2010 -2960 0 1 {name=l23 lab=Vout}
+C {ip_block/logic_gate/or.sym} 1790 -2890 0 0 {name=X1}
+C {devices/vdd.sym} 1880 -3020 0 0 {name=l9 lab=VDD}
+C {devices/gnd.sym} 1880 -2900 0 0 {name=l12 lab=GND}
+C {noconn.sym} 2005 -2960 1 1 {name=l2}
