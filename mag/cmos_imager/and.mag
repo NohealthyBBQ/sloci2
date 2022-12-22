@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1671682980
+timestamp 1671683902
 << locali >>
 rect 0 1120 380 1180
 rect 940 1120 1220 1180
@@ -32,6 +32,7 @@ rect 820 -20 830 60
 rect 930 -20 940 60
 rect 1020 -20 1030 60
 rect 740 -40 820 -20
+rect 1120 -40 1220 60
 rect 280 -300 440 -220
 rect 110 -500 120 -440
 rect 180 -500 190 -440
@@ -75,4 +76,15 @@ use sky130_fd_pr__pfet_01v8_TSNZVH  sky130_fd_pr__pfet_01v8_TSNZVH_1
 timestamp 1671681875
 transform 1 0 226 0 1 604
 box -246 -584 246 584
+<< labels >>
+flabel metal1 580 -170 630 190 0 FreeSans 640 0 0 0 B
+port 0 nsew
+flabel metal1 1120 -40 1220 60 0 FreeSans 640 0 0 0 Vout
+port 1 nsew
+flabel metal1 940 1120 960 1180 0 FreeSans 640 0 0 0 VDD
+port 2 nsew
+flabel metal1 820 -640 860 -580 0 FreeSans 640 0 0 0 VSS
+port 3 nsew
+flabel metal1 200 -170 250 190 0 FreeSans 640 0 0 0 A
+port 4 nsew
 << end >>
