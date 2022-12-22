@@ -167,8 +167,6 @@ N 4290 -2070 4290 -1980 {
 lab=VSS}
 N 4250 -2070 4290 -2070 {
 lab=VSS}
-N 4250 -2250 4250 -2100 {
-lab=Vb2}
 N 4250 -2320 4250 -2310 {
 lab=VDD}
 N 4250 -2190 4350 -2190 {
@@ -197,10 +195,16 @@ N 3430 -2790 3430 -2760 {
 lab=VDD}
 N 3990 -2260 4030 -2260 {
 lab=Vout}
+N 4250 -2190 4250 -2170 {
+lab=Vb2}
+N 4250 -2250 4250 -2190 {
+lab=Vb2}
+N 4250 -2110 4250 -2100 {
+lab=#net4}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3200 -2080 0 0 {name=M4
-L=0.5
-W=5
-nf=2
+L=2
+W=9
+nf=9
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -212,9 +216,9 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3200 -1990 0 0 {name=M5
-L=0.5
-W=5
-nf=2
+L=2
+W=9
+nf=9
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -324,9 +328,9 @@ C {lab_wire.sym} 3530 -2640 0 1 {name=l4 sig_type=std_logic lab=D3}
 C {noconn.sym} 3530 -2700 0 1 {name=l4}
 C {devices/ipin.sym} 3540 -2390 0 0 {name=p3 lab=sh_clk}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 4230 -2070 0 0 {name=M1
-L=0.5
-W=5
-nf=2
+L=2
+W=9
+nf=9
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -338,9 +342,9 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 4230 -1980 0 0 {name=M2
-L=0.5
-W=5
-nf=2
+L=2
+W=9
+nf=9
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -389,3 +393,4 @@ C {lab_wire.sym} 3430 -2790 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 3430 -2550 3 0 {name=l23 lab=VSS}
 C {opin.sym} 4030 -2260 0 0 {name=p1 lab=Vout}
 C {devices/ipin.sym} 2650 -2750 0 0 {name=p3 lab=rst_b_clk}
+C {devices/ammeter.sym} 4250 -2140 0 0 {name=Vm3 current=40e-6}

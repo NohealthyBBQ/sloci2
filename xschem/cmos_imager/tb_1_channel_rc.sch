@@ -96,10 +96,10 @@ lab=rst_b_clk}
 N 3505 -2475 3525 -2475 {
 lab=Vout}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2775 -2455 0 1 {name=M6
-L=0.5
-W=5
+L=2
+W=8
 nf=2
-mult=1
+mult=8
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -110,10 +110,10 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2775 -2365 0 1 {name=M1
-L=0.5
-W=5
+L=2
+W=8
 nf=2
-mult=1
+mult=8
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -124,7 +124,7 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {gnd.sym} 2755 -2285 0 0 {name=l1 lab=GND}
-C {isource.sym} 2755 -2605 0 0 {name=I1 value=5u}
+C {isource.sym} 2755 -2605 0 0 {name=I1 value=40u}
 C {lab_wire.sym} 2755 -2685 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 2895 -2455 0 0 {name=l1 sig_type=std_logic lab=Vb1}
 C {lab_wire.sym} 2895 -2365 0 0 {name=l1 sig_type=std_logic lab=Vb0}
@@ -148,13 +148,17 @@ C {devices/code_shown.sym} 2190 -3150 0 0 {name=s2 only_toplevel=false value="
 .control
 save all
 run
-tran 0.1n 50u
+tran 0.1n 70u
 display
 
 *plot Vin_1 Vin_2 Vin_3 Vpixel_out
 *plot Vpixel_out Vbuff_out Vcap Vout
 plot A B sh_clk rst_b_clk
 plot Vout
+plot Vb0 Vb1
+plot v.x14.vm1#branch
+plot v.x14.vm2#branch
+plot v.x14.vm3#branch
 *plot rst_b_clk sh_clk
 *plot sh_clk sh_clk_b
 *plot Vcap Vout
