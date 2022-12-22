@@ -1,0 +1,63 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_WSE2Y6 in circuit 3T (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LDYTSD in circuit 3T (0)(1 instance)
+
+Removing zero-valued device vsrc from cell 3T (1) makes a better match
+Removing zero-valued device vsrc from cell 3T (1) makes a better match
+Making another compare attempt.
+
+Class 3T (0):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: 3T                              |Circuit 2: 3T                              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (3->2)         |sky130_fd_pr__nfet_01v8_lvt (3->2)         
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: 3T                              |Circuit 2: 3T                              
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+row_sel                                    |row_sel                                    
+Vout                                       |Vout                                       
+rst_b                                      |rst_b                                      
+pd_in                                      |pd_in                                      
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes 3T and 3T are equivalent.
+
+Final result: Circuits match uniquely.
+.
