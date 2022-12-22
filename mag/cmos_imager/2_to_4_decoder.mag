@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1671722503
+use and  and_0
+timestamp 1671683902
+transform 1 0 580 0 1 -630
+box -10 -330 616 594
+use and  and_1
+timestamp 1671683902
+transform 1 0 10 0 1 -630
+box -10 -330 616 594
+use and  and_2
+timestamp 1671683902
+transform 1 0 580 0 1 330
+box -10 -330 616 594
+use and  and_3
+timestamp 1671683902
+transform 1 0 10 0 1 330
+box -10 -330 616 594
+<< end >>
