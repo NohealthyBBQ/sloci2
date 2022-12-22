@@ -1,0 +1,33 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1671682305
+<< locali >>
+rect 120 940 170 1150
+rect 500 940 550 1150
+rect 130 -620 170 -420
+rect 510 -620 550 -420
+<< metal1 >>
+rect 200 -170 250 190
+rect 580 -170 630 190
+use inv  inv_0
+timestamp 1671682090
+transform 1 0 800 0 1 100
+box -60 -760 432 1088
+use sky130_fd_pr__nfet_01v8_Y5UG24  sky130_fd_pr__nfet_01v8_Y5UG24_0
+timestamp 1671681966
+transform 1 0 606 0 1 -331
+box -246 -329 246 329
+use sky130_fd_pr__nfet_01v8_Y5UG24  sky130_fd_pr__nfet_01v8_Y5UG24_1
+timestamp 1671681966
+transform 1 0 226 0 1 -331
+box -246 -329 246 329
+use sky130_fd_pr__pfet_01v8_TSNZVH  sky130_fd_pr__pfet_01v8_TSNZVH_0
+timestamp 1671681875
+transform 1 0 606 0 1 604
+box -246 -584 246 584
+use sky130_fd_pr__pfet_01v8_TSNZVH  sky130_fd_pr__pfet_01v8_TSNZVH_1
+timestamp 1671681875
+transform 1 0 226 0 1 604
+box -246 -584 246 584
+<< end >>
