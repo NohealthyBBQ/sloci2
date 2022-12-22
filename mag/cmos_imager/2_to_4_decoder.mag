@@ -1,6 +1,16 @@
 magic
 tech sky130A
-timestamp 1671722503
+timestamp 1671724387
+<< metal1 >>
+rect 0 350 130 360
+rect 0 320 10 350
+rect 40 320 130 350
+rect 0 310 130 320
+<< via1 >>
+rect 10 320 40 350
+<< metal2 >>
+rect 10 350 40 360
+rect 10 20 40 320
 use and  and_0
 timestamp 1671683902
 transform 1 0 580 0 1 -630
@@ -17,4 +27,14 @@ use and  and_3
 timestamp 1671683902
 transform 1 0 10 0 1 330
 box -10 -330 616 594
+use inv  inv_0
+timestamp 1671682090
+transform 1 0 -160 0 1 -580
+box -30 -380 216 544
+use inv  inv_1
+timestamp 1671682090
+transform 1 0 -160 0 1 380
+box -30 -380 216 544
+<< labels >>
+flabel space 0 310 135 360 0 FreeSans 320 0 0 0 A_b
 << end >>
