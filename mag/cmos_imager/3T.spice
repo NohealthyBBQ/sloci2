@@ -1,0 +1,18 @@
+** sch_path: /home/zexious/project/sloci2/xschem/cmos_imager/3T.sch
+.subckt 3T Vout rst_b pd_in VDD row_sel VSS
+*.PININFO Vout:O rst_b:I pd_in:I VDD:B row_sel:I VSS:B
+XM2 net2 pd_in net1 VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+Vm2 net1 Vmid 0
+.save i(vm2)
+Vm3 VDD net2 0
+.save i(vm3)
+XM3 Vmid row_sel Vout VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM20 pd_in rst_b VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+.end
