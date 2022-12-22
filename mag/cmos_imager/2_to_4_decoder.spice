@@ -1,0 +1,46 @@
+** sch_path: /home/zexious/project/sloci2/xschem/ip_block/logic_gate/2_to_4_decoder.sch
+.subckt 2_to_4_decoder A B VDD VSS D0 D1 D2 D3
+*.PININFO A:I B:I VDD:B VSS:B D0:O D1:O D2:O D3:O
+X1 A A_b VSS VDD inv
+X2 B B_b VSS VDD inv
+X3 A_b D0 VSS VDD B_b and
+X4 A D1 VSS VDD B_b and
+X5 A_b D2 VSS VDD B and
+X6 A D3 VSS VDD B and
+.ends
+
+* expanding   symbol:  ip_block/logic_gate/inv.sym # of pins=4
+** sym_path: /home/zexious/project/sloci2/xschem/ip_block/logic_gate/inv.sym
+** sch_path: /home/zexious/project/sloci2/xschem/ip_block/logic_gate/inv.sch
+.subckt inv Vin Vout VSS VDD
+*.PININFO Vin:I Vout:O VDD:B VSS:B
+XMinv_n Vout Vin VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMinv_p Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ip_block/logic_gate/and.sym # of pins=5
+** sym_path: /home/zexious/project/sloci2/xschem/ip_block/logic_gate/and.sym
+** sch_path: /home/zexious/project/sloci2/xschem/ip_block/logic_gate/and.sch
+.subckt and A Vout VSS VDD B
+*.PININFO B:I Vout:O VDD:B VSS:B A:I
+XMinv_n net1 B VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMinv_p net2 A VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMinv_n1 net2 A net1 VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMinv_p1 net2 B VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+X1 net2 Vout VSS VDD inv
+.ends
+
+.end
