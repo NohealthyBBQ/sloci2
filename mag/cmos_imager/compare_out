@@ -1,0 +1,91 @@
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_2p85  |Circuit 2: sky130_fd_pr__res_high_po_2p85  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_2p85 and sky130_fd_pr__res_high_po_2p85 are equivalent.
+Flattening unmatched subcell XM_cs in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_D74VRS in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell XM_diffpair in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_E96B6C in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_A5VCMN in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_EN3Q86 in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_7J2RPB in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell XM_actload2 in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_USQY94 in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell XM_tail in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_7MFZYU in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell XM_ppair in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_MBDTEX in circuit opamp_realcomp3_usefinger (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_B64SAM in circuit opamp_realcomp3_usefinger (0)(1 instance)
+
+Class opamp_realcomp3_usefinger (0):  Merged 119 parallel devices.
+Subcircuit summary:
+Circuit 1: opamp_realcomp3_usefinger       |Circuit 2: opamp_realcomp3_usefinger       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_lvt (88->3)        |sky130_fd_pr__pfet_01v8_lvt (12->3)        
+sky130_fd_pr__nfet_01v8_lvt (38->4)        |sky130_fd_pr__nfet_01v8_lvt (14->4)        
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+sky130_fd_pr__res_high_po_2p85 (1)         |sky130_fd_pr__res_high_po_2p85 (1)         
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: opamp_realcomp3_usefinger       |Circuit 2: opamp_realcomp3_usefinger       
+-------------------------------------------|-------------------------------------------
+bias_0p7                                   |bias_0p7                                   
+vss                                        |vss                                        
+in_n                                       |in_n                                       
+in_p                                       |in_p                                       
+out                                        |out                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes opamp_realcomp3_usefinger and opamp_realcomp3_usefinger are equivalent.
+Circuits match uniquely.
