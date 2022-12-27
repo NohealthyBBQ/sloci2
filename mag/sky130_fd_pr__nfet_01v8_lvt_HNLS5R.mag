@@ -1,0 +1,181 @@
+magic
+tech sky130A
+timestamp 1671762831
+<< pwell >>
+rect -180 -155 179 155
+<< nmoslvt >>
+rect -80 -50 -65 50
+rect -32 -50 -17 50
+rect 16 -50 31 50
+rect 64 -50 79 50
+<< ndiff >>
+rect -111 44 -80 50
+rect -111 -44 -105 44
+rect -88 -44 -80 44
+rect -111 -50 -80 -44
+rect -65 44 -32 50
+rect -65 -44 -57 44
+rect -40 -44 -32 44
+rect -65 -50 -32 -44
+rect -17 44 16 50
+rect -17 -44 -9 44
+rect 8 -44 16 44
+rect -17 -50 16 -44
+rect 31 44 64 50
+rect 31 -44 39 44
+rect 56 -44 64 44
+rect 31 -50 64 -44
+rect 79 44 110 50
+rect 79 -44 87 44
+rect 104 -44 110 44
+rect 79 -50 110 -44
+<< ndiffc >>
+rect -105 -44 -88 44
+rect -57 -44 -40 44
+rect -9 -44 8 44
+rect 39 -44 56 44
+rect 87 -44 104 44
+<< psubdiff >>
+rect -162 120 -114 137
+rect 113 120 161 137
+rect -162 89 -145 120
+rect 144 89 161 120
+rect -162 -120 -145 -89
+rect 144 -120 161 -89
+rect -162 -137 -114 -120
+rect 113 -137 161 -120
+<< psubdiffcont >>
+rect -114 120 113 137
+rect -162 -89 -145 89
+rect 144 -89 161 89
+rect -114 -137 113 -120
+<< poly >>
+rect 55 86 88 94
+rect 55 81 63 86
+rect -80 69 63 81
+rect 80 69 88 86
+rect -80 63 88 69
+rect -80 50 -65 63
+rect -41 61 -8 63
+rect -32 50 -17 61
+rect 16 50 31 63
+rect 55 61 88 63
+rect 64 50 79 61
+rect -80 -63 -65 -50
+rect -32 -63 -17 -50
+rect 16 -63 31 -50
+rect 64 -63 79 -50
+<< polycont >>
+rect 63 69 80 86
+<< locali >>
+rect -162 120 -114 137
+rect 113 120 161 137
+rect -162 89 -145 120
+rect 144 89 161 120
+rect 55 69 63 86
+rect 80 69 88 86
+rect -105 44 -88 52
+rect -105 -52 -88 -44
+rect -57 44 -40 52
+rect -57 -52 -40 -44
+rect -9 44 8 52
+rect -9 -52 8 -44
+rect 39 44 56 52
+rect 39 -52 56 -44
+rect 87 44 104 52
+rect 87 -52 104 -44
+rect -162 -120 -145 -89
+rect 144 -120 161 -89
+rect -162 -137 -114 -120
+rect 113 -137 161 -120
+<< viali >>
+rect 63 69 80 86
+rect -105 -44 -88 44
+rect -57 -44 -40 44
+rect -9 -44 8 44
+rect 39 -44 56 44
+rect 87 -44 104 44
+<< metal1 >>
+rect 55 86 88 94
+rect 55 69 63 86
+rect 80 69 88 86
+rect 55 66 88 69
+rect -108 44 -85 50
+rect -108 -17 -105 44
+rect -113 -20 -105 -17
+rect -88 -17 -85 44
+rect -65 47 -32 50
+rect -65 20 -63 47
+rect -36 20 -32 47
+rect -65 17 -57 20
+rect -88 -20 -80 -17
+rect -113 -47 -110 -20
+rect -83 -47 -80 -20
+rect -113 -50 -80 -47
+rect -60 -44 -57 17
+rect -40 17 -32 20
+rect -12 44 11 50
+rect -40 -44 -37 17
+rect -12 -17 -9 44
+rect -60 -50 -37 -44
+rect -17 -20 -9 -17
+rect 8 -17 11 44
+rect 31 47 64 50
+rect 31 20 33 47
+rect 60 20 64 47
+rect 31 17 39 20
+rect 8 -20 16 -17
+rect -17 -47 -14 -20
+rect 13 -47 16 -20
+rect -17 -50 16 -47
+rect 36 -44 39 17
+rect 56 17 64 20
+rect 84 44 107 50
+rect 56 -44 59 17
+rect 84 -17 87 44
+rect 36 -50 59 -44
+rect 79 -20 87 -17
+rect 104 -17 107 44
+rect 104 -20 112 -17
+rect 79 -47 82 -20
+rect 109 -47 112 -20
+rect 79 -50 112 -47
+<< via1 >>
+rect -63 44 -36 47
+rect -63 20 -57 44
+rect -57 20 -40 44
+rect -40 20 -36 44
+rect -110 -44 -105 -20
+rect -105 -44 -88 -20
+rect -88 -44 -83 -20
+rect -110 -47 -83 -44
+rect 33 44 60 47
+rect 33 20 39 44
+rect 39 20 56 44
+rect 56 20 60 44
+rect -14 -44 -9 -20
+rect -9 -44 8 -20
+rect 8 -44 13 -20
+rect -14 -47 13 -44
+rect 82 -44 87 -20
+rect 87 -44 104 -20
+rect 104 -44 109 -20
+rect 82 -47 109 -44
+<< metal2 >>
+rect -113 47 112 87
+rect -113 20 -63 47
+rect -36 20 33 47
+rect 60 20 112 47
+rect -113 17 112 20
+rect -113 -20 112 -17
+rect -113 -47 -110 -20
+rect -83 -47 -14 -20
+rect 13 -47 82 -20
+rect 109 -47 112 -20
+rect -113 -87 112 -47
+<< properties >>
+string FIXED_BBOX -153 -128 153 128
+string gencell sky130_fd_pr__nfet_01v8_lvt
+string library sky130
+string parameters w 1.0 l 0.15 m 1 nf 4 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>
