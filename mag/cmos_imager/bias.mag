@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672263526
+timestamp 1672265139
 << locali >>
 rect 180 360 240 540
 rect 1100 360 1160 540
@@ -11,6 +11,19 @@ rect 3840 360 3900 540
 rect 4760 360 4820 540
 rect 5220 360 5280 540
 << metal1 >>
+rect 1520 4630 4520 4780
+rect 180 160 280 900
+rect 1080 870 4380 900
+rect 1070 700 1080 780
+rect 1160 700 1170 780
+rect 1990 700 2000 780
+rect 2080 700 2090 780
+rect 2910 700 2920 780
+rect 3000 700 3010 780
+rect 3810 700 3820 780
+rect 3900 700 3910 780
+rect 4730 700 4740 780
+rect 4820 700 4830 780
 rect 640 580 700 680
 rect 1560 580 1620 680
 rect 2480 580 2540 680
@@ -23,6 +36,30 @@ rect 2480 380 2540 480
 rect 3380 380 3440 480
 rect 4300 380 4360 480
 rect 1080 160 4380 190
+rect 5160 160 5280 920
+<< via1 >>
+rect 1080 700 1160 780
+rect 2000 700 2080 780
+rect 2920 700 3000 780
+rect 3820 700 3900 780
+rect 4740 700 4820 780
+<< metal2 >>
+rect 1080 780 1160 790
+rect 2000 780 2080 790
+rect 2920 780 3000 790
+rect 3820 780 3900 790
+rect 4740 780 4820 790
+rect 1060 700 1080 780
+rect 1160 700 2000 780
+rect 2080 700 2920 780
+rect 3000 700 3820 780
+rect 3900 700 4740 780
+rect 4820 700 4840 780
+rect 1080 690 1160 700
+rect 2000 690 2080 700
+rect 2920 690 3000 700
+rect 3820 690 3900 700
+rect 4740 690 4820 700
 use sky130_fd_pr__nfet_01v8_lvt_J9QE6F  sky130_fd_pr__nfet_01v8_lvt_J9QE6F_1
 timestamp 1672262880
 transform 1 0 2726 0 1 299
@@ -31,6 +68,10 @@ use sky130_fd_pr__nfet_01v8_lvt_M93XMJ  sky130_fd_pr__nfet_01v8_lvt_M93XMJ_0
 timestamp 1672262880
 transform 1 0 2726 0 1 759
 box -2686 -279 2686 279
+use sky130_fd_pr__pfet_01v8_lvt_QH9SH3  sky130_fd_pr__pfet_01v8_lvt_QH9SH3_0
+timestamp 1672264357
+transform 1 0 2723 0 1 4704
+box -2686 -3537 2686 3537
 << labels >>
 flabel space 1080 -180 1180 -20 0 FreeSans 800 0 0 0 S
 flabel space 1980 -160 2080 0 0 FreeSans 800 0 0 0 S
@@ -42,4 +83,20 @@ flabel space 2440 -180 2540 -20 0 FreeSans 800 0 0 0 D
 flabel space 3360 -140 3460 20 0 FreeSans 800 0 0 0 D
 flabel space 4280 -120 4380 40 0 FreeSans 800 0 0 0 D
 flabel space 620 -200 720 -40 0 FreeSans 800 0 0 0 D
+flabel space 1280 1030 1380 1180 0 FreeSans 800 0 0 0 A
+flabel space 1760 1030 1860 1180 0 FreeSans 800 0 0 0 A
+flabel space 4030 1060 4130 1210 0 FreeSans 800 0 0 0 A
+flabel space 4520 1050 4620 1200 0 FreeSans 800 0 0 0 A
+flabel space 2220 1030 2320 1180 0 FreeSans 800 0 0 0 B
+flabel space 2690 1020 2790 1170 0 FreeSans 800 0 0 0 B
+flabel space 3130 1010 3230 1160 0 FreeSans 800 0 0 0 B
+flabel space 3580 1040 3680 1190 0 FreeSans 800 0 0 0 B
+flabel space 1290 8290 1390 8440 0 FreeSans 800 0 0 0 B
+flabel space 1730 8290 1830 8440 0 FreeSans 800 0 0 0 B
+flabel space 2210 8290 2310 8440 0 FreeSans 800 0 0 0 A
+flabel space 2660 8300 2760 8450 0 FreeSans 800 0 0 0 A
+flabel space 3110 8280 3210 8430 0 FreeSans 800 0 0 0 A
+flabel space 3590 8290 3690 8440 0 FreeSans 800 0 0 0 A
+flabel space 4060 8280 4160 8430 0 FreeSans 800 0 0 0 B
+flabel space 4530 8280 4630 8430 0 FreeSans 800 0 0 0 B
 << end >>
