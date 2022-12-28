@@ -1,8 +1,29 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672262970
-use sky130_fd_pr__nfet_01v8_lvt_J9QE6F  sky130_fd_pr__nfet_01v8_lvt_J9QE6F_0
+timestamp 1672263526
+<< locali >>
+rect 180 360 240 540
+rect 1100 360 1160 540
+rect 2020 360 2080 540
+rect 2920 360 2980 540
+rect 3840 360 3900 540
+rect 4760 360 4820 540
+rect 5220 360 5280 540
+<< metal1 >>
+rect 640 580 700 680
+rect 1560 580 1620 680
+rect 2480 580 2540 680
+rect 3380 580 3440 680
+rect 4300 580 4360 680
+rect 640 480 4360 580
+rect 640 380 700 480
+rect 1560 380 1620 480
+rect 2480 380 2540 480
+rect 3380 380 3440 480
+rect 4300 380 4360 480
+rect 1080 160 4380 190
+use sky130_fd_pr__nfet_01v8_lvt_J9QE6F  sky130_fd_pr__nfet_01v8_lvt_J9QE6F_1
 timestamp 1672262880
 transform 1 0 2726 0 1 299
 box -2686 -279 2686 279
@@ -10,4 +31,15 @@ use sky130_fd_pr__nfet_01v8_lvt_M93XMJ  sky130_fd_pr__nfet_01v8_lvt_M93XMJ_0
 timestamp 1672262880
 transform 1 0 2726 0 1 759
 box -2686 -279 2686 279
+<< labels >>
+flabel space 1080 -180 1180 -20 0 FreeSans 800 0 0 0 S
+flabel space 1980 -160 2080 0 0 FreeSans 800 0 0 0 S
+flabel space 2900 -140 3000 20 0 FreeSans 800 0 0 0 S
+flabel space 3820 -140 3920 20 0 FreeSans 800 0 0 0 S
+flabel space 4740 -160 4840 0 0 FreeSans 800 0 0 0 S
+flabel space 1520 -180 1620 -20 0 FreeSans 800 0 0 0 D
+flabel space 2440 -180 2540 -20 0 FreeSans 800 0 0 0 D
+flabel space 3360 -140 3460 20 0 FreeSans 800 0 0 0 D
+flabel space 4280 -120 4380 40 0 FreeSans 800 0 0 0 D
+flabel space 620 -200 720 -40 0 FreeSans 800 0 0 0 D
 << end >>
