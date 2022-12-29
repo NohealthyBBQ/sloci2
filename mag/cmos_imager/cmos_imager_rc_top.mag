@@ -1,0 +1,45 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1672330730
+use 2_to_4_decoder  2_to_4_decoder_0
+timestamp 1671728743
+transform 1 0 460 0 1 -57680
+box -460 -1920 2480 1848
+use 3T  3T_0
+timestamp 1671680485
+transform 1 0 280 0 1 2300
+box -280 -900 1153 838
+use 3T  3T_1
+timestamp 1671680485
+transform 1 0 480 0 1 -53300
+box -280 -900 1153 838
+use 3T  3T_2
+timestamp 1671680485
+transform 1 0 480 0 1 -25700
+box -280 -900 1153 838
+use bias  bias_0
+timestamp 1672278816
+transform 1 0 -37 0 1 -69400
+box 37 -200 5412 8450
+use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_0
+timestamp 1662739988
+transform 1 0 15380 0 1 -60594
+box -5380 594 6776 6403
+use rc_model_4cap  rc_model_4cap_0
+timestamp 1672330275
+transform 1 0 -8000 0 1 19400
+box 8000 -16400 25896 9200
+use rc_model_6cap  rc_model_6cap_0
+timestamp 1672329859
+transform 1 0 -1400 0 1 -8600
+box 1400 -16400 25896 9200
+use rc_model_8cap  rc_model_8cap_0
+timestamp 1672329920
+transform 1 0 -1406 0 1 -36198
+box 1400 -16400 25896 9200
+use sample_hold  sample_hold_0
+timestamp 1672262444
+transform 1 0 -800 0 1 -59600
+box 5200 -200 10099 4000
+<< end >>
