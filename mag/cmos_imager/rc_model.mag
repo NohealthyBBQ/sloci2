@@ -1,0 +1,61 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1672280052
+use sky130_fd_pr__cap_mim_m3_1_LQXKLG  sky130_fd_pr__cap_mim_m3_1_LQXKLG_0
+timestamp 1672279567
+transform 1 0 11150 0 1 -3400
+box -3150 -12600 3149 12600
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_0
+timestamp 1672279968
+transform 0 1 56598 -1 0 6739
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_1
+timestamp 1672279968
+transform 0 1 56598 -1 0 -15261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_2
+timestamp 1672279968
+transform 0 1 56598 -1 0 -13261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_3
+timestamp 1672279968
+transform 0 1 56598 -1 0 -11261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_4
+timestamp 1672279968
+transform 0 1 56598 -1 0 -9261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_5
+timestamp 1672279968
+transform 0 1 56598 -1 0 -7261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_6
+timestamp 1672279968
+transform 0 1 56598 -1 0 -5261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_7
+timestamp 1672279968
+transform 0 1 56598 -1 0 -3261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_8
+timestamp 1672279968
+transform 0 1 56598 -1 0 -1261
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_9
+timestamp 1672279968
+transform 0 1 56598 -1 0 739
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_10
+timestamp 1672279968
+transform 0 1 56598 -1 0 2739
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_11
+timestamp 1672279968
+transform 0 1 56598 -1 0 4739
+box -739 -40598 739 40598
+use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_12
+timestamp 1672279968
+transform 0 1 56598 -1 0 8739
+box -739 -40598 739 40598
+<< end >>
