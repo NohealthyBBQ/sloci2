@@ -97,13 +97,19 @@ N 2670 -2590 2670 -2560 {
 lab=res}
 N 2420 -1770 2650 -1770 {
 lab=VSS}
-N 1860 -2690 2000 -2690 {}
-N 2000 -2690 2150 -2690 {}
-N 2150 -2690 2240 -2690 {}
-N 2150 -2630 2240 -2630 {}
-N 2000 -2630 2150 -2630 {}
-N 1860 -2630 2000 -2630 {}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2240 -2660 0 0 {name=C1 model=cap_mim_m3_1 W=100 L=100 MF=1 spiceprefix=X}
+N 1860 -2690 2000 -2690 {
+lab=Vout}
+N 2000 -2690 2150 -2690 {
+lab=Vout}
+N 2150 -2690 2240 -2690 {
+lab=Vout}
+N 2150 -2630 2240 -2630 {
+lab=VSS}
+N 2000 -2630 2150 -2630 {
+lab=VSS}
+N 1860 -2630 2000 -2630 {
+lab=VSS}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2240 -2660 0 0 {name=C1 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 2330 -2600 0 0 {name=M9
 L=10
 W=0.5
@@ -218,7 +224,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2110 0 0 {name=R3
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
@@ -226,78 +232,78 @@ C {opin.sym} 2370 -2730 0 0 {name=p1 lab=Vout}
 C {iopin.sym} 2230 -1770 0 1 {name=p1 lab=VSS}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2050 0 0 {name=R1
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -1990 0 0 {name=R2
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -1930 0 0 {name=R4
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -1870 0 0 {name=R5
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -1810 0 0 {name=R6
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2470 0 0 {name=R7
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2410 0 0 {name=R8
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2350 0 0 {name=R9
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2290 0 0 {name=R10
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2230 0 0 {name=R11
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2170 0 0 {name=R12
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 2670 -2530 0 0 {name=R13
 W=5.73
-L=400
+L=50
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {lab_wire.sym} 2350 -2060 0 0 {name=l1 sig_type=std_logic lab=res}
 C {lab_wire.sym} 2670 -2590 0 0 {name=l1 sig_type=std_logic lab=res}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1860 -2660 0 0 {name=C2 model=cap_mim_m3_1 W=100 L=100 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -2660 0 0 {name=C3 model=cap_mim_m3_1 W=100 L=100 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2150 -2660 0 0 {name=C4 model=cap_mim_m3_1 W=100 L=100 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1860 -2660 0 0 {name=C2 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -2660 0 0 {name=C3 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2150 -2660 0 0 {name=C4 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}

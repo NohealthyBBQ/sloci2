@@ -1,11 +1,43 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672280052
+timestamp 1672286092
 use sky130_fd_pr__cap_mim_m3_1_LQXKLG  sky130_fd_pr__cap_mim_m3_1_LQXKLG_0
 timestamp 1672279567
 transform 1 0 11150 0 1 -3400
 box -3150 -12600 3149 12600
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_0
+timestamp 1672282197
+transform 1 0 98696 0 1 -13971
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_1
+timestamp 1672282197
+transform 1 0 98696 0 1 -15051
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_2
+timestamp 1672282197
+transform 1 0 98696 0 1 -13611
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_3
+timestamp 1672282197
+transform 1 0 98696 0 1 -13251
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_4
+timestamp 1672282197
+transform 1 0 98696 0 1 -14331
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_5
+timestamp 1672282197
+transform 1 0 98696 0 1 -14691
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_6
+timestamp 1672282197
+transform 1 0 98696 0 1 -15411
+box -1196 -229 1196 229
+use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_7
+timestamp 1672282197
+transform 1 0 98696 0 1 -15771
+box -1196 -229 1196 229
 use sky130_fd_pr__res_xhigh_po_5p73_EBHDZU  sky130_fd_pr__res_xhigh_po_5p73_EBHDZU_0
 timestamp 1672279968
 transform 0 1 56598 -1 0 6739
