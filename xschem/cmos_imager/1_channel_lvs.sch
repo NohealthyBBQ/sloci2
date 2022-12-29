@@ -312,9 +312,6 @@ C {devices/lab_pin.sym} 2670 -2420 0 0 {name=l23 lab=rst_b_clk}
 C {cmos_imager/3T.sym} 2650 -2050 0 0 {name=X5}
 C {lab_wire.sym} 2770 -2160 0 0 {name=l4 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 2670 -2090 0 0 {name=l23 lab=rst_b_clk}
-C {cmos_imager/photodiode_real_rc_10p.sym} -460 630 0 0 {name=X6}
-C {cmos_imager/photodiode_real_rc_20p.sym} -460 940 0 0 {name=X7}
-C {cmos_imager/photodiode_real_rc_40p.sym} -460 1270 0 0 {name=X8}
 C {lab_wire.sym} 2530 -2730 0 0 {name=l4 sig_type=std_logic lab=Vin_1}
 C {lab_wire.sym} 2530 -2400 0 0 {name=l4 sig_type=std_logic lab=Vin_2}
 C {lab_wire.sym} 2520 -2070 0 0 {name=l4 sig_type=std_logic lab=Vin_3}
@@ -394,3 +391,6 @@ C {devices/lab_pin.sym} 3430 -2550 3 0 {name=l23 lab=VSS}
 C {opin.sym} 4030 -2260 0 0 {name=p1 lab=Vout}
 C {devices/ipin.sym} 2650 -2750 0 0 {name=p3 lab=rst_b_clk}
 C {devices/ammeter.sym} 4250 -2140 0 0 {name=Vm3 current=40e-6}
+C {cmos_imager/photodiode_real_rc_4cap_lvs.sym} -460 630 0 0 {name=X6}
+C {cmos_imager/photodiode_real_rc_6cap_lvs.sym} -460 940 0 0 {name=X7}
+C {cmos_imager/photodiode_real_rc_8cap_lvs.sym} -460 1270 0 0 {name=X8}
