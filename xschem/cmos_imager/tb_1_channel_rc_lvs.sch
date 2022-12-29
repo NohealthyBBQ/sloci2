@@ -228,7 +228,7 @@ C {devices/vsource.sym} 3505 -3020 0 0 {name=V15 value="pulse 0 1.8 2u 0.1u 0.1u
 C {devices/gnd.sym} 3505 -2990 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 3505 -3070 0 1 {name=l23 lab=rst_b_clk}
 C {noconn.sym} 3505 -3080 0 0 {name=l9}
-C {cmos_imager/1_channel_2nd.sym} 3215 -2405 0 0 {name=X14}
+C {cmos_imager/1_channel_rc_lvs.sym} 3215 -2405 0 0 {name=X14}
 C {devices/vdd.sym} 3335 -2595 0 0 {name=l1 lab=VDD}
 C {gnd.sym} 3335 -2295 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 3235 -2515 0 0 {name=l1 lab=A}
