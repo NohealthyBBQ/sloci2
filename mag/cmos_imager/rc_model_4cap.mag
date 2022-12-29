@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672329266
+timestamp 1672330275
 << locali >>
 rect 14600 3780 15000 3800
 rect 14600 3320 14620 3780
@@ -101,7 +101,7 @@ rect 13200 -16380 14840 -16220
 rect 14980 -16380 15000 -16220
 rect 13200 -16400 15000 -16380
 use sky130_fd_pr__cap_mim_m3_1_LQXKLG  sky130_fd_pr__cap_mim_m3_1_LQXKLG_0
-timestamp 1672279567
+timestamp 1672329859
 transform 1 0 11150 0 1 -3400
 box -3150 -12600 3149 12600
 use sky130_fd_pr__nfet_01v8_lvt_Z6RSN3  sky130_fd_pr__nfet_01v8_lvt_Z6RSN3_0
