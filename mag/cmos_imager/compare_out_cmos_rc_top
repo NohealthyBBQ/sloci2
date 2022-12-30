@@ -159,21 +159,11 @@ NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs                
 
 ---------------------------------------------------------------------------------------
-Net: VSUBS                                 |Net: Vb1                                   
-  sky130_fd_pr__nfet_01v8_lvt/4 = 45       |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
-  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  |                                           
-  sky130_fd_pr__res_xhigh_po_5p73/3 = 3    |                                           
-  sky130_fd_pr__cap_mim_m3_1/2 = 4         |                                           
-  inv/VSUBS = 3                            |                                           
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__res_high_po_2p85/3 = 1     |                                           
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 10   |                                           
-  sky130_fd_pr__nfet_01v8_lvt/2 = 5        |                                           
-  and/VSS = 4                              |                                           
+Net: Vb1                                   |Net: Vb1                                   
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
                                            |                                           
-Net: Vpixel_out                            |Net: Vb0                                   
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 5    |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
+Net: Vb0                                   |Net: Vb0                                   
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
                                            |                                           
 Net: D1                                    |Net: D1                                    
   sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
@@ -187,7 +177,7 @@ Net: D3                                    |Net: D3
   sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
   and/Vout = 1                             |  and/Vout = 1                             
                                            |                                           
-Net: m2_10200_n53600#                      |Net: net3                                  
+Net: Vout                                  |Net: net3                                  
   sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
                                            |                                           
 Net: x3T:3T_0/m1_170_n680#                 |Net: 3T:1/net1                             
@@ -199,28 +189,28 @@ Net: x3T:3T_1/m1_170_n680#                 |Net: 3T:4/net1
 Net: x3T:3T_2/m1_170_n680#                 |Net: 3T:5/net1                             
   sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
                                            |                                           
-Net: /bias_0/m1_1080_160#                  |Net: Vb2                                   
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__pfet_01v8_lvt/2 = 2        
-                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
-                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-                                           |                                           
-Net: /bias_0/m1_1080_870#                  |Net: miller_2stage:2/first_stage_out       
+Net: Vpixel_out                            |Net: Vb2                                   
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 5    |  sky130_fd_pr__pfet_01v8_lvt/2 = 2        
   sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
                                            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-                                           |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
-                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
                                            |                                           
-Net: /opamp_realcomp3_usefinger_0/first_st |Net: VSS                                   
-  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/4 = 42       
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 6    
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__res_high_po_2p85/3 = 1     
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__cap_mim_m3_1/2 = 4         
-                                           |  inv/VSS = 3                              
-                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-                                           |  and/VSS = 4                              
-                                           |  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  
-                                           |  sky130_fd_pr__res_xhigh_po_5p73/3 = 3    
-                                           |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+Net: /opamp_realcomp3_usefinger_0/first_st |Net: miller_2stage:2/first_stage_out       
+  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+                                           |                                           
+Net: VSS                                   |Net: VSS                                   
+  sky130_fd_pr__nfet_01v8_lvt/4 = 45       |  sky130_fd_pr__nfet_01v8_lvt/4 = 42       
+  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  |  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  
+  sky130_fd_pr__res_xhigh_po_5p73/3 = 3    |  sky130_fd_pr__res_xhigh_po_5p73/3 = 3    
+  sky130_fd_pr__cap_mim_m3_1/2 = 4         |  sky130_fd_pr__cap_mim_m3_1/2 = 4         
+  inv/VSUBS = 3                            |  inv/VSS = 3                              
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__res_high_po_2p85/3 = 1     |  sky130_fd_pr__res_high_po_2p85/3 = 1     
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 10   |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 6    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 5        |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+  and/VSS = 4                              |  and/VSS = 4                              
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
@@ -231,7 +221,7 @@ Net: /bias_0/m1_1070_700#                  |Net: Vpixel_out
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: 3T_2/VDD                              |Net: VDD                                   
+Net: VDD                                   |Net: VDD                                   
   sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    
   sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
   sky130_fd_pr__pfet_01v8/4 = 3            |  sky130_fd_pr__pfet_01v8/4 = 3            
@@ -331,15 +321,18 @@ Netlists do not match.
 Subcircuit pins:
 Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs                
 -------------------------------------------|-------------------------------------------
-*VSUBS **Mismatch**                        |Vb1                                        
+*VSS                                       |*Vb1 **Mismatch**                          
 *Vpixel_out **Mismatch**                   |Vb0                                        
+Vout                                       |*net3 **Mismatch**                         
+Vb0                                        |*Vb2 **Mismatch**                          
+Vb1                                        |*miller_2stage:2/first_stage_out **Mismatc 
 */opamp_realcomp3_usefinger_0/first_stage_ |VSS                                        
-*/sample_hold_0/m1_5220_1840# **not pin**  |sh_clk                                     
-*opamp_realcomp3_usefinger_0/bias_0p7 **no |Vbias                                      
-*3T_2/VDD **Mismatch**                     |VDD                                        
-*3T_2/rst_b **not pin**                    |rst_b_clk                                  
-*2_to_4_decoder_0/A **not pin**            |A                                          
-*2_to_4_decoder_0/B **not pin**            |B                                          
+Vbias                                      |Vbias                                      
+sh_clk                                     |sh_clk                                     
+*VDD                                       |*VDD **Mismatch**                          
+rst_b_clk                                  |rst_b_clk                                  
+A                                          |A                                          
+B                                          |B                                          
 **no match**                               |Vout                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists for cmos_imager_rc_top and 1_channel_rc_lvs do not match.

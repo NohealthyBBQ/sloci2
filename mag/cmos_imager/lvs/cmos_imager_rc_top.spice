@@ -127,7 +127,7 @@ Xsky130_fd_pr__nfet_01v8_Y5UG24_0 VSUBS m1_160_n270# VSUBS m1_240_n400# sky130_f
 .ends
 
 .subckt sample_hold sky130_fd_pr__cap_mim_m3_1_WXTTNJ_0/m3_n2150_n2100# Vcap sky130_fd_pr__nfet_01v8_lvt_ZSX9YN_0/a_50_n531#
-+ inv_0/li_80_830# VSUBS
++ m1_5220_1840# inv_0/li_80_830# VSUBS
 Xsky130_fd_pr__cap_mim_m3_1_WXTTNJ_0 Vcap sky130_fd_pr__cap_mim_m3_1_WXTTNJ_0/m3_n2150_n2100#
 + sky130_fd_pr__cap_mim_m3_1_WXTTNJ
 Xsky130_fd_pr__nfet_01v8_lvt_ZSX9YN_0 VSUBS sky130_fd_pr__nfet_01v8_lvt_ZSX9YN_0/a_50_n531#
@@ -477,7 +477,7 @@ X9 a_n1174_n131# a_n1574_n157# a_n1632_n131# a_n2650_n243# sky130_fd_pr__nfet_01
 X10 a_1116_n131# a_716_n157# a_658_n131# a_n2650_n243# sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=2e+06u
 .ends
 
-.subckt cd_current m1_1070_700# VSUBS
+.subckt cd_current m1_1080_160# m1_1080_870# m1_1070_700# VSUBS
 Xsky130_fd_pr__nfet_01v8_lvt_J9QE6F_1 VSUBS m1_1080_160# VSUBS m1_1080_160# m1_640_380#
 + VSUBS VSUBS m1_1080_160# VSUBS m1_640_380# VSUBS VSUBS m1_1080_160# m1_640_380#
 + m1_1080_160# m1_640_380# VSUBS m1_1080_160# VSUBS m1_640_380# m1_1080_160# m1_1080_160#
@@ -520,7 +520,7 @@ X20 a_200_118# a_n200_21# a_n258_118# w_n2686_n3537# sky130_fd_pr__pfet_01v8_lvt
 X21 a_n2090_118# a_n2490_21# a_n2548_118# w_n2686_n3537# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.64e+12p ps=3.258e+07u w=1.6e+07u l=2e+06u
 .ends
 
-.subckt bias m1_1510_6800# li_80_4480# VSUBS
+.subckt bias m1_1080_160# m1_1510_6800# li_80_4480# m1_1080_870# VSUBS
 Xsky130_fd_pr__nfet_01v8_lvt_J9QE6F_1 VSUBS m1_1080_160# VSUBS m1_1080_160# m1_640_380#
 + VSUBS VSUBS m1_1080_160# VSUBS m1_640_380# VSUBS VSUBS m1_1080_160# m1_640_380#
 + m1_1080_160# m1_640_380# VSUBS m1_1080_160# VSUBS m1_640_380# m1_1080_160# m1_1080_160#
@@ -588,20 +588,19 @@ Xand_2 B_b VDD VSS A D1 and
 Xand_3 B_b VDD VSS and_3/A D0 and
 .ends
 
-.subckt cmos_imager_rc_top
-Xrc_model_8cap_0 Vin_3 VSUBS rc_model_8cap
-X3T_0 Vpixel_out 3T_2/rst_b Vin_1 3T_2/VDD D1 VSUBS x3T
-X3T_1 Vpixel_out 3T_2/rst_b Vin_3 3T_2/VDD D3 VSUBS x3T
-X3T_2 Vpixel_out 3T_2/rst_b Vin_2 3T_2/VDD D2 VSUBS x3T
-Xrc_model_4cap_0 Vin_1 VSUBS rc_model_4cap
-Xsample_hold_0 VSUBS Vcap opamp_realcomp3_usefinger_0/out 3T_2/VDD VSUBS sample_hold
-Xcd_output_0 VSUBS 3T_2/VDD m2_10200_n53600# Vcap cd_output
-Xopamp_realcomp3_usefinger_0 opamp_realcomp3_usefinger_0/out Vpixel_out opamp_realcomp3_usefinger_0/bias_0p7
-+ opamp_realcomp3_usefinger_0/out 3T_2/VDD VSUBS opamp_realcomp3_usefinger
-Xcd_current_0 Vpixel_out VSUBS cd_current
-Xbias_0 m2_10200_n53600# 3T_2/VDD VSUBS bias
-Xrc_model_6cap_0 Vin_2 VSUBS rc_model_6cap
-X2_to_4_decoder_0 2_to_4_decoder_0/A 2_to_4_decoder_0/B 3T_2/VDD 2_to_4_decoder_0/D0
-+ D1 D3 D2 VSUBS x2_to_4_decoder
+.subckt cmos_imager_rc_top sh_clk VDD VSS Vb1 Vb0 Vbias A B Vout rst_b_clk
+Xrc_model_8cap_0 Vin_3 VSS rc_model_8cap
+X3T_0 Vpixel_out rst_b_clk Vin_1 VDD D1 VSS x3T
+X3T_1 Vpixel_out rst_b_clk Vin_3 VDD D3 VSS x3T
+X3T_2 Vpixel_out rst_b_clk Vin_2 VDD D2 VSS x3T
+Xrc_model_4cap_0 Vin_1 VSS rc_model_4cap
+Xsample_hold_0 VSS Vcap opamp_realcomp3_usefinger_0/out sh_clk VDD VSS sample_hold
+Xcd_output_0 VSS VDD Vout Vcap cd_output
+Xopamp_realcomp3_usefinger_0 opamp_realcomp3_usefinger_0/out Vpixel_out Vbias opamp_realcomp3_usefinger_0/out
++ VDD VSS opamp_realcomp3_usefinger
+Xcd_current_0 m1_3820_n54160# m1_4740_n53380# Vpixel_out VSS cd_current
+Xbias_0 Vb0 Vout VDD Vb1 VSS bias
+Xrc_model_6cap_0 Vin_2 VSS rc_model_6cap
+X2_to_4_decoder_0 A B VDD 2_to_4_decoder_0/D0 D1 D3 D2 VSS x2_to_4_decoder
 .ends
 
