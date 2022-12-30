@@ -1,0 +1,74 @@
+
+Magic 8.3 revision 315 - Compiled on Tue Oct 11 20:27:25 UTC 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/home/zexious/mpw_precheck/checks/drc_checks/magic/magic_drc_check.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_analog_project_wrapper
+Reading "sky130_fd_pr__nfet_01v8_lvt_YTLFGX".
+Reading "sky130_fd_pr__nfet_01v8_lvt_WKNS5B".
+Reading "oscillator_core".
+Reading "sky130_fd_pr__pfet_01v8_LDYTSD".
+Reading "sky130_fd_pr__nfet_01v8_lvt_WSE2Y6".
+Reading "3T".
+Reading "sky130_fd_pr__pfet_01v8_lvt_QH9SH3".
+Reading "sky130_fd_pr__nfet_01v8_lvt_M93XMJ".
+Reading "sky130_fd_pr__nfet_01v8_lvt_J9QE6F".
+Reading "bias".
+Reading "cd_current".
+Reading "sky130_fd_pr__pfet_01v8_lvt_BKT746".
+Reading "cd_output".
+Reading "sky130_fd_pr__res_high_po_2p85_7J2RPB".
+Reading "sky130_fd_pr__cap_mim_m3_1_EN3Q86".
+Reading "sky130_fd_pr__nfet_01v8_lvt_7MFZYU".
+Reading "XM_tail".
+Reading "sky130_fd_pr__pfet_01v8_lvt_MBDTEX".
+Reading "sky130_fd_pr__pfet_01v8_lvt_B64SAM".
+Reading "XM_ppair".
+Reading "sky130_fd_pr__nfet_01v8_lvt_E96B6C".
+Reading "sky130_fd_pr__nfet_01v8_lvt_A5VCMN".
+Reading "XM_diffpair".
+Reading "sky130_fd_pr__pfet_01v8_lvt_D74VRS".
+Reading "XM_cs".
+Reading "sky130_fd_pr__nfet_01v8_lvt_USQY94".
+Reading "XM_actload2".
+Reading "opamp_realcomp3_usefinger".
+CIF file read warning: CIF style sky130(vendor): units rescaled by factor of 5 / 1
+Reading "sky130_fd_pr__cap_mim_m3_1_LQXKLG".
+Reading "sky130_fd_pr__nfet_01v8_lvt_Z6RSN3".
+Reading "sky130_fd_pr__res_xhigh_po_5p73_AW8RAB".
+Reading "rc_model_8cap".
+Reading "sky130_fd_pr__nfet_01v8_lvt_ZSX9YN".
+Reading "sky130_fd_pr__nfet_01v8_lvt_XHV9AV".
+Reading "sky130_fd_pr__cap_mim_m3_1_WXTTNJ".
+Reading "sky130_fd_pr__pfet_01v8_TSNZVH".
+Reading "sky130_fd_pr__nfet_01v8_Y5UG24".
+Reading "inv".
+Reading "sample_hold".
+Reading "sky130_fd_pr__cap_mim_m3_1_L46JLG".
+Reading "rc_model_6cap".
+Reading "and".
+Reading "2_to_4_decoder".
+Reading "rc_model_4cap".
+Reading "cmos_imager_rc_top".
+Reading "user_analog_project_wrapper".
+[INFO]: Loading user_analog_project_wrapper
+
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+No errors found.
+[INFO]: COUNT: 0
+[INFO]: Should be divided by 3 or 4
+[INFO]: DRC Checking DONE (/home/zexious/project/sloci2/precheck_results/30_DEC_2022___04_23_57/outputs/reports/magic_drc_check.drc.report)
+[INFO]: Saving mag view with DRC errors(/home/zexious/project/sloci2/precheck_results/30_DEC_2022___04_23_57/outputs/user_analog_project_wrapper.magic.drc.mag)
+[INFO]: Saved

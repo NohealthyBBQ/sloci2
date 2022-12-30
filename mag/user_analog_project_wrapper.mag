@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1672373277
+timestamp 1672374203
 << metal2 >>
 rect 262 -400 318 240
 rect 853 -400 909 240
@@ -704,6 +704,10 @@ use cmos_imager_rc_top  cmos_imager_rc_top_0
 timestamp 1672366434
 transform 1 0 21961 0 1 205884
 box -750 -30500 12800 14300
+use oscillator_core  oscillator_core_0
+timestamp 1671829590
+transform 1 0 31452 0 1 291674
+box 752 -895 7035 1930
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
