@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672439470
+timestamp 1672439880
 << locali >>
 rect 13564 7094 14704 7128
 rect 8418 6908 8862 6946
@@ -100,7 +100,7 @@ timestamp 1672090405
 transform -1 0 30718 0 -1 -388
 box 4978 -4056 23903 -62
 use oscillator_core  oscillator_core_0
-timestamp 1672439470
+timestamp 1672439880
 transform 1 0 8824 0 1 6360
 box 1504 -1790 14070 3860
 << labels >>

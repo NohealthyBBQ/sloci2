@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672439470
+timestamp 1672439880
 << poly >>
 rect 205570 361250 423150 487080
 << metal1 >>
@@ -888,7 +888,7 @@ rect -100 0 0 704000
 rect 584000 0 584100 704000
 rect -100 -100 584100 0
 use VCO-assembly  VCO-assembly_0
-timestamp 1672439470
+timestamp 1672439880
 transform -1 0 60892 0 1 678180
 box 6815 -326 25740 10562
 use cmos_imager_rc_top  cmos_imager_rc_top_0
