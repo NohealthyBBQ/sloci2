@@ -1,0 +1,55 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1672262444
+<< locali >>
+rect 5360 200 5540 460
+<< metal1 >>
+rect 5220 2560 5460 2620
+rect 5220 1900 5280 2560
+rect 5220 1840 5500 1900
+rect 5260 540 5360 900
+rect 5620 660 5680 2360
+rect 5400 600 5680 660
+rect 5260 500 5540 540
+rect 5260 400 5400 500
+rect 5520 400 5540 500
+rect 5260 360 5540 400
+<< via1 >>
+rect 5400 400 5520 500
+<< metal2 >>
+rect 5400 500 5520 510
+rect 5400 390 5520 400
+<< via2 >>
+rect 5400 400 5520 500
+<< metal3 >>
+rect 5390 500 5530 505
+rect 5390 400 5400 500
+rect 5520 400 5530 500
+rect 5390 395 5530 400
+<< via3 >>
+rect 5400 400 5520 500
+<< metal4 >>
+rect 5380 500 6060 520
+rect 5380 400 5400 500
+rect 5520 400 6060 500
+rect 5380 380 6060 400
+use inv  inv_0
+timestamp 1671682090
+transform 1 0 5260 0 1 2680
+box -60 -760 432 1088
+use sky130_fd_pr__cap_mim_m3_1_WXTTNJ  sky130_fd_pr__cap_mim_m3_1_WXTTNJ_0
+timestamp 1671758126
+transform 1 0 7950 0 1 1900
+box -2150 -2100 2149 2100
+use sky130_fd_pr__nfet_01v8_lvt_XHV9AV  sky130_fd_pr__nfet_01v8_lvt_XHV9AV_0
+timestamp 1672261271
+transform 1 0 5446 0 1 349
+box -246 -429 246 429
+use sky130_fd_pr__nfet_01v8_lvt_ZSX9YN  sky130_fd_pr__nfet_01v8_lvt_ZSX9YN_0
+timestamp 1672261160
+transform 1 0 5446 0 1 1339
+box -246 -679 246 679
+<< labels >>
+flabel metal1 5260 360 5360 900 0 FreeSans 640 0 0 0 Vcap
+<< end >>

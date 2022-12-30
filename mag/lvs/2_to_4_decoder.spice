@@ -1,0 +1,33 @@
+* NGSPICE file created from 2_to_4_decoder.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_TSNZVH a_50_n364# w_n246_n584# a_n108_n364# a_n50_n461#
+X0 a_50_n364# a_n50_n461# a_n108_n364# w_n246_n584# sky130_fd_pr__pfet_01v8 ad=1.16e+12p pd=8.58e+06u as=1.16e+12p ps=8.58e+06u w=4e+06u l=500000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_Y5UG24 a_n108_n181# a_n50_n207# a_n210_n293# a_50_n181#
+X0 a_50_n181# a_n50_n207# a_n108_n181# a_n210_n293# sky130_fd_pr__nfet_01v8 ad=4.35e+11p pd=3.58e+06u as=4.35e+11p ps=3.58e+06u w=1.5e+06u l=500000u
+.ends
+
+.subckt inv m1_240_n400# m1_160_n270# li_80_830# VSUBS
+Xsky130_fd_pr__pfet_01v8_TSNZVH_0 m1_240_n400# li_80_830# li_80_830# m1_160_n270#
++ sky130_fd_pr__pfet_01v8_TSNZVH
+Xsky130_fd_pr__nfet_01v8_Y5UG24_0 VSUBS m1_160_n270# VSUBS m1_240_n400# sky130_fd_pr__nfet_01v8_Y5UG24
+.ends
+
+.subckt and B VDD VSS A Vout
+Xsky130_fd_pr__pfet_01v8_TSNZVH_0 m1_280_n300# VDD VDD B sky130_fd_pr__pfet_01v8_TSNZVH
+Xsky130_fd_pr__pfet_01v8_TSNZVH_1 m1_280_n300# VDD VDD A sky130_fd_pr__pfet_01v8_TSNZVH
+Xinv_0 Vout m1_280_n300# VDD VSS inv
+Xsky130_fd_pr__nfet_01v8_Y5UG24_0 VSS B VSS m1_110_n500# sky130_fd_pr__nfet_01v8_Y5UG24
+Xsky130_fd_pr__nfet_01v8_Y5UG24_1 m1_110_n500# A VSS m1_280_n300# sky130_fd_pr__nfet_01v8_Y5UG24
+.ends
+
+.subckt 2_to_4_decoder A B VDD VSS D0 D1 D2 D3
+Xinv_0 B_b B VDD VSS inv
+Xinv_1 and_3/A A VDD VSS inv
+Xand_0 B VDD VSS A D3 and
+Xand_1 B VDD VSS and_3/A D2 and
+Xand_2 B_b VDD VSS A D1 and
+Xand_3 B_b VDD VSS and_3/A D0 and
+.ends
+

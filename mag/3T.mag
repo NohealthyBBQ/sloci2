@@ -1,0 +1,87 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1671680485
+<< locali >>
+rect -60 220 80 620
+rect -60 -840 1120 -820
+rect -60 -880 0 -840
+rect 240 -880 1120 -840
+rect -60 -900 1120 -880
+<< viali >>
+rect 0 -880 240 -840
+<< metal1 >>
+rect -280 660 200 800
+rect -60 560 100 620
+rect -60 300 -20 560
+rect 40 300 100 560
+rect -60 220 100 300
+rect 200 220 960 620
+rect -260 -260 220 -120
+rect 480 -260 580 220
+rect 860 -260 960 220
+rect -60 -680 80 -300
+rect 390 -380 400 -300
+rect 480 -380 490 -300
+rect 770 -380 780 -300
+rect 860 -380 870 -300
+rect 170 -680 180 -600
+rect 260 -680 270 -600
+rect 550 -680 560 -600
+rect 640 -680 650 -600
+rect 930 -680 940 -600
+rect 1020 -680 1030 -600
+rect -20 -840 260 -820
+rect -20 -880 0 -840
+rect 240 -880 260 -840
+rect -20 -900 260 -880
+<< via1 >>
+rect -20 300 40 560
+rect 400 -380 480 -300
+rect 780 -380 860 -300
+rect 180 -680 260 -600
+rect 560 -680 640 -600
+rect 940 -680 1020 -600
+<< metal2 >>
+rect -60 560 80 620
+rect -60 300 -20 560
+rect 40 300 80 560
+rect -60 -280 80 300
+rect -120 -300 860 -280
+rect -120 -380 400 -300
+rect 480 -380 780 -300
+rect -120 -400 860 -380
+rect 180 -600 1020 -580
+rect 260 -680 560 -600
+rect 640 -680 940 -600
+rect 180 -700 1020 -680
+use sky130_fd_pr__nfet_01v8_lvt_WSE2Y6  sky130_fd_pr__nfet_01v8_lvt_WSE2Y6_0
+timestamp 1671680485
+transform 1 0 147 0 1 -489
+box -246 -410 246 410
+use sky130_fd_pr__nfet_01v8_lvt_WSE2Y6  sky130_fd_pr__nfet_01v8_lvt_WSE2Y6_1
+timestamp 1671680485
+transform 1 0 527 0 1 -489
+box -246 -410 246 410
+use sky130_fd_pr__nfet_01v8_lvt_WSE2Y6  sky130_fd_pr__nfet_01v8_lvt_WSE2Y6_2
+timestamp 1671680485
+transform 1 0 907 0 1 -489
+box -246 -410 246 410
+use sky130_fd_pr__pfet_01v8_LDYTSD  sky130_fd_pr__pfet_01v8_LDYTSD_0
+timestamp 1671675948
+transform 1 0 146 0 1 419
+box -246 -419 246 419
+<< labels >>
+flabel metal1 -60 -680 80 -300 0 FreeSans 640 0 0 0 Vout
+port 0 nsew
+flabel metal1 -280 660 200 800 0 FreeSans 640 0 0 0 rst_b
+port 1 nsew
+flabel metal1 200 220 960 620 0 FreeSans 640 0 0 0 pd_in
+port 2 nsew
+flabel metal2 -60 -400 80 300 0 FreeSans 640 0 0 0 VDD
+port 3 nsew
+flabel metal1 -260 -260 220 -120 0 FreeSans 640 0 0 0 row_sel
+port 4 nsew
+flabel metal1 -20 -900 0 -820 0 FreeSans 640 0 0 0 VSS
+port 5 nsew
+<< end >>
