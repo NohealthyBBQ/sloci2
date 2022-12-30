@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -1142,5 +1143,5 @@ C {sky130_fd_pr/pnp_05v5.sym} 1110 -430 0 1 {name=Q4
 model="pnp_05v5_W3p40L3p40 m=14"
 spiceprefix=X
 }
-C {opamp_realcomp3_usefinger.sym} -740 -460 1 1 {name=x1}
-C {opamp_realcomp3_usefinger.sym} 440 -420 0 0 {name=x2}
+C {ip_block/opamp/miller_2stage/miller_2stage.sym} 440 -420 0 0 {name=x1}
+C {ip_block/opamp/miller_2stage/miller_2stage.sym} -740 -460 1 1 {name=x2}
