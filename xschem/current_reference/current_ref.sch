@@ -79,7 +79,7 @@ lab=VSS}
 N 840 -10 910 -10 {
 lab=VSS}
 N 410 -520 410 -500 {
-lab=Vota_bias}
+lab=Vota_bias_internal}
 N 660 -280 660 -250 {
 lab=vd4}
 N 660 -250 660 -220 {
@@ -382,9 +382,38 @@ N -50 -220 -10 -220 {
 lab=Vota_bias}
 N -10 -670 300 -670 {
 lab=VDD}
+N -400 -40 -390 -40 { lab=VSS}
+N -440 -70 -440 -40 { lab=Vota_bias_internal}
+N -440 -70 -400 -70 { lab=Vota_bias_internal}
+N -390 -40 -390 -10 { lab=VSS}
+N -400 -570 -390 -570 { lab=VDD}
+N -390 -600 -390 -570 { lab=VDD}
+N -400 -600 -390 -600 { lab=VDD}
+N -400 -670 -400 -600 { lab=VDD}
+N -400 -350 -400 -70 { lab=Vota_bias_internal}
+N -400 -670 -360 -670 { lab=VDD}
+N -390 -10 -350 -10 { lab=VSS}
+N -400 -540 -400 -470 {
+lab=Vota_bias_internal}
+N -400 -410 -400 -350 {
+lab=Vota_bias_internal}
+N -400 -10 -390 -10 {
+lab=VSS}
+N -440 -10 -400 -10 {
+lab=VSS}
+N -400 -470 -400 -410 {
+lab=Vota_bias_internal}
+N -490 -570 -440 -570 {
+lab=vcurrent_gate}
+N -400 -220 -360 -220 {
+lab=Vota_bias_internal}
+N -360 -670 -50 -670 {
+lab=VDD}
+N -350 -10 -90 -10 {
+lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -70 -40 0 0 {name=Mota_bias_n
-L=4
-W=5
+L=2
+W=10
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -454,7 +483,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 840 -410 0 1 {name=l24 lab=voutb2}
 C {devices/lab_pin.sym} 660 -400 0 1 {name=l25 lab=vd4}
-C {devices/lab_pin.sym} 410 -520 2 1 {name=l19 lab=Vota_bias}
+C {devices/lab_pin.sym} 410 -520 2 1 {name=l19 lab=Vota_bias_internal}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 860 -130 0 1 {name=M5
 L=2
 W=8
@@ -530,8 +559,6 @@ spiceprefix=X
 C {opin.sym} 1060 -200 0 0 {name=p1 lab=Iout0}
 C {devices/lab_pin.sym} 1170 -40 0 0 {name=l36 lab=voutb1}
 C {devices/lab_pin.sym} 1170 -130 0 0 {name=l37 lab=voutb2}
-C {iopin.sym} -50 -670 0 1 {name=p2 lab=VDD}
-C {iopin.sym} -90 -10 0 1 {name=p3 lab=VSS}
 C {devices/lab_pin.sym} 440 -320 0 0 {name=l9 lab=VSS}
 C {opin.sym} 1230 -200 0 0 {name=p4 lab=Iout1}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1380 -40 0 0 {name=M19
@@ -721,7 +748,7 @@ spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_1p41.sym} 580 -80 3 0 {name=Rref_high1
 W=1.41
-L=47.5
+L=50
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
@@ -779,3 +806,35 @@ C {ip_block/opamp/miller_2stage/miller_2stage.sym} 440 -420 0 0 {name=x1}
 C {ipin.sym} 280 -400 0 0 {name=p6 lab=Vbg}
 C {devices/lab_pin.sym} -140 -570 0 0 {name=l21 lab=vcurrent_gate}
 C {opin.sym} -10 -220 0 0 {name=p1 lab=Vota_bias}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -420 -40 0 0 {name=Mota_bias_n1
+L=4
+W=5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -420 -570 0 0 {name=Mota_bias_p2
+L=1
+W=1
+nf=1
+mult=5
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {iopin.sym} -400 -670 0 1 {name=p2 lab=VDD}
+C {iopin.sym} -440 -10 0 1 {name=p3 lab=VSS}
+C {devices/lab_pin.sym} -490 -570 0 0 {name=l21 lab=vcurrent_gate}
+C {devices/lab_pin.sym} -360 -220 2 0 {name=l19 lab=Vota_bias_internal}
