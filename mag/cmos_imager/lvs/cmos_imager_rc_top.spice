@@ -520,7 +520,7 @@ X20 a_200_118# a_n200_21# a_n258_118# w_n2686_n3537# sky130_fd_pr__pfet_01v8_lvt
 X21 a_n2090_118# a_n2490_21# a_n2548_118# w_n2686_n3537# sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=4.64e+12p ps=3.258e+07u w=1.6e+07u l=2e+06u
 .ends
 
-.subckt bias m1_1080_160# m1_1510_6800# li_80_4480# m1_1080_870# VSUBS
+.subckt bias m1_1080_870# m1_1080_160# m1_1510_6800# li_80_4480# VSUBS
 Xsky130_fd_pr__nfet_01v8_lvt_J9QE6F_1 VSUBS m1_1080_160# VSUBS m1_1080_160# m1_640_380#
 + VSUBS VSUBS m1_1080_160# VSUBS m1_640_380# VSUBS VSUBS m1_1080_160# m1_640_380#
 + m1_1080_160# m1_640_380# VSUBS m1_1080_160# VSUBS m1_640_380# m1_1080_160# m1_1080_160#
@@ -598,8 +598,8 @@ Xsample_hold_0 VSS Vcap opamp_realcomp3_usefinger_0/out sh_clk VDD VSS sample_ho
 Xcd_output_0 VSS VDD Vout Vcap cd_output
 Xopamp_realcomp3_usefinger_0 opamp_realcomp3_usefinger_0/out Vpixel_out Vbias opamp_realcomp3_usefinger_0/out
 + VDD VSS opamp_realcomp3_usefinger
-Xcd_current_0 m1_3820_n54160# m1_4740_n53380# Vpixel_out VSS cd_current
-Xbias_0 Vb0 Vout VDD Vb1 VSS bias
+Xcd_current_0 Vb0 Vb1 Vpixel_out VSS cd_current
+Xbias_0 Vb1 Vb0 Vout VDD VSS bias
 Xrc_model_6cap_0 Vin_2 VSS rc_model_6cap
 X2_to_4_decoder_0 A B VDD 2_to_4_decoder_0/D0 D1 D3 D2 VSS x2_to_4_decoder
 .ends
