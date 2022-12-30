@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672093809
+timestamp 1672439880
 << locali >>
 rect 13564 7094 14704 7128
 rect 8418 6908 8862 6946
@@ -48,9 +48,7 @@ rect 10328 5330 10690 5348
 rect 10328 4752 10348 5330
 rect 10672 4752 10690 5330
 rect 10328 4730 10690 4752
-rect 17846 4590 19746 4594
-rect 16084 4122 19746 4590
-rect 16084 4118 18134 4122
+rect 16084 4118 16894 4590
 rect 15256 3866 16200 3932
 rect 15256 3658 15372 3866
 rect 16130 3658 16200 3866
@@ -99,16 +97,15 @@ transform 1 0 13036 0 1 7196
 box -600 -310 598 310
 use cap_bank3  cap_bank3_0
 timestamp 1672090405
-transform 1 0 0 0 1 4656
+transform -1 0 30718 0 -1 -388
 box 4978 -4056 23903 -62
-use oscillator_core  oscillator_core_0 /foss/designs/layout
-timestamp 1671829590
+use oscillator_core  oscillator_core_0
+timestamp 1672439880
 transform 1 0 8824 0 1 6360
 box 1504 -1790 14070 3860
 << labels >>
 flabel space 16444 7780 16846 10044 1 FreeSans 1600 90 0 0 VCO-OUT2
 flabel space 15770 7380 16172 10044 1 FreeSans 1600 90 0 0 VCO-OUT1
-flabel metal3 17846 4122 19746 4594 0 FreeSans 1600 0 0 0 VSS
 flabel space 18104 4728 18456 5540 0 FreeSans 1600 0 0 0 VDD
 flabel space 10328 4728 10680 5528 0 FreeSans 1600 0 0 0 VDD
 flabel space 7896 7220 8166 7296 0 FreeSans 1600 0 0 0 BIAS
