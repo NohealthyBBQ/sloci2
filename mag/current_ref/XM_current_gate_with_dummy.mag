@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1662842659
+use XM_current_gate  XM_current_gate_0
+timestamp 1662765305
+transform 1 0 53 0 1 284
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_1
+timestamp 1662765305
+transform 1 0 812 0 1 284
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_2
+timestamp 1662765305
+transform 1 0 1571 0 1 284
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_3
+timestamp 1662765305
+transform 1 0 53 0 1 746
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_4
+timestamp 1662765305
+transform 1 0 812 0 1 746
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_5
+timestamp 1662765305
+transform 1 0 1571 0 1 746
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_6
+timestamp 1662765305
+transform 1 0 53 0 1 -178
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_7
+timestamp 1662765305
+transform 1 0 812 0 1 -178
+box -53 -284 759 231
+use XM_current_gate  XM_current_gate_8
+timestamp 1662765305
+transform 1 0 1571 0 1 -178
+box -53 -284 759 231
+<< end >>
