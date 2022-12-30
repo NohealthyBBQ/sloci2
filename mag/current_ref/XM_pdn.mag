@@ -1,0 +1,77 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662820526
+<< locali >>
+rect 97 967 131 1046
+rect 484 968 518 1047
+rect 98 -647 132 -568
+rect 484 -647 518 -568
+<< metal1 >>
+rect 280 160 380 220
+rect 660 160 760 220
+rect 160 -220 220 100
+rect 320 -20 380 160
+rect 540 -20 600 100
+rect 320 -80 600 -20
+rect 320 -260 380 -80
+rect 540 -220 600 -80
+rect 700 0 760 160
+rect 700 -60 1480 0
+rect 700 -260 760 -60
+rect 910 -240 920 -120
+rect 1020 -240 1030 -120
+rect 280 -320 380 -260
+rect 660 -320 760 -260
+rect 1420 -360 1480 -60
+rect 5030 -460 5040 -380
+rect 5120 -460 5130 -380
+<< via1 >>
+rect 920 -240 1020 -120
+rect 5040 -460 5120 -380
+<< metal2 >>
+rect 920 -120 1020 -110
+rect 920 -250 1020 -240
+rect 5040 -380 5120 -370
+rect 5040 -470 5120 -460
+<< via2 >>
+rect 920 -240 1020 -120
+rect 5040 -460 5120 -380
+<< metal3 >>
+rect 910 -120 1030 -115
+rect 910 -240 920 -120
+rect 1020 -240 1030 -120
+rect 910 -245 1030 -240
+rect 5020 -380 5140 20
+rect 5020 -460 5040 -380
+rect 5120 -460 5140 -380
+rect 5030 -465 5130 -460
+use sky130_fd_pr__cap_mim_m3_1_Y9W37A  sky130_fd_pr__cap_mim_m3_1_Y9W37A_0
+timestamp 1662733733
+transform 1 0 3182 0 1 526
+box -2450 -680 2318 680
+use sky130_fd_pr__nfet_01v8_Y5UG24  sky130_fd_pr__nfet_01v8_Y5UG24_0
+timestamp 1662731509
+transform 1 0 194 0 1 -387
+box -246 -329 246 329
+use sky130_fd_pr__nfet_01v8_Y5UG24  sky130_fd_pr__nfet_01v8_Y5UG24_1
+timestamp 1662731509
+transform 1 0 580 0 1 -387
+box -246 -329 246 329
+use sky130_fd_pr__nfet_01v8_Y5UG24  sky130_fd_pr__nfet_01v8_Y5UG24_2
+timestamp 1662731509
+transform 1 0 966 0 1 -387
+box -246 -329 246 329
+use sky130_fd_pr__pfet_01v8_TSNZVH  sky130_fd_pr__pfet_01v8_TSNZVH_0
+timestamp 1662731045
+transform 1 0 193 0 1 531
+box -246 -584 246 584
+use sky130_fd_pr__pfet_01v8_TSNZVH  sky130_fd_pr__pfet_01v8_TSNZVH_1
+timestamp 1662731045
+transform 1 0 580 0 1 532
+box -246 -584 246 584
+use sky130_fd_pr__res_high_po_1p41_2TBR6S  sky130_fd_pr__res_high_po_1p41_2TBR6S_0
+timestamp 1662731843
+transform 0 1 3304 -1 0 -411
+box -307 -2198 307 2198
+<< end >>

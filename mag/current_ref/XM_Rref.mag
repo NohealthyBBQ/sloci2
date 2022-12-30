@@ -1,0 +1,14 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662826901
+<< metal1 >>
+rect 1132 20636 1238 21045
+rect 3616 20636 3722 21045
+rect -110 -995 -4 -586
+rect 2374 -995 2480 -586
+use sky130_fd_pr__res_xhigh_po_5p73_UZMRKM  sky130_fd_pr__res_xhigh_po_5p73_UZMRKM_0
+timestamp 1662826682
+transform 1 0 1806 0 1 10025
+box -3223 -11198 3223 11198
+<< end >>
