@@ -1,0 +1,21 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1672430888
+use XM_Rref  XM_Rref_0
+timestamp 1662826901
+transform 0 1 16305 -1 0 4889
+box -1417 -1173 5029 21223
+use XM_current_gate_with_dummy  XM_current_gate_with_dummy_0
+timestamp 1662842659
+transform 1 0 1136 0 1 -17858
+box 0 -924 4660 1954
+use XM_output_mirr_combined_with_dummy  XM_output_mirr_combined_with_dummy_0
+timestamp 1662903677
+transform 1 0 64942 0 1 3812
+box -17600 -7400 35500 15000
+use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_0
+timestamp 1662836520
+transform 1 0 5380 0 1 -592
+box -5380 594 6776 6403
+<< end >>
