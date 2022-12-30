@@ -253,6 +253,78 @@ N 4770 -2030 4800 -2030 {
 lab=VSS}
 N 4770 -2080 4770 -2060 {
 lab=Vcurr_mid2}
+N 4470 -1820 4510 -1820 {
+lab=VSS}
+N 4470 -1820 4470 -1750 {
+lab=VSS}
+N 4470 -1750 4550 -1750 {
+lab=VSS}
+N 4550 -1790 4550 -1750 {
+lab=VSS}
+N 4550 -1750 4580 -1750 {
+lab=VSS}
+N 4580 -1820 4580 -1750 {
+lab=VSS}
+N 4550 -1820 4580 -1820 {
+lab=VSS}
+N 4550 -1870 4550 -1850 {
+lab=Vb2}
+N 4470 -1600 4510 -1600 {
+lab=VSS}
+N 4470 -1600 4470 -1530 {
+lab=VSS}
+N 4470 -1530 4550 -1530 {
+lab=VSS}
+N 4550 -1570 4550 -1530 {
+lab=VSS}
+N 4550 -1530 4580 -1530 {
+lab=VSS}
+N 4580 -1600 4580 -1530 {
+lab=VSS}
+N 4550 -1600 4580 -1600 {
+lab=VSS}
+N 4550 -1650 4550 -1630 {
+lab=VSS}
+N 4470 -1650 4550 -1650 {
+lab=VSS}
+N 4470 -1650 4470 -1600 {
+lab=VSS}
+N 4700 -1820 4740 -1820 {
+lab=VSS}
+N 4700 -1820 4700 -1750 {
+lab=VSS}
+N 4700 -1750 4780 -1750 {
+lab=VSS}
+N 4780 -1790 4780 -1750 {
+lab=VSS}
+N 4780 -1750 4810 -1750 {
+lab=VSS}
+N 4810 -1820 4810 -1750 {
+lab=VSS}
+N 4780 -1820 4810 -1820 {
+lab=VSS}
+N 4780 -1870 4780 -1850 {
+lab=#net3}
+N 4700 -1600 4740 -1600 {
+lab=VSS}
+N 4700 -1600 4700 -1530 {
+lab=VSS}
+N 4700 -1530 4780 -1530 {
+lab=VSS}
+N 4780 -1570 4780 -1530 {
+lab=VSS}
+N 4780 -1530 4810 -1530 {
+lab=VSS}
+N 4810 -1600 4810 -1530 {
+lab=VSS}
+N 4780 -1600 4810 -1600 {
+lab=VSS}
+N 4780 -1650 4780 -1630 {
+lab=VSS}
+N 4700 -1650 4780 -1650 {
+lab=VSS}
+N 4700 -1650 4700 -1600 {
+lab=VSS}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3200 -2080 0 0 {name=M4
 L=2
 W=9
@@ -445,8 +517,8 @@ C {cmos_imager/photodiode_real_rc_6cap_lvs.sym} -460 940 0 0 {name=X7}
 C {cmos_imager/photodiode_real_rc_8cap_lvs.sym} -460 1270 0 0 {name=X8}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 4530 -2030 0 0 {name=M6
 L=2
-W=4
-nf=4
+W=2
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -495,3 +567,65 @@ C {lab_wire.sym} 4770 -2080 0 0 {name=l1 sig_type=std_logic lab=Vcurr_mid2}
 C {devices/lab_pin.sym} 3450 -2130 3 0 {name=l23 lab=VSS}
 C {devices/lab_pin.sym} 3670 -2160 3 0 {name=l23 lab=VSS}
 C {devices/lab_pin.sym} 3840 -2160 3 0 {name=l23 lab=VSS}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 4530 -1820 0 0 {name=M10
+L=2
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 4550 -1750 3 0 {name=l23 lab=VSS}
+C {lab_wire.sym} 4550 -1870 0 0 {name=l1 sig_type=std_logic lab=Vb2}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 4530 -1600 0 0 {name=M11
+L=2
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 4550 -1530 3 0 {name=l23 lab=VSS}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 4760 -1820 0 0 {name=M12
+L=2
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 4780 -1750 3 0 {name=l23 lab=VSS}
+C {lab_wire.sym} 4780 -1870 0 0 {name=l3 sig_type=std_logic lab=Vpixel_out}
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 4760 -1600 0 0 {name=M13
+L=2
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 4780 -1530 3 0 {name=l23 lab=VSS}
