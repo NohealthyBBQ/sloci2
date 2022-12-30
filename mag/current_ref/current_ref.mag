@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672430888
+timestamp 1672431769
 use XM_Rref  XM_Rref_0
 timestamp 1662826901
 transform 0 1 16305 -1 0 4889
@@ -18,4 +18,24 @@ use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_0
 timestamp 1662836520
 transform 1 0 5380 0 1 -592
 box -5380 594 6776 6403
+use sky130_fd_pr__nfet_01v8_lvt_E2U6GT  sky130_fd_pr__nfet_01v8_lvt_E2U6GT_0
+timestamp 1672431769
+transform 1 0 64250 0 1 -12439
+box -596 -679 596 679
+use sky130_fd_pr__nfet_01v8_lvt_H8V8HY  sky130_fd_pr__nfet_01v8_lvt_H8V8HY_0
+timestamp 1672431769
+transform 1 0 66281 0 1 -11478
+box -396 -1179 396 1179
+use sky130_fd_pr__pfet_01v8_lvt_9NUCV4  sky130_fd_pr__pfet_01v8_lvt_9NUCV4_0
+timestamp 1672431587
+transform 1 0 64545 0 1 -10785
+box -812 -466 812 466
+use sky130_fd_pr__res_high_po_1p41_LGJJBG  sky130_fd_pr__res_high_po_1p41_LGJJBG_0
+timestamp 1672431385
+transform 1 0 39405 0 1 -16270
+box -307 -10998 307 10998
+use sky130_fd_pr__res_high_po_1p41_XT5NM9  sky130_fd_pr__res_high_po_1p41_XT5NM9_0
+timestamp 1672431385
+transform 1 0 42134 0 1 -22351
+box -307 -5598 307 5598
 << end >>
