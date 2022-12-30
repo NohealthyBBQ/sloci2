@@ -1,41 +1,41 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672431769
+timestamp 1672432591
 use XM_Rref  XM_Rref_0
 timestamp 1662826901
-transform 0 1 16305 -1 0 4889
+transform 0 1 18173 -1 0 5029
 box -1417 -1173 5029 21223
 use XM_current_gate_with_dummy  XM_current_gate_with_dummy_0
 timestamp 1662842659
-transform 1 0 1136 0 1 -17858
+transform 1 0 11600 0 1 3924
 box 0 -924 4660 1954
 use XM_output_mirr_combined_with_dummy  XM_output_mirr_combined_with_dummy_0
 timestamp 1662903677
-transform 1 0 64942 0 1 3812
+transform 1 0 16600 0 1 14200
 box -17600 -7400 35500 15000
 use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_0
 timestamp 1662836520
-transform 1 0 5380 0 1 -592
+transform 1 0 4380 0 1 -594
 box -5380 594 6776 6403
 use sky130_fd_pr__nfet_01v8_lvt_E2U6GT  sky130_fd_pr__nfet_01v8_lvt_E2U6GT_0
 timestamp 1672431769
-transform 1 0 64250 0 1 -12439
+transform 1 0 12196 0 1 1359
 box -596 -679 596 679
 use sky130_fd_pr__nfet_01v8_lvt_H8V8HY  sky130_fd_pr__nfet_01v8_lvt_H8V8HY_0
 timestamp 1672431769
-transform 1 0 66281 0 1 -11478
+transform 1 0 13096 0 1 859
 box -396 -1179 396 1179
-use sky130_fd_pr__pfet_01v8_lvt_9NUCV4  sky130_fd_pr__pfet_01v8_lvt_9NUCV4_0
-timestamp 1672431587
-transform 1 0 64545 0 1 -10785
+use sky130_fd_pr__pfet_01v8_lvt_MUVN4U  sky130_fd_pr__pfet_01v8_lvt_MUVN4U_0
+timestamp 1672432293
+transform 1 0 12412 0 1 2626
 box -812 -466 812 466
-use sky130_fd_pr__res_high_po_1p41_LGJJBG  sky130_fd_pr__res_high_po_1p41_LGJJBG_0
-timestamp 1672431385
-transform 1 0 39405 0 1 -16270
-box -307 -10998 307 10998
-use sky130_fd_pr__res_high_po_1p41_XT5NM9  sky130_fd_pr__res_high_po_1p41_XT5NM9_0
-timestamp 1672431385
-transform 1 0 42134 0 1 -22351
+use sky130_fd_pr__res_high_po_1p41_EL7NMZ  sky130_fd_pr__res_high_po_1p41_EL7NMZ_0
+timestamp 1672432498
+transform 0 -1 22598 1 0 -733
 box -307 -5598 307 5598
+use sky130_fd_pr__res_high_po_1p41_G3LFBQ  sky130_fd_pr__res_high_po_1p41_G3LFBQ_0
+timestamp 1672432498
+transform 0 1 27998 -1 0 -213
+box -307 -10998 307 10998
 << end >>
