@@ -1,0 +1,2 @@
+#netgen -batch lvs "opamp_realcomp3_usefinger.spice opamp_realcomp3_usefinger" "lvs/opamp_realcomp3_usefinger.spice opamp_realcomp3_usefinger" /pdk/open_pdks/install/share/pdk/sky130A/libs.tech/netgen/setup.tcl compare_out
+netgen -batch lvs "lvs/cmos_imager_rc_top.spice cmos_imager_rc_top" "1_channel_rc_lvs.spice 1_channel_rc_lvs"  /pdk/open_pdks/install/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl compare_out_cmos_rc_top

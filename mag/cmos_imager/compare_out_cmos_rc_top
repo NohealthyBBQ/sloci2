@@ -1,0 +1,347 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_5p73 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_5p73 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_5p73 and sky130_fd_pr__res_xhigh_po_5p73 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_high_po_2p85 and Circuit 2 cell sky130_fd_pr__res_high_po_2p85 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_high_po_2p85 and sky130_fd_pr__res_high_po_2p85 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TSNZVH in circuit inv (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_Y5UG24 in circuit inv (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv                             |Circuit 2: inv                             
+-------------------------------------------|-------------------------------------------
+m1_240_n400#                               |Vout **Mismatch**                          
+m1_160_n270#                               |Vin **Mismatch**                           
+VSUBS                                      |VSS **Mismatch**                           
+li_80_830#                                 |VDD **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists for inv and inv altered to match.
+Device classes inv and inv are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TSNZVH in circuit and (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_Y5UG24 in circuit and (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: and                             |Circuit 2: and                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+inv (1)                                    |inv (1)                                    
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: and                             |Circuit 2: and                             
+-------------------------------------------|-------------------------------------------
+Vout                                       |Vout                                       
+A                                          |A                                          
+B                                          |B                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes and and and are equivalent.
+Flattening unmatched subcell rc_model_8cap in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_Z6RSN3 in circuit cmos_imager_rc_top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_AW8RAB in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_LQXKLG in circuit cmos_imager_rc_top (0)(2 instances)
+Flattening unmatched subcell x3T in circuit cmos_imager_rc_top (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_WSE2Y6 in circuit cmos_imager_rc_top (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LDYTSD in circuit cmos_imager_rc_top (0)(3 instances)
+Flattening unmatched subcell rc_model_4cap in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_Z6RSN3 in circuit cmos_imager_rc_top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_AW8RAB in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_LQXKLG in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sample_hold in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_WXTTNJ in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZSX9YN in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_XHV9AV in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell cd_output in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_BKT746 in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell opamp_realcomp3_usefinger in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell XM_cs in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_D74VRS in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell XM_diffpair in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_E96B6C in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_A5VCMN in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_EN3Q86 in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_7J2RPB in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell XM_actload2 in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_USQY94 in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell XM_tail in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_7MFZYU in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell XM_ppair in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_MBDTEX in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_B64SAM in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell cd_current in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_J9QE6F in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_M93XMJ in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell bias in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_J9QE6F in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_QH9SH3 in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_M93XMJ in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell rc_model_6cap in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_Z6RSN3 in circuit cmos_imager_rc_top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_AW8RAB in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_L46JLG in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_LQXKLG in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell x2_to_4_decoder in circuit cmos_imager_rc_top (0)(1 instance)
+Flattening unmatched subcell 3T in circuit 1_channel_rc_lvs (1)(3 instances)
+Flattening unmatched subcell miller_2stage in circuit 1_channel_rc_lvs (1)(1 instance)
+Flattening unmatched subcell 2_to_4_decoder in circuit 1_channel_rc_lvs (1)(1 instance)
+Flattening unmatched subcell photodiode_real_rc_4cap_lvs in circuit 1_channel_rc_lvs (1)(1 instance)
+Flattening unmatched subcell photodiode_real_rc_6cap_lvs in circuit 1_channel_rc_lvs (1)(1 instance)
+Flattening unmatched subcell photodiode_real_rc_8cap_lvs in circuit 1_channel_rc_lvs (1)(1 instance)
+
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Removing zero-valued device vsrc from cell 1_channel_rc_lvs (1) makes a better match
+Making another compare attempt.
+
+Class cmos_imager_rc_top (0):  Merged 210 parallel devices.
+Class cmos_imager_rc_top (0):  Merged 36 series devices.
+Class 1_channel_rc_lvs (1):  Merged 15 parallel devices.
+Class 1_channel_rc_lvs (1):  Merged 36 series devices.
+Subcircuit summary:
+Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (117->45)      |sky130_fd_pr__nfet_01v8_lvt (55->42) **Mis 
+sky130_fd_pr__res_xhigh_po_5p73 (39->3)    |sky130_fd_pr__res_xhigh_po_5p73 (39->3)    
+sky130_fd_pr__cap_mim_m3_1 (20->5)         |sky130_fd_pr__cap_mim_m3_1 (20->5)         
+sky130_fd_pr__pfet_01v8 (3)                |sky130_fd_pr__pfet_01v8 (3)                
+inv (3)                                    |inv (3)                                    
+sky130_fd_pr__pfet_01v8_lvt (130->7)       |sky130_fd_pr__pfet_01v8_lvt (54->7)        
+sky130_fd_pr__res_high_po_2p85 (1)         |sky130_fd_pr__res_high_po_2p85 (1)         
+and (4)                                    |and (4)                                    
+Number of devices: 71 **Mismatch**         |Number of devices: 68 **Mismatch**         
+Number of nets: 59 **Mismatch**            |Number of nets: 57 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs                
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: Vb1                                   
+  sky130_fd_pr__nfet_01v8_lvt/4 = 45       |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  |                                           
+  sky130_fd_pr__res_xhigh_po_5p73/3 = 3    |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 4         |                                           
+  inv/VSUBS = 3                            |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__res_high_po_2p85/3 = 1     |                                           
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 10   |                                           
+  sky130_fd_pr__nfet_01v8_lvt/2 = 5        |                                           
+  and/VSS = 4                              |                                           
+                                           |                                           
+Net: Vpixel_out                            |Net: Vb0                                   
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 5    |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
+                                           |                                           
+Net: D1                                    |Net: D1                                    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+  and/Vout = 1                             |  and/Vout = 1                             
+                                           |                                           
+Net: D2                                    |Net: D2                                    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+  and/Vout = 1                             |  and/Vout = 1                             
+                                           |                                           
+Net: D3                                    |Net: D3                                    
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+  and/Vout = 1                             |  and/Vout = 1                             
+                                           |                                           
+Net: m2_10200_n53600#                      |Net: net3                                  
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: x3T:3T_0/m1_170_n680#                 |Net: 3T:1/net1                             
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: x3T:3T_1/m1_170_n680#                 |Net: 3T:4/net1                             
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: x3T:3T_2/m1_170_n680#                 |Net: 3T:5/net1                             
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: /bias_0/m1_1080_160#                  |Net: Vb2                                   
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__pfet_01v8_lvt/2 = 2        
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |                                           
+Net: /bias_0/m1_1080_870#                  |Net: miller_2stage:2/first_stage_out       
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
+                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+                                           |                                           
+Net: /opamp_realcomp3_usefinger_0/first_st |Net: VSS                                   
+  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/4 = 42       
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 6    
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__res_high_po_2p85/3 = 1     
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__cap_mim_m3_1/2 = 4         
+                                           |  inv/VSS = 3                              
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |  and/VSS = 4                              
+                                           |  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  
+                                           |  sky130_fd_pr__res_xhigh_po_5p73/3 = 3    
+                                           |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /bias_0/m1_1070_700#                  |Net: Vpixel_out                            
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 4    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+  sky130_fd_pr__pfet_01v8_lvt/2 = 2        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 3T_2/VDD                              |Net: VDD                                   
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+  sky130_fd_pr__pfet_01v8/4 = 3            |  sky130_fd_pr__pfet_01v8/4 = 3            
+  inv/li_80_830# = 3                       |  inv/VDD = 3                              
+  sky130_fd_pr__pfet_01v8_lvt/4 = 7        |  sky130_fd_pr__pfet_01v8_lvt/4 = 7        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 7    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 7    
+  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
+  and/VDD = 4                              |  and/VDD = 4                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /opamp_realcomp3_usefinger_0/m2_n4080 |Net: miller_2stage:2/diffpair_source       
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /cd_current_0/m1_640_380#             |Net: Vcurr_mid                             
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 3    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs                
+
+---------------------------------------------------------------------------------------
+Instance: x3T:3T_0//sky130_fd_pr__nfet_01v |Instance: miller_2stage:2/sky130_fd_pr__nf 
+  (1,3) = (6,2)                            |  (1,3) = (4,3)                            
+  2 = 2                                    |  2 = 5                                    
+  4 = 79                                   |  4 = 69                                   
+                                           |                                           
+Instance: x3T:3T_1//sky130_fd_pr__nfet_01v |Instance: 3T:1/sky130_fd_pr__nfet_01v8_lvt 
+  (1,3) = (6,2)                            |  (1,3) = (5,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 79                                   |  4 = 69                                   
+                                           |                                           
+Instance: x3T:3T_2//sky130_fd_pr__nfet_01v |Instance: 3T:4/sky130_fd_pr__nfet_01v8_lvt 
+  (1,3) = (6,2)                            |  (1,3) = (5,2)                            
+  2 = 2                                    |  2 = 2                                    
+  4 = 79                                   |  4 = 69                                   
+                                           |                                           
+Instance: cd_current_0//sky130_fd_pr__nfet |Instance: 3T:5/sky130_fd_pr__nfet_01v8_lvt 
+  (1,3) = (79,79)                          |  (1,3) = (5,2)                            
+  2 = 79                                   |  2 = 2                                    
+  4 = 79                                   |  4 = 69                                   
+                                           |                                           
+Instance: cd_current_0//sky130_fd_pr__nfet |(no matching instance)                     
+  (1,3) = (79,6)                           |                                           
+  2 = 79                                   |                                           
+  4 = 79                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: opamp_realcomp3_usefinger_0//XM_ |(no matching instance)                     
+  (1,3) = (4,3)                            |                                           
+  2 = 6                                    |                                           
+  4 = 79                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: bias_0//sky130_fd_pr__nfet_01v8_ |(no matching instance)                     
+  (1,3) = (79,5)                           |                                           
+  2 = 79                                   |                                           
+  4 = 79                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: cd_current_0//sky130_fd_pr__nfet |Instance: sky130_fd_pr__nfet_01v8_lvt:M6   
+  (1,3) = (79,3)                           |  (1,3) = (69,3)                           
+  2 = 79                                   |  2 = 69                                   
+  4 = 79                                   |  4 = 69                                   
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8_lvt:M2   
+                                           |  (1,3) = (69,3)                           
+                                           |  2 = 2                                    
+                                           |  4 = 69                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8_lvt:M1   
+                                           |  (1,3) = (4,3)                            
+                                           |  2 = 2                                    
+                                           |  4 = 69                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: bias_0//sky130_fd_pr__pfet_01v8_ |(no matching instance)                     
+  (1,3) = (31,5)                           |                                           
+  2 = 5                                    |                                           
+  4 = 31                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: bias_0//sky130_fd_pr__pfet_01v8_ |(no matching instance)                     
+  (1,3) = (31,2)                           |                                           
+  2 = 5                                    |                                           
+  4 = 31                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs                
+-------------------------------------------|-------------------------------------------
+*VSUBS **Mismatch**                        |Vb1                                        
+*Vpixel_out **Mismatch**                   |Vb0                                        
+*/opamp_realcomp3_usefinger_0/first_stage_ |VSS                                        
+*/sample_hold_0/m1_5220_1840# **not pin**  |sh_clk                                     
+*opamp_realcomp3_usefinger_0/bias_0p7 **no |Vbias                                      
+*3T_2/VDD **Mismatch**                     |VDD                                        
+*3T_2/rst_b **not pin**                    |rst_b_clk                                  
+*2_to_4_decoder_0/A **not pin**            |A                                          
+*2_to_4_decoder_0/B **not pin**            |B                                          
+**no match**                               |Vout                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for cmos_imager_rc_top and 1_channel_rc_lvs do not match.
+
+Final result: Netlists do not match.
