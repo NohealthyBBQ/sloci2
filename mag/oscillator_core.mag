@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1671829590
+timestamp 1672376622
 << psubdiff >>
 rect 5870 2040 6008 2078
 rect 8908 2040 9204 2078
@@ -942,115 +942,115 @@ rect 1504 -1140 6320 -832
 rect 9270 -1140 14070 -820
 rect 1504 -1632 1856 -1140
 rect 9280 -1632 9632 -1140
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM1
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM1
 timestamp 1671055274
 transform 1 0 7123 0 1 1770
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM2
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM2
 timestamp 1671055274
 transform 1 0 7920 0 1 1350
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM3
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM3
 timestamp 1671055274
 transform 1 0 7120 0 1 830
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM4
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM4
 timestamp 1671055274
 transform 1 0 7920 0 1 410
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM5
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM5
 timestamp 1671055274
 transform 1 0 7120 0 1 -110
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM6
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM6
 timestamp 1671055274
 transform 1 0 8720 0 1 1770
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM7
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM7
 timestamp 1671055274
 transform 1 0 6320 0 1 1350
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM8
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM8
 timestamp 1671055274
 transform 1 0 8720 0 1 830
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM9
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM9
 timestamp 1671055274
 transform 1 0 8720 0 1 410
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM10
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM10
 timestamp 1671055274
 transform 1 0 6320 0 1 -110
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM11
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM11
 timestamp 1671055274
 transform 1 0 7920 0 1 1770
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM12
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM12
 timestamp 1671055274
 transform 1 0 7120 0 1 1350
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM13
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM13
 timestamp 1671055274
 transform 1 0 7920 0 1 830
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM14
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM14
 timestamp 1671055274
 transform 1 0 7120 0 1 410
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM15
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM15
 timestamp 1671055274
 transform 1 0 7920 0 1 -110
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM16
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM16
 timestamp 1671055274
 transform 1 0 6320 0 1 1770
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM17
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM17
 timestamp 1671055274
 transform 1 0 8720 0 1 1350
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM18
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM18
 timestamp 1671055274
 transform 1 0 6320 0 1 830
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM19
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  XM19
 timestamp 1671055274
 transform -1 0 6366 0 1 410
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM21
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM21
 timestamp 1671827388
 transform 1 0 6168 0 1 2650
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM22
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM22
 timestamp 1671827388
 transform -1 0 8922 0 1 2650
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM23
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM23
 timestamp 1671827388
 transform 1 0 6166 0 -1 -626
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM24
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM24
 timestamp 1671827388
 transform -1 0 8916 0 -1 -626
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM25
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM25
 timestamp 1671827388
 transform 1 0 6168 0 -1 3270
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM26
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM26
 timestamp 1671827388
 transform -1 0 8922 0 -1 3270
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM27
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM27
 timestamp 1671827388
 transform 1 0 6166 0 1 -1246
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM28
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM28
 timestamp 1671827388
 transform -1 0 8916 0 1 -1246
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  sky130_fd_pr__nfet_01v8_lvt_WKNS5B_1
+use sky130_fd_pr__nfet_01v8_lvt_WKNS5B#0  sky130_fd_pr__nfet_01v8_lvt_WKNS5B_1
 timestamp 1671055274
 transform 1 0 8720 0 1 -110
 box -480 -300 526 320
