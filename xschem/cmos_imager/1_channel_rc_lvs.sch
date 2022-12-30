@@ -304,7 +304,7 @@ lab=VSS}
 N 4780 -1820 4810 -1820 {
 lab=VSS}
 N 4780 -1870 4780 -1850 {
-lab=#net3}
+lab=Vpixel_out}
 N 4700 -1600 4740 -1600 {
 lab=VSS}
 N 4700 -1600 4700 -1530 {
@@ -550,8 +550,8 @@ C {lab_wire.sym} 4500 -2340 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 3220 -2030 0 0 {name=l1 sig_type=std_logic lab=Vcurr_mid2}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 4750 -2030 0 0 {name=M9
 L=2
-W=4
-nf=4
+W=2
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

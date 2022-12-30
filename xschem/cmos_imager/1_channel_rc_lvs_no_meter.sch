@@ -200,7 +200,7 @@ lab=Vb2}
 N 4250 -2250 4250 -2190 {
 lab=Vb2}
 N 4250 -2110 4250 -2100 {
-lab=#net1}
+lab=Vb2}
 N 4470 -2030 4510 -2030 {
 lab=VSS}
 N 4470 -2030 4470 -1960 {
@@ -329,7 +329,8 @@ N 3220 -2190 3220 -2130 {
 lab=Vpixel_out}
 N 3990 -2350 3990 -2290 {
 lab=Vout}
-N 4250 -2170 4250 -2110 {}
+N 4250 -2170 4250 -2110 {
+lab=Vb2}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 3200 -2080 0 0 {name=M4
 L=2
 W=9
@@ -552,8 +553,8 @@ C {lab_wire.sym} 4500 -2340 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 3220 -2030 0 0 {name=l1 sig_type=std_logic lab=Vcurr_mid2}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 4750 -2030 0 0 {name=M9
 L=2
-W=4
-nf=4
+W=2
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

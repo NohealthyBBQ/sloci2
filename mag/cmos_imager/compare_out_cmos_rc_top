@@ -152,9 +152,7 @@ and (4)                                    |and (4)
 Number of devices: 71                      |Number of devices: 71                      
 Number of nets: 57                         |Number of nets: 57                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-cd_current_0//sky130_fd_pr__nfet_01v8_lvt_J9QE6F_1/sky130_fd_pr__nfet_01v8_lvt:6 vs. sky130_fd_pr__nfet_01v8_lvt:M9:
- w circuit1: 2   circuit2: 4   (delta=66.7%, cutoff=1%)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: cmos_imager_rc_top              |Circuit 2: 1_channel_rc_lvs_no_meter       
@@ -174,7 +172,4 @@ Cell pin lists are equivalent.
 Device classes cmos_imager_rc_top and 1_channel_rc_lvs_no_meter are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- cmos_imager_rc_top
+.
