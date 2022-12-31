@@ -1,0 +1,25 @@
+$user_analog_project_wrapper
+ 100
+r_0_capm.2b
+Rule File Pathname: /home/zexious/project/sloci2/precheck_results/31_DEC_2022___17_41_36/outputs/reports/magic_drc_check.drc.report
+capm.2b: MiM cap bottom plate spacing < 1.2um 
+p 1 4
+155800 304200
+155800 304200
+155800 304400
+155800 304400
+p 2 4
+156000 304400
+156000 304400
+156000 304500
+156000 304500
+p 3 4
+155900 321700
+155900 321700
+155900 321700
+155900 321700
+p 4 4
+156000 321800
+156000 321800
+156000 321800
+156000 321800

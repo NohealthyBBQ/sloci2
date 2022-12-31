@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<report-database>
+    <categories>
+        <category>
+            <name>MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b</name>
+        </category>
+    </categories>
+    <cells>
+        <cell>
+            <name>user_analog_project_wrapper</name>
+        </cell>
+    </cells>
+    <items>
+        <item>
+            <category>'MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b'</category>
+            <cell>user_analog_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (1558.800,3042.800;1558.995,3044.750)</value>
+                <value>text: 'On layer capm'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>'MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b'</category>
+            <cell>user_analog_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (1560.000,3044.000;1560.195,3045.500)</value>
+                <value>text: 'On layer capm'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>'MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b'</category>
+            <cell>user_analog_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (1559.300,3217.300;1559.500,3217.500)</value>
+                <value>text: 'On layer capm'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>'MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b'</category>
+            <cell>user_analog_project_wrapper</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (1560.500,3218.500;1560.700,3218.700)</value>
+                <value>text: 'On layer capm'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+    </items>
+</report-database>

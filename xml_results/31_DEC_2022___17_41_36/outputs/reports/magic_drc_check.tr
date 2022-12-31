@@ -1,0 +1,12 @@
+  violation type: MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b
+    srcs: N/A N/A
+    bbox = ( 1558.800, 3042.800 ) - ( 1558.995, 3044.750 ) on Layer capm
+  violation type: MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b
+    srcs: N/A N/A
+    bbox = ( 1560.000, 3044.000 ) - ( 1560.195, 3045.500 ) on Layer capm
+  violation type: MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b
+    srcs: N/A N/A
+    bbox = ( 1559.300, 3217.300 ) - ( 1559.500, 3217.500 ) on Layer capm
+  violation type: MiM_cap_bottom_plate_spacing_lt_1dot2um_capmdot2b
+    srcs: N/A N/A
+    bbox = ( 1560.500, 3218.500 ) - ( 1560.700, 3218.700 ) on Layer capm
