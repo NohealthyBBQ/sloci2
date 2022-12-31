@@ -1,0 +1,19 @@
+magic
+tech sky130A
+timestamp 1672465007
+<< viali >>
+rect -10 220 190 240
+<< metal1 >>
+rect -20 240 330 260
+rect -20 220 -10 240
+rect 190 220 330 240
+rect -16 217 196 220
+rect 50 100 330 170
+use sky130_fd_pr__diode_pd2nw_05v5_UW3TFX  sky130_fd_pr__diode_pd2nw_05v5_UW3TFX_0
+timestamp 1672464635
+transform 1 0 88 0 1 138
+box -188 -188 188 188
+<< labels >>
+flabel space 381 245 596 398 0 FreeSans 800 0 0 0 NP
+flabel space 390 -4 605 149 0 FreeSans 800 0 0 0 PP
+<< end >>

@@ -1,0 +1,9 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1672463399
+use sky130_fd_pr__photodiode_23G4VT  sky130_fd_pr__photodiode_23G4VT_0
+timestamp 1672462443
+transform 1 0 2094 0 1 2094
+box -2147 -2147 2147 2147
+<< end >>
