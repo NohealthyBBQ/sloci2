@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672518341
+timestamp 1672520470
 << metal1 >>
 rect 571790 692400 571800 692800
 rect 572200 692400 572210 692800
@@ -1313,10 +1313,6 @@ use inductor_4  inductor_4_0
 timestamp 1672460674
 transform -1 0 97920 0 1 200960
 box -17920 -62080 19840 35200
-use inductor_differential  inductor_differential_0
-timestamp 1672518341
-transform 1 0 -24090800 0 1 -11077460
-box 24517800 11295100 24574900 11416060
 << labels >>
 flabel metal3 s 583520 269230 584800 269342 0 FreeSans 1120 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
