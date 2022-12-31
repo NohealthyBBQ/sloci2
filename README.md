@@ -9,9 +9,10 @@
 
 ## Please fill in your project documentation in this README.md file 
 
+    
+2nd-gen lab-on-chip system test IC. It has one 20GHz VCO, one CMOS image sensor, and test structures 
 
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
+
 
 ---
 
