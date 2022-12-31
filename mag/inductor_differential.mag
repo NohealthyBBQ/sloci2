@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1672496864
+timestamp 1672507087
 << metal2 >>
 rect 12285890 5694280 12287020 5695280
 rect 12286100 5655180 12287020 5694280
@@ -11,12 +11,12 @@ rect 12285890 5696280 12287450 5697280
 rect 12285890 5692280 12287450 5693280
 rect 12284490 5655670 12287230 5656440
 rect 12284520 5653170 12287260 5653940
-use sky130_fd_pr__rf_test_coil1  sky130_fd_pr__rf_test_coil1_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
-timestamp 1663859327
+use sky130_fd_pr__rf_test_coil1  sky130_fd_pr__rf_test_coil1_0 pdk/sky130A/libs.ref/sky130_fd_pr/mag
+timestamp 1672506959
 transform 1 0 12276792 0 1 5654802
 box -7252 -7252 7750 7252
-use sky130_fd_pr__rf_test_coil2  sky130_fd_pr__rf_test_coil2_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
-timestamp 1663859327
+use sky130_fd_pr__rf_test_coil2  sky130_fd_pr__rf_test_coil2_0 pdk/sky130A/libs.ref/sky130_fd_pr/mag
+timestamp 1672507087
 transform 1 0 12272150 0 1 5694780
 box -13250 -13250 13750 13250
 << end >>
