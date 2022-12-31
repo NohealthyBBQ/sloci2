@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672498352
+timestamp 1672499013
 << metal1 >>
 rect 18200 682212 18500 682224
 rect 18200 682156 18214 682212
@@ -1145,7 +1145,7 @@ timestamp 1672454300
 transform 1 0 305500 0 1 621000
 box -1500 -61000 25600 28600
 use current_ref  current_ref_0
-timestamp 1672454300
+timestamp 1672499013
 transform 1 0 241000 0 1 581400
 box -1400 -1400 52800 29800
 use inductor_4  inductor_4_0
