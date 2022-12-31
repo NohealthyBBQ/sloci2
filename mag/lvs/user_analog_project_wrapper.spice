@@ -1,5 +1,13 @@
 * NGSPICE file created from user_analog_project_wrapper.ext - technology: sky130A
 
+.subckt sky130_fd_pr__nfet_01v8_lvt_MH9Y6H a_n260_n274#
+X0 a_100_n100# a_n100_n188# a_n158_n100# a_n260_n274# sky130_fd_pr__nfet_01v8_lvt ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=1e+06u
+.ends
+
+.subckt inductor_differential m3_24571780_11392560# VSUBS
+Xsky130_fd_pr__nfet_01v8_lvt_MH9Y6H_0 VSUBS sky130_fd_pr__nfet_01v8_lvt_MH9Y6H
+.ends
+
 .subckt sky130_fd_pr__nfet_01v8_lvt_WKNS5B a_n250_n90# a_n280_n120# a_n342_n90# VSUBS
 X0 a_n342_n90# a_n280_n120# a_n250_n90# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=1.3e+12p pd=1.06e+07u as=1.3e+12p ps=1.06e+07u w=1e+06u l=150000u
 X1 a_n250_n90# a_n280_n120# a_n342_n90# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
@@ -37,12 +45,12 @@ X19 a_n898_n100# a_n946_n188# a_n990_n100# a_n1092_n274# sky130_fd_pr__nfet_01v8
 .subckt oscillator_core m1_7086_2470# VSS cap2 cap1
 XXM12 m2_5320_n1360# cap1 cap2 VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
 XXM23 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
-XXM25 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 XXM13 cap2 cap1 m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
 XXM14 m2_5320_n1360# cap1 cap2 VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
 XXM24 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
-XXM26 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
+XXM25 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 XXM15 cap2 cap1 m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
+XXM26 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 XXM16 cap2 cap1 m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
 XXM27 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 XXM17 m2_5320_n1360# cap1 cap2 VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
@@ -59,10 +67,10 @@ Xsky130_fd_pr__nfet_01v8_lvt_WKNS5B_1 cap1 cap2 m2_5320_n1360# VSS sky130_fd_pr_
 XXM7 m2_5320_n1360# cap2 cap1 VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
 XXM8 cap1 cap2 m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
 XXM9 m2_5320_n1360# cap1 cap2 VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
-XXM21 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 XXM10 cap2 cap1 m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
-XXM22 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
+XXM21 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 XXM11 cap2 cap1 m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_WKNS5B
+XXM22 m1_7086_2470# VSS m2_5320_n1360# VSS sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_lvt_4Q3NH3 a_n100_n198# a_n30_n101# w_n296_n320# a_n158_n101#
@@ -1320,6 +1328,7 @@ Xsky130_fd_pr__nfet_01v8_EDB9KC_0 VSUBS VSUBS VSUBS VSUBS sky130_fd_pr__nfet_01v
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
+Xinductor_differential_0 io_in[5] vssa2 inductor_differential
 XVCO-assembly_0 io_in[18] io_in[17] io_in[16] io_in[15] io_in[14] current_ref_0/Iout0
 + vccd2 vccd2 vssa2 VCO-assembly
 Xcmos_imager_rc_top_0 io_in[10] vccd2 current_ref_0/voutb2 current_ref_0/voutb1 current_ref_0/Vota_bias
