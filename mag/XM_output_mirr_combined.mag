@@ -1,0 +1,36 @@
+magic
+tech sky130A
+timestamp 1662815693
+use XM_output_mirr  XM_output_mirr_0
+timestamp 1662769653
+transform 1 0 150 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_1
+timestamp 1662769653
+transform 1 0 1250 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_2
+timestamp 1662769653
+transform 1 0 2350 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_3
+timestamp 1662769653
+transform 1 0 3450 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_4
+timestamp 1662769653
+transform 1 0 4550 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_5
+timestamp 1662769653
+transform 1 0 5650 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_6
+timestamp 1662769653
+transform 1 0 6750 0 1 2800
+box -150 -2800 1100 1000
+use XM_output_mirr  XM_output_mirr_7
+timestamp 1662769653
+transform 1 0 7850 0 1 2800
+box -150 -2800 1100 1000
+<< end >>

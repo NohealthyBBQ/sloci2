@@ -1,0 +1,22 @@
+magic
+tech sky130A
+timestamp 1662907566
+<< locali >>
+rect 300 1600 3000 1650
+rect 300 950 1410 1000
+rect 1840 950 3000 1000
+rect 300 300 3000 350
+<< metal1 >>
+rect 1545 900 1550 1050
+rect 1700 900 1705 1050
+<< via1 >>
+rect 1550 900 1700 1050
+<< metal2 >>
+rect 1550 1050 1700 1055
+rect 1550 895 1700 900
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+array 0 4 644 0 2 644
+timestamp 1657128861
+transform 1 0 0 0 1 0
+box 0 0 670 670
+<< end >>
