@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672505482
+timestamp 1672505615
 << metal1 >>
 rect 18200 682212 18500 682224
 rect 18200 682156 18214 682212
@@ -2648,6 +2648,8 @@ flabel metal2 s 6434 -800 6546 480 0 FreeSans 1120 90 0 0 wbs_we_i
 port 677 nsew signal input
 flabel space 52726 685400 56918 685476 3 FreeSans 1600 0 0 0 BIAS
 flabel space 474800 417000 512000 430200 0 FreeSans 80000 0 0 0 sh_clk
+flabel space 471600 459900 512600 466900 0 FreeSans 80000 0 0 0 B
+flabel space 472000 502400 513000 509400 0 FreeSans 80000 0 0 0 A
 << properties >>
 string FIXED_BBOX 0 0 584000 704000
 << end >>
