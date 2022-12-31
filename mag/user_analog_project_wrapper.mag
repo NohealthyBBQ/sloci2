@@ -1,9 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672439880
-<< poly >>
-rect 205570 361250 423150 487080
+timestamp 1672454300
 << metal1 >>
 rect 18200 682212 18500 682224
 rect 18200 682156 18214 682212
@@ -892,9 +890,13 @@ timestamp 1672439880
 transform -1 0 60892 0 1 678180
 box 6815 -326 25740 10562
 use cmos_imager_rc_top  cmos_imager_rc_top_0
-timestamp 1672366434
+timestamp 1672454300
 transform 1 0 519816 0 1 379556
 box -1500 -61000 25600 28600
+use current_ref  current_ref_0
+timestamp 1672454300
+transform 1 0 241428 0 1 581328
+box -1400 -1400 52800 29800
 << labels >>
 flabel metal3 s 583520 269230 584800 269342 0 FreeSans 1120 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
