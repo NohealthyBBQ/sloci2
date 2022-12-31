@@ -1215,6 +1215,14 @@ XXM_output_mirr_combined_with_dummy_0 Iout4 Iout3 Iout2 Iout6 Iout1 voutb2 voutb
 Xsky130_fd_pr__res_high_po_1p41_EL7NMZ_0 VSS VSS m1_27630_n840# sky130_fd_pr__res_high_po_1p41_EL7NMZ
 .ends
 
+.subckt sky130_fd_pr__diode_pd2nw_05v5_UW3TFX a_n100_n100# w_n238_n238#
+D0 a_n100_n100# w_n238_n238# sky130_fd_pr__diode_pd2nw_05v5 pj=4e+06u area=1e+12p
+.ends
+
+.subckt diode li_n20_440# m1_100_200#
+Xsky130_fd_pr__diode_pd2nw_05v5_UW3TFX_0 m1_100_200# li_n20_440# sky130_fd_pr__diode_pd2nw_05v5_UW3TFX
+.ends
+
 .subckt sky130_fd_pr__nfet_01v8_EDB9KC a_n33_n130# a_15_n42# a_n175_n216# a_n73_n42#
 X0 a_15_n42# a_n33_n130# a_n73_n42# a_n175_n216# sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
 .ends
@@ -1336,6 +1344,7 @@ Xcmos_imager_rc_top_0 io_in[10] vccd2 current_ref_0/voutb2 current_ref_0/voutb1 
 Xcurrent_ref_0 current_ref_0/Iout0 io_analog[6] current_ref_0/Iout2 current_ref_0/Iout3
 + current_ref_0/Iout4 current_ref_0/Iout5 current_ref_0/Iout6 io_analog[7] current_ref_0/Vota_bias
 + vccd2 current_ref_0/voutb1 current_ref_0/voutb2 vssa2 current_ref
+Xdiode_0 io_analog[1] io_analog[0] diode
 Xinductor_4_0 io_in[22] vssa2 inductor_4
 .ends
 
