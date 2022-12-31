@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672466169
+timestamp 1672496864
 << metal1 >>
 rect 18200 682212 18500 682224
 rect 18200 682156 18214 682212
@@ -1138,7 +1138,7 @@ timestamp 1672460674
 transform -1 0 97920 0 1 200960
 box -17920 -62080 19840 35200
 use inductor_differential  inductor_differential_0
-timestamp 1672462632
+timestamp 1672496864
 transform 1 0 -24090800 0 1 -11077460
 box 24517800 11295100 24574900 11416060
 << labels >>
