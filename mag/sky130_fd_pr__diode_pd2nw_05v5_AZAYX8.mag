@@ -1,0 +1,77 @@
+magic
+tech sky130A
+timestamp 1672464588
+<< nwell >>
+rect -119 -119 119 119
+<< pwell >>
+rect -188 119 188 188
+rect -188 -119 -119 119
+rect 119 -119 188 119
+rect -188 -188 188 -119
+<< psubdiff >>
+rect -170 153 -122 170
+rect 122 153 170 170
+rect -170 122 -153 153
+rect 153 122 170 153
+rect -170 -153 -153 -122
+rect 153 -153 170 -122
+rect -170 -170 -122 -153
+rect 122 -170 170 -153
+<< nsubdiff >>
+rect -101 84 -53 101
+rect 53 84 101 101
+rect -101 53 -84 84
+rect 84 53 101 84
+rect -101 -84 -84 -53
+rect 84 -84 101 -53
+rect -101 -101 -53 -84
+rect 53 -101 101 -84
+<< psubdiffcont >>
+rect -122 153 122 170
+rect -170 -122 -153 122
+rect 153 -122 170 122
+rect -122 -170 122 -153
+<< nsubdiffcont >>
+rect -53 84 53 101
+rect -101 -53 -84 53
+rect 84 -53 101 53
+rect -53 -101 53 -84
+<< pdiode >>
+rect -50 44 50 50
+rect -50 -44 -44 44
+rect 44 -44 50 44
+rect -50 -50 50 -44
+<< pdiodec >>
+rect -44 -44 44 44
+<< locali >>
+rect -170 153 -122 170
+rect 122 153 170 170
+rect -170 122 -153 153
+rect 153 122 170 153
+rect -101 84 -53 101
+rect 53 84 101 101
+rect -101 53 -84 84
+rect 84 53 101 84
+rect -52 -44 -44 44
+rect 44 -44 52 44
+rect -101 -84 -84 -53
+rect 84 -84 101 -53
+rect -101 -101 -53 -84
+rect 53 -101 101 -84
+rect -170 -153 -153 -122
+rect 153 -153 170 -122
+rect -170 -170 -122 -153
+rect 122 -170 170 -153
+<< viali >>
+rect -44 -44 44 44
+<< metal1 >>
+rect -50 44 50 47
+rect -50 -44 -44 44
+rect 44 -44 50 44
+rect -50 -47 50 -44
+<< properties >>
+string FIXED_BBOX -92 -92 92 92
+string gencell sky130_fd_pr__diode_pd2nw_05v5
+string library sky130
+string parameters w 1 l 1 area 1.0 peri 4.0 nx 1 ny 1 dummy 0 lmin 0.45 wmin 0.45 elc 1 erc 1 etc 1 ebc 1 glc 1 grc 1 gtc 1 gbc 1 doverlap 0 compatible {sky130_fd_pr__diode_pd2nw_05v5 sky130_fd_pr__diode_pd2nw_05v5_lvt  sky130_fd_pr__diode_pd2nw_05v5_hvt sky130_fd_pr__diode_pd2nw_11v0} full_metal 1 vias 1 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>
