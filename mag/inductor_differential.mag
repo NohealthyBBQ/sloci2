@@ -15,11 +15,11 @@ use sky130_fd_pr__nfet_01v8_lvt_MH9Y6H  sky130_fd_pr__nfet_01v8_lvt_MH9Y6H_0
 timestamp 1672510056
 transform 1 0 12268185 0 1 5668567
 box -148 -155 148 155
-use sky130_fd_pr__rf_test_coil1  sky130_fd_pr__rf_test_coil1_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+use sky130_fd_pr__rf_test_coil1  sky130_fd_pr__rf_test_coil1_0
 timestamp 1663859327
 transform 1 0 12276792 0 1 5654802
 box -7252 -7252 7750 7252
-use sky130_fd_pr__rf_test_coil2  sky130_fd_pr__rf_test_coil2_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+use sky130_fd_pr__rf_test_coil2  sky130_fd_pr__rf_test_coil2_0
 timestamp 1663859327
 transform 1 0 12272150 0 1 5694780
 box -13250 -13250 13750 13250
