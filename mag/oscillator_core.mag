@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1672439880
+timestamp 1672463390
 << psubdiff >>
 rect 5870 2040 6008 2078
 rect 8908 2040 9204 2078
@@ -1018,35 +1018,35 @@ use sky130_fd_pr__nfet_01v8_lvt_WKNS5B  XM19
 timestamp 1671055274
 transform -1 0 6366 0 1 410
 box -480 -300 526 320
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM21
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM21
 timestamp 1671827388
 transform 1 0 6168 0 1 2650
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM22
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM22
 timestamp 1671827388
 transform -1 0 8922 0 1 2650
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM23
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM23
 timestamp 1671827388
 transform 1 0 6166 0 -1 -626
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM24
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM24
 timestamp 1671827388
 transform -1 0 8916 0 -1 -626
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM25
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM25
 timestamp 1671827388
 transform 1 0 6168 0 -1 3270
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM26
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM26
 timestamp 1671827388
 transform -1 0 8922 0 -1 3270
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM27
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM27
 timestamp 1671827388
 transform 1 0 6166 0 1 -1246
 box -1128 -310 1126 310
-use sky130_fd_pr__nfet_01v8_lvt_YTLFGX  XM28
+use sky130_fd_pr__nfet_01v8_lvt_YTLFGX#0  XM28
 timestamp 1671827388
 transform -1 0 8916 0 1 -1246
 box -1128 -310 1126 310
