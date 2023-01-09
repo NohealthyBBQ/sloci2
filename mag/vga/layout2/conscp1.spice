@@ -1,0 +1,18 @@
+* NGSPICE file created from cons.ext - technology: sky130A
+
+.subckt cons vss vdd voutp voutn vd21 vd22 vc1 vc2 vcsw vinp vinn
+M0 vd22 vinn a_53403_n7310# vss sky130_fd_pr__nfet_01v8_lvt ad=1.05e+13p pd=8.5e+07u as=0p ps=0u w=1e+06u l=150000u M=61
+M1 vss vc2 m1_49981_n5637# vss sky130_fd_pr__nfet_01v8_lvt ad=5.705e+13p pd=4.601e+08u as=0p ps=0u w=1e+06u l=150000u M=172
+M2 a_53403_n7310# vc1 vss vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u M=172
+M3 vd22 vcsw voutn vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=1.05e+13p ps=8.5e+07u w=1e+06u l=150000u
+M4 vd21 vcsw voutp vss sky130_fd_pr__nfet_01v8_lvt ad=1.05e+13p pd=8.5e+07u as=1.05e+13p ps=8.5e+07u w=1e+06u l=150000u
+R5 vdd voutp vss sky130_fd_pr__res_xhigh_po_5p73 l=2.96e+06u
+R6 vd21 voutp vss sky130_fd_pr__res_xhigh_po_5p73 l=7.5e+06u
+R7 voutn vdd vss sky130_fd_pr__res_xhigh_po_5p73 l=2.96e+06u
+R8 vd22 vdd vss sky130_fd_pr__res_xhigh_po_5p73 l=2.96e+06u
+R9 vd22 voutn vss sky130_fd_pr__res_xhigh_po_5p73 l=7.5e+06u
+R10 vdd vd21 vss sky130_fd_pr__res_xhigh_po_5p73 l=2.96e+06u
+M11 vd21 vinp a_53403_n7310# vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u M=61
+M12 m1_49981_n5637# vd21 voutp vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u M=61
+M13 m1_49981_n5637# vd22 voutn vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u M=61
+.ends

@@ -1,0 +1,12 @@
+to lvs:
+xschem:
+select simulation->lvs and netlist
+
+magic:
+extract all
+ext2spice hierarchy off
+ext2spice lvs
+ext2spice -m
+
+netgen:
+netgen -batch lvs "name.spice subckt" "name.spice subckt" $PDK_ROOT/sky130A/libs.tech/netgen/sky130A_setup.tcl comp.out

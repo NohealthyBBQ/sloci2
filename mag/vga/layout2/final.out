@@ -1,0 +1,192 @@
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_5p73 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_5p73 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_5p73 |Circuit 2: sky130_fd_pr__res_xhigh_po_5p73 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_5p73 and sky130_fd_pr__res_xhigh_po_5p73 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell fb in circuit top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_FKGFGD in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_4C7XCD in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_G3ZQK6 in circuit top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_HFYJAZ in circuit top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_C28PVF in circuit top (0)(2 instances)
+Flattening unmatched subcell stage1 in circuit top (0)(4 instances)
+Flattening unmatched subcell cons_cw in circuit top (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_FKGFGD in circuit top (0)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_4C7XCD in circuit top (0)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_G3ZQK6 in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_QP6N54 in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_6H2JYD in circuit top (0)(8 instances)
+Flattening unmatched subcell cmfb1 in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_BSMWRE in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_F8HAAN in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_X3YSY6 in circuit top (0)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_ZMQPMJ in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_Q3K92U in circuit top (0)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_L4YDVW in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_ER7KZU in circuit top (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_EA9ZG2 in circuit top (0)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_72NHPP in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_8PSHEW in circuit top (0)(1 instance)
+Flattening unmatched subcell stage0 in circuit top (0)(1 instance)
+Flattening unmatched subcell cons1 in circuit top (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_FKGFGD in circuit top (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_4C7XCD in circuit top (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_G3ZQK6 in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_QP6N54 in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_L3LEKD in circuit top (0)(1 instance)
+Flattening unmatched subcell cmfb1 in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_BSMWRE in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_F8HAAN in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_X3YSY6 in circuit top (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_ZMQPMJ in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_5p73_Q3K92U in circuit top (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_L4YDVW in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_ER7KZU in circuit top (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_EA9ZG2 in circuit top (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_XA5MKQ in circuit top (0)(1 instance)
+
+Class top (0):  Merged 3469 parallel devices.
+Class topLevel (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: top                             |Circuit 2: topLevel                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (3434->85)     |sky130_fd_pr__nfet_01v8_lvt (233->85)      
+sky130_fd_pr__res_xhigh_po_5p73 (52)       |sky130_fd_pr__res_xhigh_po_5p73 (52)       
+sky130_fd_pr__res_high_po_0p35 (12)        |sky130_fd_pr__res_high_po_0p35 (12)        
+sky130_fd_pr__pfet_01v8_lvt (120->30)      |sky130_fd_pr__pfet_01v8_lvt (120->30)      
+sky130_fd_pr__cap_mim_m3_1 (40->10)        |sky130_fd_pr__cap_mim_m3_1 (40->10)        
+Number of devices: 189                     |Number of devices: 189                     
+Number of nets: 103                        |Number of nets: 103                        
+---------------------------------------------------------------------------------------
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /fb_0//sky130_fd_pr__nfet_01v8_lvt_HFYJAZ_0/sky130_fd_pr__nfet_01v8_lvt:0 network:
+  l = 0.15
+  w = 1.28
+  ps = 3.14
+  as = 0.3712
+  pd = 3.14
+  ad = 0.3712
+  l = 0.15
+  w = 1.28
+  ps = 1.86
+  as = 0.1856
+  pd = 1.86
+  ad = 0.1856
+  M = 1
+  l = 2
+  w = 1
+  ps = 2.58
+  as = 0.29
+  pd = 2.58
+  ad = 0.29
+Circuit 2 instance sky130_fd_pr__nfet_01v8_lvt:M9 network:
+  m = 1
+  mult = 2
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 2.56
+  L = 0.15
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 1
+  L = 2
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+
+Subcircuit pins:
+Circuit 1: top                             |Circuit 2: topLevel                        
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |vdd                                        
+(no matching pin)                          |vss                                        
+(no matching pin)                          |Iref                                       
+(no matching pin)                          |vref                                       
+(no matching pin)                          |vc                                         
+(no matching pin)                          |vout5p                                     
+(no matching pin)                          |vout5n                                     
+(no matching pin)                          |vinp                                       
+(no matching pin)                          |vinn                                       
+(no matching pin)                          |vin0p                                      
+(no matching pin)                          |vin0n                                      
+proxyvin0n                                 |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for top and topLevel altered to match.
+Cells failed matching, or top level cell failed pin matching.
+The following cells had property errors:
+ top
