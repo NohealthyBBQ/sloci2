@@ -1,0 +1,68 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/black_hammer/analogue_design_example/design/sram/or_demo_3_res_test.sch
+
+binary raw file "/home/black_hammer/analogue_design_example/design/SRAM/simulation/OR_DEMO_3_res_test.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 107  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+x1.qbar                               0.816706
+x1.q                                  0.816706
+vdd                                        1.8
+bl_sel                             8.82769e-07
+wl_a                                         0
+blb_sel                                    1.8
+wlb_a                                        0
+x2.qbar                               0.816706
+x2.q                                  0.816706
+wl_b                                         0
+wlb_b                                        0
+x3.qbar                               0.816706
+x3.q                                  0.816706
+wl_c                                         0
+wlb_c                                        0
+bl                                           0
+sel                                        1.8
+selb                                         0
+blb                                        1.8
+net1                               1.10197e-06
+net2                                       1.8
+sky130_fd_pr__esd_nfet_05v0_nvt.pm3               0
+                                             0
+v3#branch                          4.59611e-10
+v1#branch                         -4.63851e-10
+v10#branch                                   0
+v9#branch                                    0
+v8#branch                                    0
+v7#branch                                    0
+v6#branch                                    0
+v5#branch                                    0
+v4#branch                                    0
+v2#branch                                    0
+vdd#branch                        -4.37532e-05
+
+
+No. of Data Rows : 180
+
+Total analysis time (seconds) = 0.2
+
+Total elapsed time (seconds) = 31.905 
+
+Total DRAM available = 1975.797 MB.
+DRAM currently available =   65.688 MB.
+Maximum ngspice program size =  230.598 MB.
+Current ngspice program size =  212.551 MB.
+
+Shared ngspice pages =   10.883 MB.
+Text (code) pages =    7.543 MB.
+Stack = 0 bytes.
+Library pages =  209.938 MB.
+
