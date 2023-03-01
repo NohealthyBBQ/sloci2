@@ -1,5 +1,5 @@
-** sch_path: /foss/designs/research/simulations/vga_v3.sch
-**.subckt vga_v3
+** sch_path: /foss/designs/research/simulations/vga_v3_test.sch
+**.subckt vga_v3_test
 XR1 vd11 vdd GND sky130_fd_pr__res_xhigh_po_5p73 L=2.96 mult=5 m=5
 XR2 vout1p vdd GND sky130_fd_pr__res_xhigh_po_5p73 L=2.96 mult=3 m=3
 XR3 vd11 vout1p GND sky130_fd_pr__res_xhigh_po_5p73 L=7.5 mult=2 m=2
@@ -440,10 +440,6 @@ XM61 vgs8 vgs8 GND GND sky130_fd_pr__nfet_01v8_lvt L=0.15 W=0.64 nf=1 ad='int((n
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10
 I2 vdd vgs8 200u
-XR65 voutlpfp vout5p net42 sky130_fd_pr__res_xhigh_po_5p73 L=10 mult=1 m=1
-XR66 vout5n voutlpfn net43 sky130_fd_pr__res_xhigh_po_5p73 L=10 mult=1 m=1
-XC13 voutlpfn GND sky130_fd_pr__cap_mim_m3_1 W=13 L=13 MF=1 m=1
-XC14 voutlpfp GND sky130_fd_pr__cap_mim_m3_1 W=13 L=13 MF=1 m=1
 **** begin user architecture code
 
 ** opencircuitdesign pdks install
@@ -458,7 +454,7 @@ XC14 voutlpfp GND sky130_fd_pr__cap_mim_m3_1 W=13 L=13 MF=1 m=1
 
 .control
 run
-plot db(voutlpfp-voutlpfn)
+plot db(vout5p-vout5n)
 plot i(v3)*1.8
 .endc
 

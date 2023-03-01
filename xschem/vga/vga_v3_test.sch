@@ -1688,35 +1688,15 @@ N -2540 80 -2470 80 {
 lab=GND}
 N -2470 30 -2470 80 {
 lab=GND}
-N 1570 1480 1590 1480 {
-lab=vout5p}
 N 1130 930 1170 930 {
 lab=vout5p}
 N 2010 910 2050 910 {
 lab=vout5n}
-N 1930 1560 1930 1580 {
-lab=GND}
-N 1490 1540 1490 1570 {
-lab=GND}
 N 1990 910 2010 910 {
 lab=vout5n}
-N 1890 1480 1940 1480 {
-lab=voutlpfn}
-N 1930 1480 1930 1500 {
-lab=voutlpfn}
 N 2050 910 2130 910 {
 lab=vout5n}
 N 1080 930 1130 930 {
-lab=vout5p}
-N 1470 1480 1510 1480 {
-lab=voutlpfp}
-N 1940 1480 2020 1480 {
-lab=voutlpfn}
-N 1590 1480 1640 1480 {
-lab=vout5p}
-N 1770 1480 1830 1480 {
-lab=vout5n}
-N 1640 1480 1680 1480 {
 lab=vout5p}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} -1410 -500 0 0 {name=R1
 W=5.73
@@ -3917,7 +3897,7 @@ C {code_shown.sym} -2260 -640 0 0 {name=s2 only_toplevel=false value=
 
 .control
 run
-plot db(voutlpfp-voutlpfn)
+plot db(vout5p-vout5n)
 plot i(v3)*1.8
 .endc
 "}
@@ -4068,23 +4048,3 @@ C {lab_pin.sym} -2640 0 0 0 {name=l106 sig_type=std_logic lab=vgs8
 }
 C {isource.sym} -2540 -90 0 0 {name=I2 value=200u}
 C {lab_pin.sym} -2540 -170 0 0 {name=l256 sig_type=std_logic lab=vdd}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 1540 1480 1 0 {name=R65
-W=10
-L=10
-model=res_xhigh_po_5p73
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 1860 1480 1 0 {name=R66
-W=10
-L=10
-model=res_xhigh_po_5p73
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1930 1530 0 0 {name=C13 model=cap_mim_m3_1 W=13 L=13 MF=1 spiceprefix=X}
-C {gnd.sym} 1930 1580 0 0 {name=l257 lab=GND}
-C {gnd.sym} 1490 1570 0 0 {name=l258 lab=GND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1490 1510 0 0 {name=C14 model=cap_mim_m3_1 W=13 L=13 MF=1 spiceprefix=X}
-C {lab_pin.sym} 1470 1480 0 0 {name=l259 sig_type=std_logic lab=voutlpfp}
-C {lab_pin.sym} 2010 1480 0 0 {name=l260 sig_type=std_logic lab=voutlpfn}
-C {lab_pin.sym} 1670 1480 0 0 {name=l261 sig_type=std_logic lab=vout5p}
-C {lab_pin.sym} 1790 1480 0 0 {name=l262 sig_type=std_logic lab=vout5n}
