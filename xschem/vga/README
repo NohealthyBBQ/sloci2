@@ -1,0 +1,32 @@
+VGA: Designed by Chengyu Fan and Xinchen Ma
+
+This VGA is designed in Professor Rick Carley's research group, and the goal is to form a lab-on-chip testbench for FMR material. This VGA is very close to the complete design, but still, you can make your own adjustment and play with it if you want.
+
+About this VGA:
+We use 'A 1.8 V, 10 Gbps fully integrated CMOS optical receiver analog front end' by Wei-Zen Chen and Ying-Lien Cheng as the reference(copy avaliable inside the shared google folder). You can use this paper to check your hand calculation and understand the principle of this circuit structure. If you want to know more about this sturcture, please check Cherry-Hooper Amplifier
+
+
+VGA i/o:
+	Inputs:
+	VDD/VSS = 1.8/0V
+	Vinp/Vinn (differential input) = DC: 1.25V
+	Ibias1 = 20u (current reference: this will directly connect to current mirror and generate: vbias2 and vgs9)
+	Ibias2 = 200u (current reference: this will generate vgs8)
+	VC = 1V (control voltage for various gain switch: currently we have two levels)
+	2*pos/neg connections for external cap (sadly we have to have this due to large capacitance requirement)
+
+vga_hierarchy.sch:
+	The file vga_hierarchy.sch is the latest version of the circuit, it used subcells to make the circuit easy to follow. It contains two subcells named: VGA_preamp and VGA_unit, corresponding to first unit cell and rest of the unit cell.
+
+VGA_unit.sch:
+	A unit cell will provide gain to the input signal. It needs: vdd/GND, vref, vbias2, vc, vinp/vinn as the input and voutp/voutn as the differential output.
+
+VGA_preamp.sch:
+	The first unit cell is differnt from other unit cells becuase it needs to accept the signal from the subtractor/feedback. Therefore it needs 3 extra i/o: vin0p/vin0n(feedback connection), vgs9(tail transistor biasing for extra differential circuit)
+
+********************************************************files below are not the latest file:
+vga_v1.sch: this circuit fixed the simulation issue caused by software update
+vga_v2.sch: this file tried to adjust the bandwidth of the circuit
+vga_v3.sch/vga_v3_test.sch: these files are the association file for designing hierarchy structure
+simulation1.sch: the 1st functional circuit designed by Aug 2022. This is the original circuit
+
